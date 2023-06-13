@@ -7,7 +7,7 @@ c	ac	net/minecraft/block/SnowBlock
 	m	(II)V	<init>	<init>
 		p	2	n2	texture
 		p	1	n	id
-c	ad	net/minecraft/utility/json/JSONNodeDoesNotMatchJSONNodeSelectorException
+c	ad	argo/JSONNodeDoesNotMatchJSONNodeSelectorException
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		message
 c	ae	net/minecraft/particle/NoteParticle
@@ -38,8 +38,8 @@ c	ak	net/minecraft/block/PortalBlock
 		p	2	n2	texture
 c	al	net/minecraft/client/sound/GlassBlockSound
 c	am	net/minecraft/utility/noise/PerlinNoiseGenerator
-c	an	net/minecraft/utility/json/SAJParser
-c	ao	net/minecraft/utility/json/JSONNodeDoesNotMatchPathElementsException
+c	an	argo/SAJParser
+c	ao	argo/JSONNodeDoesNotMatchPathElementsException
 c	ap	net/minecraft/generator/TallGrassGenerator
 	m	(II)V	<init>	<init>
 		p	1		blockID
@@ -55,7 +55,7 @@ c	as	net/minecraft/utility/NBTStream
 	m	(Lnu;Ljava/io/OutputStream;)V	a	a
 		p	1		outputStream
 		p	0		compoundTag
-c	at	net/minecraft/utility/json/JSONNodeType
+c	at	argo/JSONNodeType
 	f	Lat;	g	NULL
 	f	Lat;	d	NUMBER
 	f	Lat;	c	STRING
@@ -78,7 +78,7 @@ c	az	net/minecraft/blockentity/DispenserBlockEntity
 	f	[Liz;	a	items
 	m	()Liz;	b	dispenseItem
 	f	Ljava/util/Random;	b	random
-c	ba	net/minecraft/utility/json/LeafFunctor
+c	ba	argo/LeafFunctor
 c	bb	net/minecraft/client/renderer/ItemRenderer
 c	bc	net/minecraft/item/BucketItem
 	f	I	a	blockID
@@ -217,7 +217,7 @@ c	e	net/minecraft/block/ChestBlock
 		p	4	n3	z
 		p	3	n2	y
 	f	Ljava/util/Random;	a	random
-c	f	net/minecraft/utility/json/JSONStringNodeBuilder
+c	f	argo/JSONStringNodeBuilder
 c	cj	net/minecraft/statistic/StatisticSyncer
 	m	(Lgr;Lxi;Ljava/io/File;)V	<init>	<init>
 		p	1		session
@@ -229,7 +229,7 @@ c	i	net/minecraft/client/texturepack/TexturePack
 	f	Ljava/lang/String;	b	description
 c	cl	net/minecraft/world/source/WorldSource
 	m	()Ljava/lang/String;	c	getName
-c	j	net/minecraft/utility/json/ChainedFunctor
+c	j	argo/ChainedFunctor
 c	k	net/minecraft/generator/ForestGenerator
 c	cn	net/minecraft/entity/monster/SpiderEntity
 c	l	net/minecraft/block/OreStorageBlock
@@ -299,7 +299,7 @@ c	cy	net/minecraft/blockentity/MobSpawnerBlockEntity
 c	v	net/minecraft/client/renderer/BipedRenderer
 c	cz	net/minecraft/client/thread/ResourceDownloadThread
 c	x	net/minecraft/client/screen/OutOfMemoryScreen
-c	y	net/minecraft/utility/json/JSONNodeList
+c	y	argo/JSONNodeList
 c	z	net/minecraft/recipes/ArmorRecipes
 	f	[[Ljava/lang/Object;	b	ingredientsAndOutput
 	f	[[Ljava/lang/String;	a	shape
@@ -422,7 +422,7 @@ c	eb	net/minecraft/LightLayer
 	f	I	c	lightValue
 	f	Leb;	a	SKY
 	f	Leb;	b	BLOCK
-c	ed	net/minecraft/utility/json/JSONArrayNodeBuilder
+c	ed	argo/JSONArrayNodeBuilder
 c	ee	net/minecraft/block/WoolBlock
 c	ef	net/minecraft/packet/ChunkPacket
 	f	I	a	x
@@ -508,7 +508,7 @@ c	ei	net/minecraft/world/WorldInfo
 		p	2		playerTag
 		p	1		tag
 c	ej	net/minecraft/client/model/ZombieModel
-c	el	net/minecraft/utility/json/CompactJSONFormatter
+c	el	argo/CompactJSONFormatter
 c	em	net/minecraft/particle/CollectItemParticle
 c	eo	net/minecraft/block/StoneBlock
 	m	(II)V	<init>	<init>
@@ -573,7 +573,7 @@ c	eq	net/minecraft/utility/physics/AABB
 	f	D	a	minX
 c	er	net/minecraft/generator/DungeonGenerator
 c	es	net/minecraft/client/renderer/SquidRenderer
-c	et	net/minecraft/utility/json/ThingWithPosition
+c	et	argo/ThingWithPosition
 c	eu	net/minecraft/packet/HealthPacket
 	f	I	a	health
 c	ev	net/minecraft/packet/PlayerPositionLookPacket
@@ -1069,7 +1069,7 @@ c	gs	net/minecraft/entity/player/Player
 		p	2	integer	amount
 		p	1	vr	statistic
 	f	Llx;	D	fish
-c	gu	net/minecraft/utility/json/JSONNode
+c	gu	argo/JSONNode
 	m	()Lat;	a	getType
 c	gv	net/minecraft/client/renderer/LivingEntityRenderer
 	m	(Lls;IF)Z	a	a
@@ -1193,7 +1193,7 @@ c	hw	net/minecraft/client/utility/colorizer/WaterColorizer
 	m	([I)V	a	setBuffer
 		p	0		buffer
 	f	[I	a	buffer
-c	hx	net/minecraft/utility/json/JDOMParser
+c	hx	argo/JDOMParser
 c	hy	net/minecraft/client/renderer/PistonRenderer
 c	ia	net/minecraft/client/utility/colorizer/GrassColorizer
 	m	([I)V	a	setBuffer
@@ -1389,7 +1389,7 @@ c	iz	net/minecraft/item/ItemStack
 		p	1		item
 	m	(Luu;)F	a	a
 		p	1		block
-c	ja	net/minecraft/utility/json/JSONNumberNode
+c	ja	argo/JSONNumberNode
 c	jb	net/minecraft/block/DeadBushBlock
 c	jc	net/minecraft/entity/EntityList
 	m	(ILfd;)Lsn;	a	createEntity
@@ -1507,7 +1507,7 @@ c	jr	net/minecraft/block/SnowLayerBlock
 		p	1	n	id
 c	js	net/minecraft/blockentity/ChestBlockEntity
 	f	[Liz;	a	items
-c	jt	net/minecraft/utility/json/JSONNodeSelector
+c	jt	argo/JSONNodeSelector
 c	ju	net/minecraft/entity/FallingBlockEntity
 c	jv	net/minecraft/packet/MinePacket
 	f	I	b	y
@@ -1534,7 +1534,7 @@ c	jz	net/minecraft/packet/ClickBedPacket
 	f	I	a	entityID
 	f	I	d	z
 	f	I	c	y
-c	ka	net/minecraft/utility/json/JSONNodeSelectors
+c	ka	argo/JSONNodeSelectors
 c	kb	net/minecraft/packet/WindowItemsPacket
 	f	[Liz;	b	items
 	f	I	a	windowID
@@ -1571,7 +1571,7 @@ c	kd	net/minecraft/biome/Biome
 	f	Lkd;	e	SAVANNA
 c	ke	net/minecraft/client/gui/Button
 	f	I	f	id
-c	kf	net/minecraft/utility/json/JSONArrayNodeSelector
+c	kf	argo/JSONArrayNodeSelector
 c	kg	net/minecraft/client/thread/TimerHackThread
 	m	(Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V	<init>	<init>
 		p	1		minecraft
@@ -1609,9 +1609,9 @@ c	ki	net/minecraft/packet/Packet
 		p	1		dataOutputStream
 	f	Ljava/util/Map;	b	classToIDMap
 	f	Ljava/util/Map;	a	idToClassMap
-c	kj	net/minecraft/utility/json/JSONStringNodeSelectors
+c	kj	argo/JSONStringNodeSelectors
 	f	Lnet/minecraft/client/Minecraft;	a	minecraft
-c	kk	net/minecraft/utility/json/JSONStringNodeSelector
+c	kk	argo/JSONStringNodeSelector
 c	kl	net/minecraft/client/renderer/FireballRenderer
 c	km	net/minecraft/item/DyeItem
 	f	[I	bk	colors
@@ -1621,7 +1621,7 @@ c	kp	net/minecraft/client/thread/PaidCheckThread
 	f	Lnet/minecraft/client/Minecraft;	a	minecraft
 c	kq	net/minecraft/client/MinecraftImplementation
 	f	Ljava/awt/Frame;	a	frame
-c	kr	net/minecraft/utility/json/JSONObject
+c	kr	argo/JSONObject
 c	ks	net/minecraft/block/LockedChestBlock
 	m	(I)V	<init>	<init>
 		p	1	n	id
@@ -1692,7 +1692,7 @@ c	la	net/minecraft/item/HoeItem
 	m	(ILbu;)V	<init>	<init>
 		p	2	bu2	tier
 		p	1	n	id
-c	lb	net/minecraft/utility/json/JSONNodeBuilder
+c	lb	argo/JSONNodeBuilder
 c	lc	net/minecraft/client/model/SkeletonModel
 c	le	net/minecraft/block/DoorBlock
 	m	(I)Z	f	isOpen
@@ -1705,7 +1705,7 @@ c	le	net/minecraft/block/DoorBlock
 c	lf	net/minecraft/Point
 c	lg	net/minecraft/client/gui/SlotGUI
 c	lh	net/minecraft/utility/nbt/EndNBTTag
-c	lj	net/minecraft/utility/json/PositionTrackingPushbackReader
+c	lj	argo/PositionTrackingPushbackReader
 c	lk	net/minecraft/entity/MobType
 	m	()Ljava/lang/Class;	a	getMobClass
 	f	Lln;	f	survivableMaterial
@@ -1783,7 +1783,7 @@ c	ls	net/minecraft/entity/LivingEntity
 	f	Ljava/lang/String;	O	texture
 	m	()V	o	livingTick
 	f	I	ae	attackTime
-c	lt	net/minecraft/utility/json/JSONListenerToJDOMAdapter
+c	lt	argo/JSONListenerToJDOMAdapter
 c	lu	net/minecraft/material/TransparentMaterial
 c	lv	net/minecraft/item/GroundPlaceableItem
 	f	I	a	block
@@ -1836,7 +1836,7 @@ c	mi	net/minecraft/utility/nbt/LongNBTTag
 c	mj	net/minecraft/client/renderer/SlimeRenderer
 c	mk	net/minecraft/client/LoadingScreen
 	f	Lnet/minecraft/client/Minecraft;	b	minecraft
-c	ml	net/minecraft/utility/json/JSONFormatter
+c	ml	argo/JSONFormatter
 c	mm	mm
 	f	Lnb;	D	networkHandler
 	m	(I)Lsn;	b	getEntityFromID
@@ -1860,10 +1860,10 @@ c	mv	net/minecraft/packet/FurnaceProgressPacket
 	f	I	b	bar
 	f	I	c	value
 c	mw	net/minecraft/client/model/SheepFurModel
-c	my	net/minecraft/utility/json/ObjectNodeContainer
+c	my	argo/ObjectNodeContainer
 	f	Llt;	b	adapter
-c	mz	net/minecraft/utility/json/JSONNodeDoesNotMatchChainedJSONNodeSelectorException
-c	na	net/minecraft/utility/json/ArrayNodeContainer
+c	mz	argo/JSONNodeDoesNotMatchChainedJSONNodeSelectorException
+c	na	argo/ArrayNodeContainer
 c	nb	net/minecraft/client/network/ClientNetworkHandler
 	m	()V	b	disconnect
 	m	(I)Lsn;	a	getEntityFromID
@@ -1880,7 +1880,7 @@ c	nb	net/minecraft/client/network/ClientNetworkHandler
 		p	1	ki2	packet
 	f	Ljava/util/Random;	c	random
 	f	Lpf;	e	networkManager
-c	nc	net/minecraft/utility/json/FieldNodeContainer
+c	nc	argo/FieldNodeContainer
 c	nd	net/minecraft/packet/SpawnItemPacket
 	f	I	l	metadata
 	f	B	e	yaw
@@ -2059,11 +2059,11 @@ c	ob	net/minecraft/client/controller/PlayerController
 	m	(Lgs;Lsn;)V	b	leftClickEntity
 		p	2	sn2	victim
 		p	1	gs2	attacker
-c	oc	net/minecraft/utility/json/JSONNumberNodeBuilder
+c	oc	argo/JSONNumberNodeBuilder
 c	od	net/minecraft/recipes/FoodRecipes
 	m	(Lhk;)V	a	addRecipes
 		p	1		recipes
-c	oe	net/minecraft/utility/json/JSONArray
+c	oe	argo/JSONArray
 c	of	net/minecraft/packet/StatisticPacket
 	f	I	b	amount
 	f	I	a	statisticID
@@ -2096,7 +2096,7 @@ c	ok	ok
 	m	(Lfd;Lbf;Lcl;)V	<init>	<init>
 		p	3		worldSource
 		p	1		world
-c	ol	net/minecraft/utility/json/JSONNodeFactory
+c	ol	argo/JSONNodeFactory
 c	om	net/minecraft/block/FlowingLiquidBlock
 	m	(Lfd;III)V	j	j
 		p	1	fd2	world
@@ -2153,7 +2153,7 @@ c	ow	net/minecraft/blockentity/BlockEntity
 	f	I	e	x
 c	ox	net/minecraft/packet/RespawnPacket
 	f	B	a	dimension
-c	oy	net/minecraft/utility/json/JSONObjectNodeList
+c	oy	argo/JSONObjectNodeList
 c	oz	net/minecraft/client/screen/PauseScreen
 c	pa	net/minecraft/client/texturepack/DefaultTexturePack
 c	pb	net/minecraft/particle/SlimeParticle
@@ -2241,7 +2241,7 @@ c	pm	net/minecraft/world/WorldListener
 		p	3	integer3	z
 		p	2	integer2	y
 		p	1	integer1	x
-c	pn	net/minecraft/utility/json/JSONFieldBuilder
+c	pn	argo/JSONFieldBuilder
 c	po	net/minecraft/client/renderer/SignRenderer
 c	pp	net/minecraft/utility/nbt/IntegerNBTTag
 	f	I	a	value
@@ -2252,11 +2252,11 @@ c	ps	net/minecraft/client/renderer/ModelRenderer
 c	pt	net/minecraft/block/NoteBlock
 	m	(I)V	<init>	<init>
 		p	1	n	id
-c	pu	net/minecraft/utility/json/NodeContainer
+c	pu	argo/NodeContainer
 c	pv	net/minecraft/inventory/slot/ArmorInventorySlot
 c	pw	net/minecraft/generator/TaigaGenerator2
 c	pz	net/minecraft/packet/RelativeEntityPositionLookPacket
-c	qa	net/minecraft/utility/json/JSONStringNode
+c	qa	argo/JSONStringNode
 c	qb	net/minecraft/client/options/Keybind
 	m	(Ljava/lang/String;I)V	<init>	<init>
 		p	2		keyCode
@@ -2269,11 +2269,11 @@ c	qd	net/minecraft/item/SwordItem
 		p	2	bu2	tier
 		p	1	n	id
 	f	I	a	damage
-c	qe	net/minecraft/utility/json/JSONRootNode
-c	qf	net/minecraft/utility/json/JSONObjectNodeSelector
-c	qg	net/minecraft/utility/json/JSONElementNodeSelector
+c	qe	argo/JSONRootNode
+c	qf	argo/JSONObjectNodeSelector
+c	qg	argo/JSONElementNodeSelector
 c	qh	net/minecraft/client/screen/WorldConflictScreen
-c	qi	net/minecraft/utility/json/JSONFieldNodeSelector
+c	qi	argo/JSONFieldNodeSelector
 c	qj	net/minecraft/world/file/RegionFile
 c	qk	net/minecraft/item/CookieItem
 c	qm	net/minecraft/particle/MiningParticle
@@ -2606,7 +2606,7 @@ c	sw	net/minecraft/ChatMessage
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		message
 	f	Ljava/lang/String;	a	message
-c	sx	net/minecraft/utility/json/JSONObjectNodeBuilder
+c	sx	argo/JSONObjectNodeBuilder
 c	sy	net/minecraft/particle/SplashParticle
 c	sz	net/minecraft/utility/nbt/DoubleNBTTag
 	m	(D)V	<init>	<init>
@@ -2637,7 +2637,7 @@ c	tc	net/minecraft/block/FurnaceBlock
 		p	2	n	x
 		p	3	n2	y
 c	td	net/minecraft/client/model/ChickenModel
-c	te	net/minecraft/utility/json/JSONNodeBuilders
+c	te	argo/JSONNodeBuilders
 c	tf	net/minecraft/biome/SwamplandBiome
 c	th	net/minecraft/client/renderer/RenderManager
 	f	Ljava/util/Map;	o	renderMap
@@ -2793,7 +2793,7 @@ c	tv	net/minecraft/packet/SetBlockPacket
 	f	I	a	x
 c	tw	net/minecraft/statistic/CraftingStatistic
 c	tx	net/minecraft/client/thread/IsometricPreviewThread
-c	ua	net/minecraft/utility/json/JSONTrueNodeBuilder
+c	ua	argo/JSONTrueNodeBuilder
 c	ub	net/minecraft/client/gui/GUI
 	m	(Lsj;Ljava/lang/String;III)V	a	drawCenteredText
 		p	3		x
@@ -2807,7 +2807,7 @@ c	ub	net/minecraft/client/gui/GUI
 		p	4		y
 		p	5		color
 		p	1		fontRenderer
-c	uc	net/minecraft/utility/json/JSONNullNodeBuilder
+c	uc	argo/JSONNullNodeBuilder
 c	ud	ud
 	m	(Ljava/io/DataOutputStream;)V	a	writeToStream
 		p	1	dataOutputStream	dataOutputStream
@@ -3291,7 +3291,7 @@ c	vm	net/minecraft/block/TorchBlock
 		p	4	n3	z
 		p	3	n2	y
 		p	2	n	x
-c	vn	net/minecraft/utility/json/JSONConstants
+c	vn	argo/JSONConstants
 	f	Lvn;	b	TRUE
 	f	Lvn;	a	NULL
 	f	Lvn;	c	FALSE
@@ -3364,7 +3364,7 @@ c	wf	wf
 	f	I	c	z
 	f	I	b	y
 	f	I	a	x
-c	wg	net/minecraft/utility/json/JSONListener
+c	wg	argo/JSONListener
 c	wh	net/minecraft/entity/animal/PigEntity
 	m	(Z)V	a	setSaddled
 		p	1	bl2	isSaddled
@@ -3437,7 +3437,7 @@ c	xc	net/minecraft/recipes/WeaponRecipes
 		p	1		recipes
 	f	[[Ljava/lang/Object;	b	swords
 c	xd	net/minecraft/particle/RainParticle
-c	xe	net/minecraft/utility/json/InvalidSyntaxException
+c	xe	argo/InvalidSyntaxException
 c	xf	net/minecraft/block/SpongeBlock
 	m	(I)V	<init>	<init>
 		p	1	n	id
@@ -3568,7 +3568,7 @@ c	yo	net/minecraft/client/sound/SoundManager
 	m	(Ljava/lang/String;FF)V	a	playSound
 	f	Lkv;	f	options
 	f	Lpaulscode/sound/SoundSystem;	a	soundSystem
-c	yp	net/minecraft/utility/json/Functor
+c	yp	argo/Functor
 	m	(Ljava/lang/Object;)Z	a	equals
 		p	1		node
 c	yq	net/minecraft/block/FireBlock
@@ -3604,7 +3604,7 @@ c	ys	net/minecraft/block/SlabBlock
 		p	1	n	id
 	f	Z	b	isFull
 	f	[Ljava/lang/String;	a	translationKeys
-c	yt	net/minecraft/utility/json/JSONEscapedString
+c	yt	argo/JSONEscapedString
 c	yu	net/minecraft/entity/weather/WeatherEntity
 c	yv	net/minecraft/inventory/slot/CraftingInventorySlot
 c	net/minecraft/client/MinecraftApplet	net/minecraft/client/MinecraftApplet
