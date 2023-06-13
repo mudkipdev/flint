@@ -4,16 +4,38 @@ c	ab	net/minecraft/client/gui/SmallButton
 	m	(IIILht;Ljava/lang/String;)V	<init>	<init>
 		p	4		option
 c	ac	net/minecraft/block/SnowBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	ad	net/minecraft/utility/json/JSONNodeDoesNotMatchJSONNodeSelectorException
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		message
 c	ae	net/minecraft/particle/NoteParticle
 c	af	net/minecraft/packet/PlayerPositionPacket
+	m	(DDDDZ)V	<init>	<init>
+		p	9	bl	isOnGround
+		p	1	d	x
+		p	5	d3	z
+		p	3	d2	y
 c	ag	net/minecraft/client/renderer/MobSpawnerRenderer
 c	ah	net/minecraft/block/TNTBlock
-c	ai	net/minecraft/packet/MapPacket
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
+c	ai	net/minecraft/packet/ItemDataPacket
+	f	[B	c	data
+	f	S	b	itemMetadata
+	f	S	a	itemID
 c	aj	net/minecraft/client/sound/SandBlockSound
 c	ak	net/minecraft/block/PortalBlock
+	m	(Lfd;III)Z	a_	tryToLight
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
+		p	4	n3	z
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
 c	al	net/minecraft/client/sound/GlassBlockSound
 c	am	net/minecraft/utility/noise/PerlinNoiseGenerator
 c	an	net/minecraft/utility/json/SAJParser
@@ -23,6 +45,16 @@ c	ap	net/minecraft/generator/TallGrassGenerator
 		p	1		blockID
 c	ar	net/minecraft/entity/water/WaterEntity
 c	as	net/minecraft/utility/NBTStream
+	m	(Ljava/io/DataInput;)Lnu;	a	a
+		p	0		dataInput
+	m	(Lnu;Ljava/io/DataOutput;)V	a	a
+		p	1		dataOutput
+		p	0		compoundTag
+	m	(Ljava/io/InputStream;)Lnu;	a	a
+		p	0		inputStream
+	m	(Lnu;Ljava/io/OutputStream;)V	a	a
+		p	1		outputStream
+		p	0		compoundTag
 c	at	net/minecraft/utility/json/JSONNodeType
 	f	Lat;	g	NULL
 	f	Lat;	d	NUMBER
@@ -33,15 +65,26 @@ c	at	net/minecraft/utility/json/JSONNodeType
 	f	Lat;	a	OBJECT
 c	net/minecraft/isom/IsomPreviewApplet	net/minecraft/client/applet/IsometricPreviewApplet
 c	au	net/minecraft/item/PickaxeItem
+	f	[Luu;	bk	effectiveAgainst
+	m	(ILbu;)V	<init>	<init>
+		p	1	n	id
+		p	2	bu2	tier
 c	av	net/minecraft/client/texture/CompassDynamicTexture
 	m	(Lnet/minecraft/client/Minecraft;)V	<init>	<init>
 		p	1		minecraft
 c	aw	net/minecraft/client/texture/DynamicTexture
 c	ay	net/minecraft/dimension/SkyDimension
 c	az	net/minecraft/blockentity/DispenserBlockEntity
+	f	[Liz;	a	items
+	m	()Liz;	b	dispenseItem
+	f	Ljava/util/Random;	b	random
 c	ba	net/minecraft/utility/json/LeafFunctor
 c	bb	net/minecraft/client/renderer/ItemRenderer
 c	bc	net/minecraft/item/BucketItem
+	f	I	a	blockID
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	blockID
 c	bd	net/minecraft/client/canvas/IsometricPreviewCanvas
 	f	Lfd;	d	world
 c	be	net/minecraft/generator/FlowerGenerator
@@ -57,19 +100,45 @@ c	bh	net/minecraft/client/sound/Resource
 		p	2		url
 	f	Ljava/net/URL;	b	url
 c	bi	net/minecraft/item/WoolItem
-c	bj	net/minecraft/Spawnable
+c	bj	net/minecraft/entity/Spawnable
 	f	I	b	chance
 	f	Ljava/lang/Class;	a	entityClass
 	m	(Ljava/lang/Class;I)V	<init>	<init>
 		p	2		chance
 		p	1		entityClass
 c	bk	net/minecraft/block/LeavesBlock
+	f	I	c	baseTextureIndex
+	m	(Lfd;III)V	h	h
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	m	(Z)V	a	setFancyGraphics
+		p	1	bl2	fancyGraphics
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	bl	net/minecraft/item/ShearsItem
 c	bn	net/minecraft/statistic/DistanceStatic
 c	bo	net/minecraft/statistic/TimeStatistic
 c	bp	net/minecraft/entity/monster/GhastEntity
 c	bq	net/minecraft/statistic/BasicStatistic
 c	bs	net/minecraft/block/RedstoneOreBlock
+	f	Z	a	isLit
+	m	(Lfd;III)V	h	light
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	m	(Lfd;III)V	i	spawnParticles
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	m	(IIZ)V	<init>	<init>
+		p	3	bl	isLit
+		p	2	n2	texture
+		p	1	n	id
 c	bt	net/minecraft/utility/Vector3
 	f	D	a	x
 	m	(DDD)Lbt;	a	create
@@ -78,15 +147,18 @@ c	bt	net/minecraft/utility/Vector3
 		p	0		x
 	f	D	c	z
 	f	D	b	y
-c	bu	net/minecraft/item/ToolMaterial
-	m	()I	a	getMaxUses
+c	bu	net/minecraft/item/ToolTier
+	m	()I	a	getDurability
 	m	()I	c	getDamage
 	m	()F	b	getMiningSpeed
 	f	Lbu;	d	DIAMOND
+	m	()I	d	getLevel
 	f	Lbu;	c	IRON
-	f	I	g	maxUses
+	f	I	g	durability
+	f	I	f	level
 	f	Lbu;	e	GOLD
 	m	(Ljava/lang/String;IIIFI)V	<init>	<init>
+		p	3	integer3	level
 		p	4		maxUses
 		p	5		miningSpeed
 		p	6		damage
@@ -95,19 +167,40 @@ c	bu	net/minecraft/item/ToolMaterial
 	f	Lbu;	b	STONE
 	f	Lbu;	a	WOOD
 c	bv	net/minecraft/block/PressurePlateBlock
+	m	(Lfd;III)V	h	h
+		p	4	n3	z
+		p	1	fd2	world
+		p	3	n2	y
+		p	2	n	x
+	f	Lrt;	a	activationType
+	m	(IILrt;Lln;)V	<init>	<init>
+		p	1	n	id
+		p	3	rt2	activationType
+		p	2	n2	texture
+		p	4	ln2	material
 c	bw	net/minecraft/client/renderer/Renderer
 	m	(Lsn;DDDFF)V	a	a
 		p	1		entity
 c	bx	net/minecraft/entity/animal/CowEntity
 c	by	net/minecraft/entity/projectile/SnowballEntity
 c	bz	net/minecraft/item/MushroomStewItem
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	healAmount
 c	ca	net/minecraft/packet/GameStatePacket
 	f	I	b	state
-	f	[Ljava/lang/String;	a	states
+	f	[Ljava/lang/String;	a	translationKeys
 c	cb	net/minecraft/client/panel/CrashReportPanel
 	m	(Lmh;)V	<init>	<init>
 		p	1		crash
 c	a	net/minecraft/packet/ClickEntityPacket
+	f	I	b	entityID
+	f	I	c	isLeftClick
+	m	(III)V	<init>	<init>
+		p	1	n	playerID
+		p	3	n3	isLeftClick
+		p	2	n2	entityID
+	f	I	a	playerID
 c	ce	net/minecraft/client/screen/ErrorScreen
 	f	Ljava/lang/String;	a	lineOne
 	f	Ljava/lang/String;	i	lineTwo
@@ -116,6 +209,14 @@ c	cf	net/minecraft/entity/projectile/FireballEntity
 c	cg	net/minecraft/client/texture/LavaDynamicTexture
 c	ch	net/minecraft/client/screen/GameOverScreen
 c	e	net/minecraft/block/ChestBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
+	m	(Lfd;III)Z	h	hasNeighboringChest
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+	f	Ljava/util/Random;	a	random
 c	f	net/minecraft/utility/json/JSONStringNodeBuilder
 c	cj	net/minecraft/statistic/StatisticSyncer
 	m	(Lgr;Lxi;Ljava/io/File;)V	<init>	<init>
@@ -132,11 +233,14 @@ c	j	net/minecraft/utility/json/ChainedFunctor
 c	k	net/minecraft/generator/ForestGenerator
 c	cn	net/minecraft/entity/monster/SpiderEntity
 c	l	net/minecraft/block/OreStorageBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	co	net/minecraft/client/screen/OptionsScreen
 c	cp	net/minecraft/item/BaseMapItem
 c	m	net/minecraft/client/renderer/CreeperRenderer
 	f	Lko;	a	model
-c	cq	net/minecraft/Spawner
+c	cq	net/minecraft/entity/Spawner
 c	n	n
 	f	Lfd;	k	world
 	f	Lnet/minecraft/client/Minecraft;	t	minecraft
@@ -168,7 +272,12 @@ c	r	net/minecraft/client/canvas/MinecraftAppletCanvas
 	f	Lnet/minecraft/client/MinecraftApplet;	a	applet
 	m	(Lnet/minecraft/client/MinecraftApplet;)V	<init>	<init>
 		p	1		applet
+c	cv	net/minecraft/client/renderer/BlockRenderer
 c	s	net/minecraft/packet/EntityEquipmentPacket
+	f	I	d	itemMetadata
+	f	I	a	entityID
+	f	I	c	itemID
+	f	I	b	inventorySlot
 c	cw	net/minecraft/SleepAttemptResult
 	f	Lcw;	c	CANNOT_SLEEP_DURING_DAYTIME
 	f	Lcw;	d	TOO_FAR_AWAY
@@ -180,6 +289,12 @@ c	cx	net/minecraft/client/utility/Capabilities
 	m	()Z	a	canUseOcclusion
 	f	Z	a	shouldCheckOcclusion
 c	cy	net/minecraft/blockentity/MobSpawnerBlockEntity
+	m	()Z	b	hasNearbyPlayers
+	f	I	a	delay
+	m	(Ljava/lang/String;)V	a	setMob
+		p	1	string	mob
+	m	()Ljava/lang/String;	a	getMob
+	m	()V	d	updateDelay
 	f	Ljava/lang/String;	i	mob
 c	v	net/minecraft/client/renderer/BipedRenderer
 c	cz	net/minecraft/client/thread/ResourceDownloadThread
@@ -195,7 +310,7 @@ c	da	net/minecraft/client/screen/Screen
 	f	Lke;	a	selectedButton
 	m	()V	j	tab
 	f	I	c	width
-	m	(Lke;)V	a	clickButton
+	m	(Lke;)V	a	onButtonClick
 		p	1		button
 	f	I	d	height
 	m	(IIF)V	a	draw
@@ -213,12 +328,31 @@ c	da	net/minecraft/client/screen/Screen
 	f	Ljava/util/List;	e	elements
 	m	()V	b	setup
 c	db	net/minecraft/block/RedstoneTorchBlock
-c	dc	net/minecraft/entity/player/SingleplayerPlayerEntity
+	m	(Lfd;IIIZ)Z	a	a
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
+	m	(Lfd;III)Z	h	h
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	f	Z	a	isActive
+	m	(IIZ)V	<init>	<init>
+		p	3	bl	isActive
+		p	2	n2	texture
+		p	1	n	id
+c	dc	net/minecraft/entity/player/SingleplayerPlayer
 	f	Lnet/minecraft/client/Minecraft;	b	minecraft
+	f	Luo;	a	movementHandler
 	m	(Lnet/minecraft/client/Minecraft;Lfd;Lgr;I)V	<init>	<init>
+		p	4		dimension
 		p	3		session
 		p	2		world
 		p	1		minecraft
+	m	(Ljava/lang/String;)V	a	sendMessageToServer
+		p	1		message
 c	dd	net/minecraft/block/MobSpawnerBlock
 	m	(II)V	<init>	<init>
 		p	2		texture
@@ -227,13 +361,32 @@ c	de	net/minecraft/client/gui/TexturePackSlotGUI
 c	df	net/minecraft/utility/noise/NoiseGenerator
 c	dg	net/minecraft/client/renderer/BillboardItemRenderer
 c	di	net/minecraft/packet/CollectItemPacket
+	f	I	a	entityID
+	f	I	b	playerID
 c	dj	net/minecraft/generator/LakeGenerator
 c	dl	net/minecraft/entity/animal/SheepEntity
 c	dm	net/minecraft/item/SnowballItem
 c	dp	net/minecraft/block/LadderBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
 c	dq	net/minecraft/item/ToolItem
+	f	Lbu;	a	tier
+	m	(IILbu;[Luu;)V	<init>	<init>
+		p	1	n	id
+		p	4	uuArray	effectiveBlocks
+		p	3	bu2	tier
+	f	F	bl	miningSpeed
 	f	[Luu;	bk	effectiveBlocks
+	f	I	bm	damage
 c	ds	net/minecraft/client/renderer/PlayerRenderer
+c	dt	net/minecraft/recipes/Recipe
+	m	(Lmq;)Liz;	b	createResult
+		p	1	var1	craftingInventory
+	m	()Liz;	b	getResult
+	m	()I	a	getSize
+	m	(Lmq;)Z	a	matches
+		p	1	var1	craftingInventory
 c	dv	net/minecraft/client/screen/StatisticsScreen
 c	dw	dw
 	f	I	f	windowID
@@ -244,7 +397,7 @@ c	dx	net/minecraft/MapColor
 		p	2		color
 			c	The color as a decimal value.
 		p	1		id
-			c	The ID of the color.
+			c	The unique ID of the color.
 	f	I	q	id
 	f	Ldx;	o	WOOD
 	f	Ldx;	k	CLAY
@@ -263,12 +416,23 @@ c	dx	net/minecraft/MapColor
 	f	Ldx;	b	TRANSPARENT
 c	dy	net/minecraft/client/renderer/PaintingRenderer
 c	ea	net/minecraft/client/model/SheepModel
-c	eb	eb
+c	eb	net/minecraft/LightLayer
+	m	(Ljava/lang/String;II)V	<init>	<init>
+		p	3		lightValue
+	f	I	c	lightValue
 	f	Leb;	a	SKY
 	f	Leb;	b	BLOCK
 c	ed	net/minecraft/utility/json/JSONArrayNodeBuilder
 c	ee	net/minecraft/block/WoolBlock
 c	ef	net/minecraft/packet/ChunkPacket
+	f	I	a	x
+	f	I	b	y
+	f	I	c	z
+	f	I	d	xSize
+	f	I	e	ySize
+	f	I	f	zSize
+	f	I	h	blockDataLength
+	f	[B	g	blockData
 c	eg	net/minecraft/blockentity/JukeboxBlockEntity
 	f	I	a	musicDisc
 c	eh	net/minecraft/client/model/PigModel
@@ -345,8 +509,10 @@ c	ei	net/minecraft/world/WorldInfo
 		p	1		tag
 c	ej	net/minecraft/client/model/ZombieModel
 c	el	net/minecraft/utility/json/CompactJSONFormatter
+c	em	net/minecraft/particle/CollectItemParticle
 c	eo	net/minecraft/block/StoneBlock
 	m	(II)V	<init>	<init>
+		p	2	n2	texture
 		p	1		id
 c	ep	net/minecraft/statistic/AchievementList
 	f	Ljava/util/List;	e	achievements
@@ -364,11 +530,60 @@ c	ep	net/minecraft/statistic/AchievementList
 	f	Lny;	k	ACQUIRE_IRON
 	f	Lny;	f	OPEN_INVENTORY
 c	eq	net/minecraft/utility/physics/AABB
+	m	(Lbt;)Z	a	a
+		p	1		vector
+	m	(DDDDDD)Leq;	b	b
+		p	0	d	minX
+		p	2	d2	minY
+		p	8	d5	maxY
+		p	10	d6	maxZ
+		p	4	d3	minZ
+		p	6	d4	maxX
+	m	(DDDDDD)Leq;	a	create
+		p	0		minX
+		p	2		minY
+		p	8		maxY
+		p	10		maxZ
+		p	4		minZ
+		p	6		maxX
+	m	(DDD)Leq;	d	offset
+	m	(DDDDDD)V	<init>	<init>
+		p	11		maxZ
+		p	7		maxX
+		p	9		maxY
+		p	3		minY
+		p	5		minZ
+		p	1		minX
+	m	(Leq;)Z	a	isIntersectingWith
+		p	1		other
+	m	(DDDDDD)Leq;	c	modify
+		p	1		minX
+		p	11		maxZ
+		p	7		maxX
+		p	9		maxY
+		p	3		minY
+		p	5		minZ
+	m	(Leq;)V	b	modify
+		p	1		aabb
+	f	D	f	maxZ
+	f	D	e	maxY
+	f	D	d	maxX
+	f	D	c	minZ
+	f	D	b	minY
+	f	D	a	minX
 c	er	net/minecraft/generator/DungeonGenerator
 c	es	net/minecraft/client/renderer/SquidRenderer
 c	et	net/minecraft/utility/json/ThingWithPosition
 c	eu	net/minecraft/packet/HealthPacket
+	f	I	a	health
 c	ev	net/minecraft/packet/PlayerPositionLookPacket
+	m	(DDDDFFZ)V	<init>	<init>
+		p	9	f	yaw
+		p	10	f2	pitch
+		p	5	d3	z
+		p	3	d2	y
+		p	1	d	x
+		p	11	bl	isOnGround
 c	ex	net/minecraft/client/screen/DisconnectScreen
 c	ey	net/minecraft/recipes/SmeltingRecipes
 	m	(ILiz;)V	a	addRecipe
@@ -381,32 +596,91 @@ c	ey	net/minecraft/recipes/SmeltingRecipes
 	m	(I)Liz;	a	get
 		p	1		input
 c	ez	net/minecraft/client/model/BoatModel
-c	fa	net/minecraft/packet/LightningBoltPacket
+c	fa	net/minecraft/packet/WeatherPacket
+	f	I	c	x
+	f	I	b	type
+	f	I	a	entityID
+	m	(Lsn;)V	<init>	<init>
+		p	1	sn2	entity
+	f	I	e	z
+	f	I	d	y
 c	fb	net/minecraft/block/ObsidianBlock
 c	fc	net/minecraft/block/PumpkinBlock
+	f	Z	a	isJackOLantern
+	m	(IIZ)V	<init>	<init>
+		p	3	bl	isJackOLantern
+		p	1	n	id
+		p	2	n2	texture
 c	fd	net/minecraft/world/World
+	m	(IIIII)Z	a	setBlockWithMetadata
 	m	(IIII)V	g	notifyNeighbors
 		p	3		z
 		p	2		y
 		p	1		x
 	m	()Lei;	x	getInfo
-	f	Z	B	isMultiplayer
 	m	()Z	A	isEveryoneSleeping
 	m	(III)Z	i	doesBlockExist
 		p	2		y
 		p	3		z
 		p	1		x
-	m	(Lsn;)Z	a	addWeatherEffect
-		p	1		entity
+	m	(IIIII)V	e	playEffect
+	m	(Lsn;Leq;)Ljava/util/List;	b	getEntitiesWithinAABB
+	m	(II)I	e	findTopBlockY
+		p	2	n2	z
+		p	1	n	x
 	m	(Lwt;Ljava/lang/String;JLxa;)V	<init>	<init>
 		p	3		seed
 		p	2		name
-	f	Z	s	isNew
+	m	(Ljava/lang/Class;Leq;)Ljava/util/List;	a	getEntitiesOfTypeWithinAABB
+	m	(II)I	a	getTopBlockID
 	m	(IIII)Z	c	setBlock
+	f	Lxa;	t	dimension
+	m	(IIILow;)V	b	updateBlockEntity
+	m	(III)Z	r	isBlockPowered
+	m	(IIIII)Z	b	setBlockWithMetadataAndNotifyNeighbors
+	m	(Lsn;Ljava/lang/String;FF)V	a	playSoundAtEntity
+		p	1		entity
+		p	2		key
+	m	(Lsn;D)Lgs;	a	getClosestPlayerToEntity
+		p	1	sn	entity
+		p	2	double2	range
+	m	(IIII)V	d	setBlockMetadataAndNotifyNeighbors
+		p	1		x
+		p	3		z
+		p	2		y
+		p	4		metadata
+	m	(III)Z	l	canSeeSky
+	f	Lei;	x	info
+	m	(Lsn;)V	e	removeEntity
+		p	1		entity
+	m	(Lwt;Ljava/lang/String;Lxa;J)V	<init>	<init>
+		p	4		seed
+		p	3		dimension
+		p	2		name
+	m	(III)Z	d	isAirBlock
+	m	(DDDLjava/lang/String;FF)V	a	playSound
+	m	(IIIIZI)Z	a	canPlaceBlockAt
+	m	(IIILow;)V	a	setBlockEntity
+	f	Ljava/util/List;	e	weatherEffects
+	f	Z	B	isMultiplayer
+	m	(IIII)V	i	notifyNeighboringBlocks
+	m	(Ljava/lang/String;DDDDDD)V	a	spawnParticle
+	m	(Lsn;)Z	a	addWeatherEffect
+		p	1		entity
+	f	Z	s	isNew
+	m	()Lcl;	b	createWorldSource
+	m	(DDDD)Lgs;	a	getClosestPlayer
+		p	7	double4	range
+		p	1	double1	x
+		p	3	double2	y
+		p	5	double3	z
 	f	Lcl;	v	source
 	m	(Lfd;Lxa;)V	<init>	<init>
 		p	1		world
-	f	Lxa;	t	dimension
+	m	(III)Z	t	canRainOnBlock
+		p	1	n	x
+		p	2	n2	y
+		p	3	n3	z
 	m	(III)V	p	removeBlockEntity
 	f	Ljava/util/List;	d	players
 	f	Z	J	everyoneSleeping
@@ -416,42 +690,43 @@ c	fd	net/minecraft/world/World
 		p	4		metadata
 		p	3		z
 	m	(II)Z	f	doesChunkExist
-	m	(IIIII)Z	b	setBlockWithMetadataAndNotifyNeighbors
-	m	(Lsn;Ljava/lang/String;FF)V	a	playSoundAtEntity
-		p	1		entity
-		p	2		key
-	m	(IIII)V	d	setBlockMetadataAndNotifyNeighbors
-		p	1		x
-		p	3		z
-		p	2		y
-		p	4		metadata
 	m	(Lwt;Ljava/lang/String;J)V	<init>	<init>
 		p	3		seed
 		p	2		name
-	f	Lei;	x	info
-	m	(Lsn;)V	e	removeEntity
-		p	1		entity
-	m	(Lwt;Ljava/lang/String;Lxa;J)V	<init>	<init>
-		p	4		seed
-		p	3		dimension
-		p	2		name
+	m	(IIIII)V	d	triggerAction
+		p	2	integer2	y
+		p	1	integer1	x
+		p	5	integer5	pitchOrDirection
+		p	4	integer4	instrumentOrState
+		p	3	integer3	z
 	f	Ljava/util/Random;	r	random
-	m	(III)Z	d	isAirBlock
+	m	(Lgs;III)Z	a	a
+		p	3	n2	y
+		p	4	n3	z
+		p	1	gs2	player
+		p	2	n	x
 	m	(Ljava/lang/String;III)V	a	playMusicDisc
-	m	(DDDLjava/lang/String;FF)V	a	playSound
 	m	(Lsn;)Z	b	addEntity
-	m	(IIILow;)V	a	setBlockEntity
+	m	(Lgs;IIIII)V	a	playEffect
+	m	()V	g	tickEntities
+	m	(Lsn;DDDF)Lqx;	a	createExplosion
+		p	4	d2	y
+		p	6	d3	z
+		p	1	sn2	entity
+		p	2	d	x
+		p	8	f	size
 	m	(IIII)Z	f	setBlockAndNotifyNeighbors
 		p	1		x
 		p	3		z
 		p	2		y
 		p	4		blockID
-	f	Ljava/util/List;	e	weatherEffects
 c	fe	net/minecraft/client/renderer/BoatRenderer
-c	ff	net/minecraft/entity/Monster
+c	ff	net/minecraft/entity/monster/Monster
 c	fg	net/minecraft/particle/LavaParticle
 c	fh	net/minecraft/client/model/BipedModel
 c	fi	net/minecraft/block/CraftingTableBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	fj	net/minecraft/client/screen/CreateWorldScreen
 	f	Lda;	a	parentScreen
 	m	(Lda;)V	<init>	<init>
@@ -464,8 +739,26 @@ c	fl	net/minecraft/generator/MinableGenerator
 c	fm	fm
 	f	Ljava/io/File;	b	worldDirectory
 c	fn	net/minecraft/packet/EffectPacket
+	f	I	e	z
+	f	I	d	y
+	f	I	c	x
 	f	I	b	data
+	f	I	a	id
 c	fo	net/minecraft/block/JukeboxBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
+	m	(Lfd;IIII)V	f	play
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+		p	5	n4	metadata
+	m	(Lfd;III)V	b_	ejectMusicDisc
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
 c	fp	net/minecraft/utility/AllowedCharacters
 	m	()Ljava/lang/String;	a	getAllowedCharacters
 	f	Ljava/lang/String;	a	allowedCharacters
@@ -500,10 +793,39 @@ c	gi	net/minecraft/entity/animal/WolfEntity
 	m	()Z	D	hasOwner
 	m	()Z	C	isAngry
 c	gj	net/minecraft/packet/EntityVelocityPacket
+	m	(IDDD)V	<init>	<init>
+		p	1	n	entityID
+		p	6	d3	zVelocity
+		p	4	d2	yVelocity
+		p	2	d	xVelocity
+	f	I	d	zVelocity
+	f	I	c	yVelocity
+	f	I	b	xVelocity
+	f	I	a	entityID
+	m	(Lsn;)V	<init>	<init>
+		p	1	sn2	entity
 c	gk	net/minecraft/block/SandBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	material
+	m	(Lfd;III)V	h	h
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
+	m	(Lfd;III)Z	c_	c_
+		p	0	fd2	world
+		p	1	n	x
+		p	2	n2	y
+		p	3	n3	z
+	f	Z	a	fallWithoutEntity
 c	gl	net/minecraft/particle/FootstepParticle
 c	gm	net/minecraft/item/Item
 	m	()Ljava/lang/String;	a	getTranslationKey
+	m	(Liz;Lfd;Lgs;)Liz;	a	onRightClick
+		p	2	fd2	world
+		p	1	iz2	itemStack
+		p	3	gs2	player
 	m	()Z	e	isMetadataAllowed
 	f	Lgm;	au	BUCKET
 	f	Lgm;	U	LEATHER_CHESTPLATE
@@ -539,16 +861,23 @@ c	gm	net/minecraft/item/Item
 	f	Lgm;	E	GOLDEN_SWORD
 	f	Lgm;	f	IRON_AXE
 	f	Lgm;	aD	LEATHER
-	m	(Liz;)I	b	b
+	m	(Liz;)I	b	getTexture
 		p	1		itemStack
 	f	Lgm;	aZ	REDSTONE_REPEATER
 	m	()Z	g	canDamage
+	m	(Liz;Lfd;Lsn;IZ)V	a	a
+		p	3	sn2	entity
+		p	2	fd2	world
+		p	1	iz2	itemStack
 	f	Lgm;	as	SIGN
 	f	Lgm;	aR	GLOWSTONE_DUST
 	f	Lgm;	S	BREAD
 	f	Lgm;	t	STONE_SWORD
 	f	Lgm;	aI	PAPER
 	f	Lgm;	J	FEATHER
+	m	(Liz;Lls;)V	a	onRightClickEntity
+		p	1	iz2	itemStack
+		p	2	ls2	living
 	f	Lgm;	aj	GOLDEN_HELMET
 	f	Lgm;	k	COAL
 	f	Lgm;	aA	REDSTONE_DUST
@@ -559,13 +888,14 @@ c	gm	net/minecraft/item/Item
 	f	Lbl;	bc	SHEARS
 	m	(Z)Lgm;	a	setMetadataAllowed
 		p	1		isMetadataAllowed
-	m	(Liz;Lgs;Lfd;IIII)Z	a	a
+	m	(Liz;Lgs;Lfd;IIII)Z	a	onClickBlock
 		p	1		itemStack
 		p	2		player
 		p	5		y
 		p	6		z
 		p	3		world
 		p	4		x
+		p	7	n4	metadata
 	f	Lgm;	aS	RAW_FISH
 	f	Lgm;	u	STONE_SHOVEL
 	f	Lgm;	at	WOODEN_DOOR
@@ -596,6 +926,9 @@ c	gm	net/minecraft/item/Item
 	m	(II)Lgm;	a	setTexturePosition
 		p	1		x
 		p	2		y
+	m	(Liz;Luu;)F	a	getMiningSpeedAgainst
+		p	2	uu2	block
+		p	1	iz2	itemStack
 	f	Lgm;	aG	CLAY
 	f	Lgm;	aY	BED
 	f	Lgm;	Z	CHAIN_LEGGINGS
@@ -614,21 +947,40 @@ c	gm	net/minecraft/item/Item
 	f	Lgm;	aa	CHAIN_BOOTS
 	f	Lgm;	A	DIAMOND_AXE
 	f	I	bh	textureIndex
+	m	(Liz;IIIILls;)Z	a	breakBlock
+		p	1	iz	itemStack
+		p	2	integer2	itemID
+		p	5	n4	z
+		p	6	ls2	living
+		p	3	n2	x
+		p	4	n3	y
+	m	(Liz;)Ljava/lang/String;	a	getTranslationKey
+		p	1	iz2	itemStack
 	f	Lgm;	W	LEATHER_BOOTS
 	f	Lgm;	x	DIAMOND_SWORD
 	m	()Ljava/lang/String;	k	getNameTranslationKey
 	f	Lgm;	O	DIAMOND_HOE
 	f	Lgm;	p	WOODEN_SWORD
+	m	(Lsn;)I	a	getDamageAgainst
+		p	1	sn2	entity
 	f	Lgm;	aw	LAVA_BUCKET
 	f	Lgm;	aV	BONE
 	m	(I)V	<init>	<init>
 		p	1		id
+	m	(Liz;Lls;Lls;)Z	a	hitEntity
+		p	3	ls3	attacker
+		p	2	ls2	victim
+		p	1	iz2	itemStack
 	f	Lgm;	g	FLINT_AND_STEEL
 	f	Lgm;	aM	MINECART_WITH_FURNACE
 	f	Lgm;	N	IRON_HOE
 	m	(I)Lgm;	d	setMaxQuantity
 		p	1		maxQuantity
 	f	Lgm;	an	FLINT
+	m	(Liz;Lfd;Lgs;)V	b	b
+		p	2	fd2	world
+		p	3	gs2	gs2
+		p	1	iz2	itemStack
 	f	Lgm;	aE	MILK
 	f	Lgm;	F	GOLDEN_SHOVEL
 	f	Lgm;	af	DIAMOND_HELMET
@@ -636,9 +988,12 @@ c	gm	net/minecraft/item/Item
 	f	Lgm;	ax	MINECART
 	f	Lgm;	X	CHAIN_HELMET
 	f	Z	bj	isMetadataAllowed
+	m	(Luu;)Z	a	canDropBlock
+		p	1	uu2	block
 	f	Lgm;	q	WOODEN_SHOVEL
 	f	Lgm;	ap	COOKED_PORKCHOP
 	f	Lgm;	P	GOLD_HOE
+	m	()Z	b	is3D
 	f	Lgm;	aW	SUGAR
 	m	(I)I	f	getColorMultiplier
 		p	1		metadata
@@ -682,19 +1037,37 @@ c	gr	net/minecraft/Session
 	f	Ljava/util/List;	a	blocks
 		c	The list of blocks for this session. This is used for the creative inventory.\n\n@see net.minecraft.client.controller.CreativePlayerController
 	f	Ljava/lang/String;	b	username
-c	gs	net/minecraft/entity/player/PlayerEntity
+c	gs	net/minecraft/entity/player/Player
+	m	(ZZZ)V	a	wakeUp
 	m	(Laz;)V	a	showBlockEntityScreen
+		p	1		dispenser
+	m	(Lsn;I)V	b	b
+		p	1		entity
 	f	Ljava/lang/String;	l	username
-	m	()V	J	swing
-	m	()Liz;	G	getHeldItem
+	m	(Ljava/lang/String;)V	b	sendTranslatedMessage
+		p	1		message
+	m	()V	J	playSwingAnimation
 	m	()V	H	destroyHeldItem
 	f	Z	j	isSwinging
 	m	(Llw;)V	a	showBlockEntityScreen
+		p	1		inventory
+	f	I	m	dimension
+	m	()Liz;	G	getHeldItem
+	m	(III)V	a	showCraftingTableScreen
+		p	3		z
+		p	2		y
+		p	1		x
+	m	()V	v	respawn
 	f	I	g	score
 	m	(Lyk;)V	a	showBlockEntityScreen
+		p	1		sign
 	f	Lix;	c	inventory
 	m	()V	r	closeScreen
 	m	(Lsk;)V	a	showBlockEntityScreen
+		p	1		furnace
+	m	(Lvr;I)V	a	incrementStatistic
+		p	2	integer	amount
+		p	1	vr	statistic
 	f	Llx;	D	fish
 c	gu	net/minecraft/utility/json/JSONNode
 	m	()Lat;	a	getType
@@ -709,19 +1082,39 @@ c	gv	net/minecraft/client/renderer/LivingEntityRenderer
 		p	1		creeper
 c	gw	net/minecraft/Empty
 c	gx	net/minecraft/packet/PlacePacket
+	c	Note: The XYZ values are actually the coordinates of the block being built against.
+	f	I	d	baseSide
+	f	I	b	baseY
+	f	I	c	baseZ
+	f	I	a	baseX
+	m	(IIIILiz;)V	<init>	<init>
+		p	5	iz2	itemStack
+		p	4	n4	baseSide
+		p	3	n3	baseZ
+		p	2	n2	baseY
+		p	1	n	baseX
+	f	Liz;	e	itemStack
 c	gy	net/minecraft/particle/ExplosionParticle
 c	gz	net/minecraft/entity/monster/MonsterEntity
 c	ha	net/minecraft/recipes/ToolRecipes
+	f	[[Ljava/lang/Object;	b	tools
 	m	(Lhk;)V	a	addRecipes
 c	hb	net/minecraft/block/BookshelfBlock
 	m	(II)V	<init>	<init>
 		p	1		id
 		p	2		texture
 c	he	net/minecraft/block/SaplingBlock
+	m	(Lfd;IIILjava/util/Random;)V	c	growTree
+		p	4	n3	z
+		p	5	random	random
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
 c	hf	net/minecraft/utility/MD5
 	m	(Ljava/lang/String;)Ljava/lang/String;	a	toMD5
 	f	Ljava/lang/String;	a	string
 c	hg	net/minecraft/packet/TimePacket
+	f	J	a	time
 c	hh	net/minecraft/client/model/CowModel
 c	hi	net/minecraft/world/converter/McRegionWorldConverter
 c	hj	net/minecraft/utility/ScreenshotUtility
@@ -739,14 +1132,27 @@ c	hk	net/minecraft/recipes/Recipes
 		p	1		result
 		p	2		ingredients
 c	hl	net/minecraft/entity/ItemEntity
+	m	(Lfd;DDDLiz;)V	<init>	<init>
+		p	8	iz2	itemStack
+		p	6	d3	z
+		p	4	d2	y
+		p	2	d	x
+		p	1	fd2	world
+	f	Liz;	a	itemStack
+	f	I	c	pickupDelay
 c	hm	net/minecraft/BaseMapData
-	m	(Lnu;)V	a	a
-		p	1		tag
+	m	(Lnu;)V	b	writeToNBT
+		p	1	var1	compoundTag
+	m	(Lnu;)V	a	readFromNBT
+		p	1		compoundTag
 c	hn	net/minecraft/utility/nbt/ByteArrayNBTTag
 	m	([B)V	<init>	<init>
 		p	1		value
 	f	[B	a	value
 c	ho	net/minecraft/packet/HeldItemPacket
+	m	(I)V	<init>	<init>
+		p	1	n	slot
+	f	I	a	inventorySlot
 c	hp	net/minecraft/client/screen/ChestScreen
 c	hq	net/minecraft/packet/SetInventorySlotPacket
 c	hr	net/minecraft/client/sound/SoundPool
@@ -779,13 +1185,17 @@ c	ht	net/minecraft/client/options/Option
 	f	Lht;	c	INVERTED_MOUSE
 	f	Lht;	d	MOUSE_SENSITIVITY
 c	hu	net/minecraft/item/DoorItem
-c	hw	net/minecraft/utility/colorizer/WaterColorizer
+	m	(ILln;)V	<init>	<init>
+		p	1	n	id
+		p	2	ln2	material
+	f	Lln;	a	material
+c	hw	net/minecraft/client/utility/colorizer/WaterColorizer
 	m	([I)V	a	setBuffer
 		p	0		buffer
 	f	[I	a	buffer
 c	hx	net/minecraft/utility/json/JDOMParser
 c	hy	net/minecraft/client/renderer/PistonRenderer
-c	ia	net/minecraft/utility/colorizer/GrassColorizer
+c	ia	net/minecraft/client/utility/colorizer/GrassColorizer
 	m	([I)V	a	setBuffer
 		p	0		buffer
 	f	[I	a	buffer
@@ -796,7 +1206,17 @@ c	ic	net/minecraft/Empty2
 c	id	net/minecraft/client/screen/WindowScreen
 c	ie	net/minecraft/item/RedstoneDustItem
 c	if	net/minecraft/client/texture/FlowingLavaDynamicTexture
-c	ig	net/minecraft/packet/OnGroundPacket
+c	ig	net/minecraft/packet/PlayerPacket
+	f	D	a	x
+	f	Z	g	isOnGround
+	f	F	f	pitch
+	f	D	d	z
+	m	(Z)V	<init>	<init>
+		p	1	bl	isOnGround
+	f	Z	h	isPositionPacket
+	f	D	b	y
+	f	Z	i	isLookPacket
+	f	F	e	yaw
 c	ih	net/minecraft/generator/BigTreeGenerator
 c	ii	net/minecraft/entity/PathfindingEntity
 c	ij	net/minecraft/utility/nbt/NBTTag
@@ -822,7 +1242,23 @@ c	ik	net/minecraft/client/texturepack/TexturePackList
 	f	Ljava/util/List;	b	texturePacks
 c	il	net/minecraft/client/model/CreeperModel
 c	im	net/minecraft/particle/RedstoneParticle
-c	in	net/minecraft/utility/Math
+c	in	net/minecraft/utility/MathUtility
+	m	(F)F	e	abs
+		p	0	f	value
+	m	(F)F	c	sqrt
+		p	0		value
+	m	(F)F	a	sin
+		p	0	f	value
+	m	(F)I	d	floor
+		p	0	f	value
+	m	(F)F	b	cos
+		p	0	f	value
+	m	(D)F	a	sqrt
+		p	0	d	value
+	m	(Ljava/lang/String;)Z	a	isStringEmpty
+	m	(D)I	b	floor
+		p	0	d	value
+	f	[F	a	SIN_TABLE
 c	io	net/minecraft/client/sound/MUSCodec
 c	ip	net/minecraft/client/renderer/ChickenRenderer
 c	iq	net/minecraft/Painting
@@ -869,26 +1305,63 @@ c	iq	net/minecraft/Painting
 	f	Liq;	f	PLANT
 	f	I	B	x
 c	ir	net/minecraft/generator/SugarCaneGenerator
+c	is	net/minecraft/recipes/ShapedRecipe
+	f	Liz;	e	result
+	m	(II[Liz;Liz;)V	<init>	<init>
+		p	4	iz2	result
 c	iu	net/minecraft/MapData
 c	iw	net/minecraft/packet/OpenWindowPacket
+	f	I	d	inventorySize
 	f	I	a	windowID
-	f	I	b	windowType
+	f	I	b	inventoryType
+	f	Ljava/lang/String;	c	title
 c	ix	net/minecraft/inventory/PlayerInventory
 	m	(IZ)V	a	pickBlock
 		p	1		id
+	m	(Lgs;)V	<init>	<init>
+		p	1		player
+	m	(I)Z	c	consumeItem
+	m	()Liz;	b	getHeldItemStack
 	f	[Liz;	b	armor
 	f	[Liz;	a	items
 c	iy	net/minecraft/client/renderer/MapRenderer
+	m	(Lsj;Lkv;Lji;)V	<init>	<init>
+		p	1	sj2	fontRenderer
+		p	2	kv2	options
 	f	Lsj;	d	fontRenderer
 c	iz	net/minecraft/item/ItemStack
+	m	(ILsn;)V	a	damage
 	m	()I	i	getMetadata
-	m	()I	h	getMetadata2
-	f	I	c	id
+	m	(Lls;Lgs;)V	a	a
+		p	2	gs	player
 	f	I	d	metadata
 	m	(Luu;II)V	<init>	<init>
 		p	2		quantity
 		p	3		metadata
 		p	1		block
+	m	(Luu;)Z	b	canDropBlock
+		p	1	uu2	block
+	m	(I)Liz;	a	a
+		p	1		quantity
+	m	(Luu;I)V	<init>	<init>
+		p	1		block
+		p	2		quantity
+	m	(Lgs;Lfd;IIII)Z	a	clickBlock
+		p	2	fd2	world
+		p	3	n	x
+		p	4	n2	y
+		p	5	n3	z
+		p	1	gs2	player
+	m	(Lgm;I)V	<init>	<init>
+		p	2		quantity
+		p	1		item
+	m	(Liz;)Z	c	isEqualTo
+		p	1		itemStack
+	m	(Lnu;)V	<init>	<init>
+		p	1		tag
+	m	()I	h	getMetadata2
+	f	I	c	id
+	m	()I	b	getTexture
 	m	(Lnu;)Lnu;	a	writeToNBT
 		p	1		tag
 	m	(Lfd;Lgs;)Liz;	a	a
@@ -904,23 +1377,12 @@ c	iz	net/minecraft/item/ItemStack
 	m	()Lgm;	a	getItem
 	m	(I)V	b	setMetadata
 		p	1		metadata
-	m	(I)Liz;	a	a
-		p	1		quantity
-	m	(Luu;I)V	<init>	<init>
-		p	1		block
-		p	2		quantity
-	m	(Lgs;Lfd;IIII)Z	a	clickBlock
+	m	(Lsn;)I	a	getDamageAgainst
+		p	1	sn2	entity
 	m	(Lgm;II)V	<init>	<init>
 		p	2		quantity
 		p	3		metadata
 		p	1		item
-	m	(Lgm;I)V	<init>	<init>
-		p	2		quantity
-		p	1		item
-	m	(Liz;)Z	c	isEqualTo
-		p	1		itemStack
-	m	(Lnu;)V	<init>	<init>
-		p	1		tag
 	m	(Luu;)V	<init>	<init>
 		p	1		block
 	m	(Lgm;)V	<init>	<init>
@@ -957,12 +1419,15 @@ c	jf	net/minecraft/packet/EntityStatusPacket
 c	jg	net/minecraft/HitType
 	f	Ljg;	b	ENTITY
 	f	Ljg;	a	BLOCK
-c	jh	net/minecraft/utility/colorizer/FoliageColorizer
+c	jh	net/minecraft/client/utility/colorizer/FoliageColorizer
+	m	()I	c	getOakLeavesColor
 	m	([I)V	a	setBuffer
 		p	0		buffer
+	m	()I	b	getBirchLeavesColor
 	m	(DD)I	a	sample
 		p	2		y
 		p	0		x
+	m	()I	a	getSpruceLeavesColor
 	f	[I	a	buffer
 c	ji	ji
 	m	(Law;)V	a	addDynamicTexture
@@ -999,28 +1464,80 @@ c	jl	net/minecraft/statistic/StatisticList
 	f	Lvr;	r	RIDE_MINECART_DISTANCE
 	f	Lvr;	t	RIDE_PIG_DISTANCE
 	f	Lvr;	f	START_GAME
+	m	(I)Lvr;	a	getStatisticFromID
 	f	Lvr;	h	LOAD_WORLD
 	f	Lvr;	j	LEAVE_GAME
 	f	Lvr;	l	WALK_DISTANCE
 c	jm	net/minecraft/packet/SpawnMobPacket
+	f	B	b	type
+	f	Ljava/util/List;	i	receivedMetadata
+	f	I	e	z
+	f	I	d	y
+	m	(Lls;)V	<init>	<init>
+		p	1	ls2	mob
+	f	I	a	entityID
+	m	()Ljava/util/List;	b	getReceivedMetadata
+	f	I	c	x
+	f	Lud;	h	metadata
+	f	B	f	yaw
+	f	B	g	pitch
 c	jn	net/minecraft/client/OS2
 	f	Ljn;	b	SOLARIS
 	f	Ljn;	a	LINUX
 	f	Ljn;	d	MAC
 	f	Ljn;	c	WINDOWS
 	f	Ljn;	e	OTHER
+c	jp	net/minecraft/block/TranslucentBlock
+	m	(IILln;Z)V	<init>	<init>
+		p	3	ln2	material
+		p	1	n	id
+		p	2	n2	texture
 c	jq	net/minecraft/block/PistonBaseBlock
+	m	(IIZ)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	material
 c	jr	net/minecraft/block/SnowLayerBlock
+	m	(Lfd;III)Z	h	tryDrop
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	js	net/minecraft/blockentity/ChestBlockEntity
+	f	[Liz;	a	items
 c	jt	net/minecraft/utility/json/JSONNodeSelector
 c	ju	net/minecraft/entity/FallingBlockEntity
 c	jv	net/minecraft/packet/MinePacket
+	f	I	b	y
+	f	I	a	x
+	f	I	d	side
+	f	I	c	z
+	m	(IIIII)V	<init>	<init>
+		p	2	n2	x
+		p	1	n	status
+		p	4	n4	z
+		p	3	n3	y
+		p	5	n5	side
+	f	I	e	status
 c	jw	net/minecraft/block/FenceBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	jy	net/minecraft/recipes/MiscRecipes
 	m	(Lhk;)V	a	addRecipes
+		p	1		recipes
 c	jz	net/minecraft/packet/ClickBedPacket
+	f	I	e	type
+	f	I	b	x
+	f	I	a	entityID
+	f	I	d	z
+	f	I	c	y
 c	ka	net/minecraft/utility/json/JSONNodeSelectors
 c	kb	net/minecraft/packet/WindowItemsPacket
+	f	[Liz;	b	items
+	f	I	a	windowID
 c	kc	net/minecraft/particle/HeartParticle
 c	kd	net/minecraft/biome/Biome
 	m	(Llk;)Ljava/util/List;	a	getSpawnableMobs
@@ -1053,6 +1570,7 @@ c	kd	net/minecraft/biome/Biome
 	f	Lkd;	c	SEASONAL_FOREST
 	f	Lkd;	e	SAVANNA
 c	ke	net/minecraft/client/gui/Button
+	f	I	f	id
 c	kf	net/minecraft/utility/json/JSONArrayNodeSelector
 c	kg	net/minecraft/client/thread/TimerHackThread
 	m	(Lnet/minecraft/client/Minecraft;Ljava/lang/String;)V	<init>	<init>
@@ -1096,6 +1614,8 @@ c	kj	net/minecraft/utility/json/JSONStringNodeSelectors
 c	kk	net/minecraft/utility/json/JSONStringNodeSelector
 c	kl	net/minecraft/client/renderer/FireballRenderer
 c	km	net/minecraft/item/DyeItem
+	f	[I	bk	colors
+	f	[Ljava/lang/String;	a	translationKeys
 c	ko	net/minecraft/client/model/Model
 c	kp	net/minecraft/client/thread/PaidCheckThread
 	f	Lnet/minecraft/client/Minecraft;	a	minecraft
@@ -1103,6 +1623,8 @@ c	kq	net/minecraft/client/MinecraftImplementation
 	f	Ljava/awt/Frame;	a	frame
 c	kr	net/minecraft/utility/json/JSONObject
 c	ks	net/minecraft/block/LockedChestBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	kt	net/minecraft/generator/DeadBushGenerator
 	m	(I)V	<init>	<init>
 		p	1		blockID
@@ -1167,26 +1689,50 @@ c	kw	kw
 	f	Ljava/util/Random;	s	random
 c	kx	net/minecraft/world/source/CachedWorldSource
 c	la	net/minecraft/item/HoeItem
+	m	(ILbu;)V	<init>	<init>
+		p	2	bu2	tier
+		p	1	n	id
 c	lb	net/minecraft/utility/json/JSONNodeBuilder
 c	lc	net/minecraft/client/model/SkeletonModel
 c	le	net/minecraft/block/DoorBlock
+	m	(I)Z	f	isOpen
+		p	0	n	metadata
+	m	(Lfd;IIIZ)V	a	a
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
 c	lf	net/minecraft/Point
 c	lg	net/minecraft/client/gui/SlotGUI
 c	lh	net/minecraft/utility/nbt/EndNBTTag
 c	lj	net/minecraft/utility/json/PositionTrackingPushbackReader
 c	lk	net/minecraft/entity/MobType
+	m	()Ljava/lang/Class;	a	getMobClass
+	f	Lln;	f	survivableMaterial
+	f	Z	g	isPeaceful
+	m	()Z	d	isPeaceful
+	m	(Ljava/lang/String;ILjava/lang/Class;ILln;Z)V	<init>	<init>
+		p	3	ln2	mobClass
+		p	5	ln	survivableMaterial
+		p	6	boolean6	isPeaceful
 	f	Llk;	a	MONSTER
 	f	Llk;	b	ANIMAL
+	f	Ljava/lang/Class;	d	mobClass
 	f	Llk;	c	WATER
+	m	()Lln;	c	getSurvivableMaterial
 c	ll	net/minecraft/client/renderer/BlockEntityRenderer
 c	lm	net/minecraft/world/Chunk
 c	ln	net/minecraft/material/Material
 	f	Lln;	x	PUMPKIN
 	f	Lln;	z	CAKE
+	f	Z	D	canBurn
+	m	()Z	d	isLiquid
+	m	()Lln;	o	enableBurning
 	f	Lln;	p	GLASS
 	f	Lln;	r	CORAL
 		c	This is speculation since Notch was planning to add coral blocks around the same time this was added.
 	f	Lln;	t	SNOW
+	f	Ldx;	C	mapColor
 	f	Lln;	v	CACTUS
 	f	Lln;	g	WATER
 	f	Lln;	i	LEAVES
@@ -1198,6 +1744,7 @@ c	ln	net/minecraft/material/Material
 	f	Lln;	e	STONE
 	f	Lln;	w	CLAY
 	f	Lln;	y	PORTAL
+	m	()Z	e	canBurn
 	f	Lln;	o	REDSTONE
 	m	()Z	a	isSolid
 	f	Lln;	q	EXPLOSIVE
@@ -1223,8 +1770,10 @@ c	lq	net/minecraft/client/screen/MultiplayerScreen
 c	lr	net/minecraft/client/input/OptionsMovementHandler
 	f	Lkv;	g	options
 c	ls	net/minecraft/entity/LivingEntity
+	m	(I)V	c	heal
 	m	()Z	N	isSleeping
 	m	()F	k	getVolume
+	m	()V	V	createSpawnParticles
 	f	I	Y	health
 	m	()Ljava/lang/String;	g	getSound
 	m	()Ljava/lang/String;	i	getDeathSound
@@ -1232,20 +1781,23 @@ c	ls	net/minecraft/entity/LivingEntity
 	m	()Ljava/lang/String;	j_	getHurtSound
 	f	I	aa	hurtTime
 	f	Ljava/lang/String;	O	texture
+	m	()V	o	livingTick
 	f	I	ae	attackTime
 c	lt	net/minecraft/utility/json/JSONListenerToJDOMAdapter
 c	lu	net/minecraft/material/TransparentMaterial
-c	lv	net/minecraft/item/SugarCaneItem
+c	lv	net/minecraft/item/GroundPlaceableItem
 	f	I	a	block
 	m	(ILuu;)V	<init>	<init>
 		p	1		id
 		p	2		block
 c	lw	net/minecraft/inventory/Inventory
+	m	(Lgs;)Z	a_	canInteractWithPlayer
+		p	1	gs2	player
 	m	(I)Liz;	f_	getItemStack
 		p	1		inventorySlot
-	m	()I	a	getSize
+	m	()I	a	getInventorySize
 	m	()I	d	getMaxQuantity
-	m	()Ljava/lang/String;	c	getName
+	m	()Ljava/lang/String;	c	getInventoryName
 	m	(II)Liz;	a	decreaseQuantity
 		p	1		inventorySlot
 		p	2		amount
@@ -1253,13 +1805,23 @@ c	lw	net/minecraft/inventory/Inventory
 	m	(ILiz;)V	a	setItemStack
 		p	2		itemStack
 		p	1		inventorySlot
-c	lx	net/minecraft/entity/FishEntity
+c	lx	net/minecraft/entity/water/FishEntity
 c	ly	net/minecraft/block/GlowstoneBlock
 c	lz	net/minecraft/packet/KeepAlivePacket
 c	mb	net/minecraft/client/renderer/EntityRenderer
 c	mc	net/minecraft/client/renderer/ArrowRenderer
 c	me	net/minecraft/client/renderer/PigRenderer
 c	mf	net/minecraft/packet/SpawnPlayerPacket
+	f	B	g	pitch
+	f	I	a	entityID
+	f	B	f	yaw
+	f	I	h	itemID
+	f	I	c	x
+	m	(Lgs;)V	<init>	<init>
+		p	1	gs2	player
+	f	I	d	y
+	f	I	e	z
+	f	Ljava/lang/String;	b	username
 c	mg	net/minecraft/client/gui/WorldSlotGUI
 c	mh	net/minecraft/Crash
 	m	(Ljava/lang/String;Ljava/lang/Throwable;)V	<init>	<init>
@@ -1275,31 +1837,70 @@ c	mj	net/minecraft/client/renderer/SlimeRenderer
 c	mk	net/minecraft/client/LoadingScreen
 	f	Lnet/minecraft/client/Minecraft;	b	minecraft
 c	ml	net/minecraft/utility/json/JSONFormatter
+c	mm	mm
+	f	Lnb;	D	networkHandler
+	m	(I)Lsn;	b	getEntityFromID
+	f	Luv;	E	worldSource
 c	mn	net/minecraft/packet/CloseWindowPacket
+	f	I	a	windowID
 c	mo	net/minecraft/item/EggItem
 c	mp	net/minecraft/packet/HandshakePacket
 	f	Ljava/lang/String;	a	usernameOrConnectionHash
+	m	(Ljava/lang/String;)V	<init>	<init>
+		p	1	string	usernameOrConnectionHash
 c	mq	net/minecraft/inventory/CraftingInventory
 c	mr	net/minecraft/item/SaplingItem
 c	ms	net/minecraft/generator/ClayGenerator
 c	mt	net/minecraft/block/OreBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	material
 c	mv	net/minecraft/packet/FurnaceProgressPacket
+	f	I	a	windowID
+	f	I	b	bar
+	f	I	c	value
 c	mw	net/minecraft/client/model/SheepFurModel
 c	my	net/minecraft/utility/json/ObjectNodeContainer
 	f	Llt;	b	adapter
 c	mz	net/minecraft/utility/json/JSONNodeDoesNotMatchChainedJSONNodeSelectorException
 c	na	net/minecraft/utility/json/ArrayNodeContainer
 c	nb	net/minecraft/client/network/ClientNetworkHandler
+	m	()V	b	disconnect
+	m	(I)Lsn;	a	getEntityFromID
+		p	1	n2	entityID
+	m	(Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V	<init>	<init>
+		p	3	n	port
+		p	1	minecraft	minecraft
+		p	2	string	hostname
 	f	Z	d	isDisconnected
 	f	Lnet/minecraft/client/Minecraft;	f	minecraft
+	m	(Lki;)V	a	a
+		p	1	ki2	packet
+	m	(Lki;)V	b	sendPacket
+		p	1	ki2	packet
+	f	Ljava/util/Random;	c	random
+	f	Lpf;	e	networkManager
 c	nc	net/minecraft/utility/json/FieldNodeContainer
 c	nd	net/minecraft/packet/SpawnItemPacket
+	f	I	l	metadata
+	f	B	e	yaw
+	f	B	f	pitch
+	f	B	g	roll
+	f	I	h	itemID
+	f	I	i	quantity
+	m	(Lhl;)V	<init>	<init>
+		p	1	hl2	item
+	f	I	c	y
+	f	I	d	z
+	f	I	a	entityID
+	f	I	b	x
 c	ne	net/minecraft/block/GravelBlock
 c	nf	net/minecraft/utility/SkinParser
 	m	(Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;	a	parseSkin
 		p	1		image
 c	ng	net/minecraft/recipes/DyeRecipes
 	m	(Lhk;)V	a	addRecipes
+		p	1		recipes
 c	nh	net/minecraft/utility/Translator
 	m	()Lnh;	a	getInstance
 	f	Lnh;	a	instance
@@ -1312,6 +1913,16 @@ c	nh	net/minecraft/utility/Translator
 		p	1		key
 	f	Ljava/util/Properties;	b	languageFile
 c	ni	net/minecraft/block/WheatBlock
+	m	(Lfd;III)V	d_	d_
+		p	4	n3	z
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
+	m	(Lfd;III)F	i	i
+		p	1	fd2	world
+		p	3	n2	y
+		p	2	n	x
+		p	4	n3	z
 c	nj	net/minecraft/client/screen/VideoSettingsScreen
 c	nk	net/minecraft/block/IceBlock
 	m	(II)V	<init>	<init>
@@ -1320,6 +1931,7 @@ c	nk	net/minecraft/block/IceBlock
 c	nl	net/minecraft/world/converter/WorldConverter
 	m	()Ljava/lang/String;	a	getName
 c	nm	net/minecraft/packet/AnimationPacket
+	c	This packet is sent by both the client and the server for swinging your arm (1),\nand leaving a bed (3) which is server bound only. The client instead uses the\nEntity Action packet for leaving a bed.\n@see net.minecraft.packet.EntityActionPacket
 	f	I	b	animationType
 	f	I	a	entityID
 	m	(Lsn;I)V	<init>	<init>
@@ -1331,7 +1943,14 @@ c	np	net/minecraft/client/sound/MUSInputStream
 	f	Lio;	b	codec
 c	nq	net/minecraft/client/model/MinecartModel
 c	nr	net/minecraft/block/BaseLeavesBlock
+	m	(IILln;Z)V	<init>	<init>
+		p	3	ln	material
+		p	2	integer2	texture
+		p	1	integer1	id
+	f	Z	b	fancyGraphics
 c	ns	net/minecraft/packet/MountEntityPacket
+	f	I	a	entityID
+	f	I	b	vehicleID
 c	nt	net/minecraft/entity/monster/GiantZombieEntity
 c	nu	net/minecraft/utility/nbt/CompoundNBTTag
 	m	(Ljava/lang/String;B)V	a	setByte
@@ -1394,7 +2013,13 @@ c	nu	net/minecraft/utility/nbt/CompoundNBTTag
 	m	(Ljava/lang/String;)Lsp;	l	getList
 		p	1		name
 c	nw	net/minecraft/utility/Tessellator
+	f	Lnw;	a	instance
 c	nx	net/minecraft/block/StationaryLiquidBlock
+	m	(Lfd;III)Z	k	canBurnBlock
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
 c	ny	net/minecraft/statistic/Achievement
 c	nz	net/minecraft/packet/LoginPacket
 	f	Ljava/lang/String;	b	username
@@ -1405,8 +2030,19 @@ c	nz	net/minecraft/packet/LoginPacket
 	f	I	a	protocolVersionOrEntityID
 	f	B	d	dimension
 c	oa	net/minecraft/block/SoulSandBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	ob	net/minecraft/client/controller/PlayerController
 	m	()V	c	update
+	m	(Lgs;Lfd;Liz;IIII)Z	a	clickBlock
+		p	2	fd2	world
+		p	3	iz2	itemStack
+		p	1	gs2	player
+		p	6	n4	z
+		p	7	n5	metadata
+		p	4	n2	x
+		p	5	n3	y
 	m	(Lgs;)V	b	respawn
 		p	1		player
 	f	Lnet/minecraft/client/Minecraft;	a	minecraft
@@ -1416,22 +2052,44 @@ c	ob	net/minecraft/client/controller/PlayerController
 		p	1		x
 	m	(Lfd;)V	a	setWorld
 		p	1		world
+	m	(Lgs;Lsn;)V	a	rightClickEntity
 	m	()Z	d	shouldDrawSurvivalHUD
 	m	(Lnet/minecraft/client/Minecraft;)V	<init>	<init>
 		p	1		minecraft
-	m	(Lgs;Lsn;)V	b	attack
+	m	(Lgs;Lsn;)V	b	leftClickEntity
+		p	2	sn2	victim
+		p	1	gs2	attacker
 c	oc	net/minecraft/utility/json/JSONNumberNodeBuilder
 c	od	net/minecraft/recipes/FoodRecipes
 	m	(Lhk;)V	a	addRecipes
+		p	1		recipes
 c	oe	net/minecraft/utility/json/JSONArray
 c	of	net/minecraft/packet/StatisticPacket
+	f	I	b	amount
+	f	I	a	statisticID
 c	og	net/minecraft/inventory/LargeChestInventory
 	f	Llw;	c	secondChest
 	f	Ljava/lang/String;	a	name
 	f	Llw;	b	firstChest
 c	oh	net/minecraft/client/texture/FlowingWaterDynamicTexture
-c	oi	net/minecraft/block/StoneButton
+c	oi	net/minecraft/block/ButtonBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
+	m	(Lfd;III)Z	i	tryDrop
+	m	(Lfd;III)I	h	h
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
 c	oj	net/minecraft/packet/InventoryTransactionPacket
+	f	Z	c	isAccepted
+	f	I	a	windowID
+	m	(ISZ)V	<init>	<init>
+		p	1	n	windowID
+		p	2	s	transactionID
+		p	3	bl	isAccepted
+	f	S	b	transactionID
 c	ok	ok
 	f	Ljava/util/Set;	a	droppedChunks
 	f	Ljava/util/List;	f	chunks
@@ -1440,33 +2098,61 @@ c	ok	ok
 		p	1		world
 c	ol	net/minecraft/utility/json/JSONNodeFactory
 c	om	net/minecraft/block/FlowingLiquidBlock
+	m	(Lfd;III)V	j	j
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	m	(Lfd;IIII)V	h	h
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
 c	on	net/minecraft/client/renderer/TNTRenderer
 c	oo	net/minecraft/client/screen/CraftingTableScreen
 c	op	net/minecraft/particle/PortalParticle
 c	oq	net/minecraft/block/TrapdoorBlock
+	m	(Lfd;IIIZ)V	a	a
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+	m	(I)V	d	d
+		p	1	n	metadata
+	m	(I)Z	e	isOpen
+		p	0	n	metadata
 c	or	net/minecraft/block/CactusBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
 c	os	net/minecraft/client/controller/SingleplayerPlayerController
 c	ot	net/minecraft/block/DirtBlock
+	m	(II)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
 c	ou	net/minecraft/material/PortalMaterial
 c	ov	net/minecraft/client/screen/FurnaceScreen
 c	ow	net/minecraft/blockentity/BlockEntity
+	m	()V	y_	update
 	m	(Lnu;)V	a	readFromNBT
-		p	1		tag
+		p	1		compoundTag
 	m	(Lnu;)V	b	writeToNBT
-		p	1		tag
-	m	()V	n_	update
+		p	1		compoundTag
 	m	(Ljava/lang/Class;Ljava/lang/String;)V	a	addBlockEntity
 		p	0		blockEntityClass
 		p	1		name
 	f	Lfd;	d	world
 	f	Ljava/util/Map;	b	classToNameMap
-	f	I	g	z
 	f	Ljava/util/Map;	a	nameToClassMap
-	m	(Lnu;)Low;	c	c
-		p	0		tag
+	m	()V	n_	tick
+	f	I	g	z
+	m	(Lnu;)Low;	c	loadBlockEntity
+		p	0		compoundTag
 	f	I	f	y
+	m	()I	e	getBlockMetadata
 	f	I	e	x
 c	ox	net/minecraft/packet/RespawnPacket
+	f	B	a	dimension
 c	oy	net/minecraft/utility/json/JSONObjectNodeList
 c	oz	net/minecraft/client/screen/PauseScreen
 c	pa	net/minecraft/client/texturepack/DefaultTexturePack
@@ -1474,13 +2160,21 @@ c	pb	net/minecraft/particle/SlimeParticle
 c	pc	net/minecraft/block/RailBlock
 	m	(I)Z	d	isRail
 		p	0		blockID
+	m	()Z	i	isSpecial
 	m	(Lfd;III)Z	h	isRail
 		p	3		z
 		p	1		x
 		p	2		y
 		p	0		world
+	m	(Lpc;)Z	a	isSpecial
+		p	0	pc2	block
+	m	(IIZ)V	<init>	<init>
+		p	2	n2	texture
+		p	1	n	id
+		p	3	bl	isSpecial
 	m	(II)I	a	a
 		c	@return The index of the block texture.\nThe side of the block to display the texture on.\nThe metadata value of the block.
+	f	Z	a	isSpecial
 c	pd	net/minecraft/client/OS
 	f	Lpd;	e	OTHER
 	f	Lpd;	c	WINDOWS
@@ -1494,6 +2188,8 @@ c	pe	net/minecraft/packet/ChatMessagePacket
 c	pf	net/minecraft/network/NetworkManager
 	f	Ljava/lang/Thread;	s	readThread
 	f	Ljava/lang/Thread;	r	writeThread
+	m	(Ljava/lang/String;[Ljava/lang/Object;)V	a	disconnect
+		p	1	string	reason
 c	pg	net/minecraft/generator/Generator
 	m	(Lfd;Ljava/util/Random;III)Z	a	generate
 		p	1		world
@@ -1518,7 +2214,22 @@ c	pm	net/minecraft/world/WorldListener
 		p	2		x
 		p	3		y
 		p	4		z
+	m	(Lsn;)V	a	a
+		p	1	sn	entity
+	m	(Lsn;)V	b	b
+		p	1	sn	entity
+	m	(IIILow;)V	a	updateBlockEntity
+		p	1	integer1	x
+		p	3	integer3	z
+		p	2	integer2	y
+		p	4	ow	blockEntity
 	m	(Lgs;IIIII)V	a	playEffect
+		p	1	gs	player
+		p	6	integer6	data
+		p	2	integer2	id
+		p	3	integer3	x
+		p	4	integer4	y
+		p	5	integer5	z
 	m	(Ljava/lang/String;DDDFF)V	a	playSound
 		p	8		volume
 		p	9		pitch
@@ -1526,6 +2237,10 @@ c	pm	net/minecraft/world/WorldListener
 		p	1		sound
 		p	4		y
 		p	2		x
+	m	(III)V	a	a
+		p	3	integer3	z
+		p	2	integer2	y
+		p	1	integer1	x
 c	pn	net/minecraft/utility/json/JSONFieldBuilder
 c	po	net/minecraft/client/renderer/SignRenderer
 c	pp	net/minecraft/utility/nbt/IntegerNBTTag
@@ -1535,6 +2250,8 @@ c	pp	net/minecraft/utility/nbt/IntegerNBTTag
 c	pq	net/minecraft/client/renderer/GhastRenderer
 c	ps	net/minecraft/client/renderer/ModelRenderer
 c	pt	net/minecraft/block/NoteBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	pu	net/minecraft/utility/json/NodeContainer
 c	pv	net/minecraft/inventory/slot/ArmorInventorySlot
 c	pw	net/minecraft/generator/TaigaGenerator2
@@ -1548,6 +2265,10 @@ c	qb	net/minecraft/client/options/Keybind
 	f	Ljava/lang/String;	a	translationKey
 c	qc	net/minecraft/generator/nether/NetherLavaGenerator
 c	qd	net/minecraft/item/SwordItem
+	m	(ILbu;)V	<init>	<init>
+		p	2	bu2	tier
+		p	1	n	id
+	f	I	a	damage
 c	qe	net/minecraft/utility/json/JSONRootNode
 c	qf	net/minecraft/utility/json/JSONObjectNodeSelector
 c	qg	net/minecraft/utility/json/JSONElementNodeSelector
@@ -1565,10 +2286,46 @@ c	qp	net/minecraft/utility/nbt/ByteNBTTag
 	f	B	a	value
 c	qr	net/minecraft/item/PistonItem
 c	qs	net/minecraft/packet/ClickInventorySlotPacket
+	m	(IIIZLiz;S)V	<init>	<init>
+		p	1	n	windowID
+		p	5	iz2	itemStack
+		p	4	bl	isShiftClick
+		p	3	n3	mouseButton
+		p	2	n2	slot
+		p	6	s	transactionID
+	f	Z	f	isShiftClick
+	f	I	c	mouseButton
+	f	Liz;	e	itemStack
+	f	S	d	transactionID
+	f	I	a	windowID
+	f	I	b	inventorySlot
 c	qt	net/minecraft/client/screen/ConfirmWorldDeletionScreen
 c	qu	net/minecraft/particle/FlameParticle
 c	qv	net/minecraft/entity/PaintingEntity
+	m	(Lfd;IIII)V	<init>	<init>
+		p	4	n3	z
+		p	5	n4	direction
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+	m	(I)V	b	setDirection
+		p	1	n	direction
+	m	(Lfd;IIIILjava/lang/String;)V	<init>	<init>
+		p	6	string	name
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
+		p	5	n4	direction
+		p	1	fd2	world
+	m	()Z	k	canBePlacedHere
+	f	I	a	direction
+	f	I	d	z
+	f	I	b	x
+	f	Liq;	e	painting
+	f	I	c	y
 c	qw	net/minecraft/entity/TNTEntity
+	m	()V	k	explode
+	f	I	a	ticksUntilExplosion
 c	qx	net/minecraft/utility/physics/Explosion
 	f	D	c	y
 	f	D	d	z
@@ -1635,14 +2392,40 @@ c	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft
 	f	Z	Q	isFullscreen
 	f	Ljava/awt/Canvas;	m	canvas
 c	rc	net/minecraft/packet/SpawnPositionPacket
+	f	I	b	y
+	f	I	c	z
+	f	I	a	x
 c	rd	net/minecraft/block/SandstoneBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	rf	net/minecraft/client/model/SignModel
 c	rg	net/minecraft/packet/EntityPositionPacket
 c	rh	net/minecraft/dimension/OverworldDimension
 c	ri	net/minecraft/block/SugarCaneBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
+	m	(Lfd;III)V	h	tryDrop
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
 c	rk	net/minecraft/item/SeedsItem
+	f	I	a	blockID
+	m	(II)V	<init>	<init>
+		p	2	n2	blockID
+		p	1	n	id
 c	rl	net/minecraft/item/MinecartItem
+	f	I	a	type
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	type
 c	rm	net/minecraft/packet/ExplosionPacket
+	f	D	a	x
+	f	F	d	size
+	f	D	b	y
+	f	Ljava/util/Set;	e	affectedBlocks
+	f	D	c	z
 c	rn	net/minecraft/block/CobwebBlock
 	m	(II)V	<init>	<init>
 		p	2		texture
@@ -1659,6 +2442,7 @@ c	rt	net/minecraft/PressurePlateActivationType
 		c	Any entity can activate this pressure plate.
 c	ru	net/minecraft/block/TallGrassBlock
 c	rv	net/minecraft/packet/DespawnEntityPacket
+	f	I	a	entityID
 c	rw	net/minecraft/block/BlockEntityBlock
 	m	()Low;	a_	createBlockEntity
 c	rx	net/minecraft/item/CoalItem
@@ -1672,58 +2456,136 @@ c	sb	net/minecraft/packet/EntityLookPacket
 c	sc	net/minecraft/client/model/SpiderModel
 c	sd	net/minecraft/client/texture/FlamesDynamicTexture
 c	se	net/minecraft/packet/PreChunkPacket
+	f	I	b	chunkZ
+	f	Z	c	isLoad
+	f	I	a	chunkX
 c	sf	net/minecraft/generator/nether/NetherGlowstoneGenerator2
 c	sg	net/minecraft/material/LiquidMaterial
 c	sj	net/minecraft/client/gui/FontRenderer
+	m	(Ljava/lang/String;IIIZ)V	a	drawText
+		p	5		shadow
+		p	1		text
+		p	2		x
+		p	3		y
+		p	4		color
+	m	(Ljava/lang/String;)I	a	getTextWidth
+		p	1		string
+	m	(Ljava/lang/String;III)V	b	drawText
+		p	1		text
+		p	3		y
+		p	2		x
+		p	4		color
+	m	(Ljava/lang/String;III)V	a	drawTextWithShadow
+		p	2		x
+		p	1		text
+		p	4		color
+		p	3		y
+	m	(Lkv;Ljava/lang/String;Lji;)V	<init>	<init>
+		p	1		options
+		p	2		fontFilePath
 c	sk	net/minecraft/blockentity/FurnaceBlockEntity
+	m	()Z	l	canSmeltNow
+	m	()V	k	smelt
+	m	(Liz;)I	a	getMaxBurnTime
+		p	1	iz	itemStack
+	f	I	b	maxBurnTime
+	m	()Z	b	isBurning
+	f	I	a	burnTime
+	f	I	c	smeltTime
+	f	[Liz;	i	items
 c	sl	net/minecraft/entity/projectile/ArrowEntity
 c	sm	net/minecraft/block/RedstoneDustBlock
+	m	(Lfd;IIII)I	f	f
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
 c	sn	net/minecraft/entity/Entity
+	f	Lud;	bD	metadata
+	f	Z	bc	isInWeb
 	f	D	aM	x
-	f	Z	be	isRemoved
-	f	D	aO	z
+	m	()Lud;	ad	getMetadata
+	m	()V	S	stepInPortal
+	f	I	bK	y
+	m	(DDD)V	d	d
+		p	1	d	x
+		p	3	d2	y
+		p	5	d3	z
 	m	(Lsn;)V	i	mount
 		p	1		entity
-	m	(DDDFF)V	c	setPosition
 	m	(Lnu;)V	a	readFromNBT
-		p	1		tag
+		p	1		compoundTag
+	m	(Lsn;I)Z	a	attack
+		p	2		damage
+		p	1		attacker
 	f	Ljava/lang/String;	bB	capeURL
 	f	I	aD	id
 	m	([D)Lsp;	a	writeDoublesToNBT
 		p	1		doubles
-	f	F	aS	yaw
+	f	D	aQ	yVelocity
 	f	Lsn;	aH	vehicle
 	m	(Lnu;)V	e	readEntityFromNBT
 		p	1		tag
-	f	I	bz	air
-	m	()V	u_	updateCape
-	m	([F)Lsp;	a	writeFloatsToNBT
-		p	1		floats
 	f	F	bk	fallDistance
 	m	()F	x_	getShadowSize
-	m	()Ljava/lang/String;	q_	getTexture
-	m	(Lgs;)Z	a	interact
-		p	1		player
 	m	()Ljava/lang/String;	aj	getName
-	m	()Z	i_	isPushable
 	f	Z	aX	isOnGround
-	f	Ljava/util/Random;	bs	random
+	f	I	bJ	x
+	m	(DDDFFI)V	a	a
+		p	1		double1
 	m	(Lnu;)V	b	writeToNBT
-		p	1		tag
-	m	()V	K	remove
+		p	1		compoundTag
 	f	I	a	lastEntityID
-	f	Lsn;	aG	passenger
 	f	Ljava/lang/String;	bA	skinURL
+	f	D	aP	xVelocity
 	m	()V	b	initialize
 	m	(Lfd;)V	<init>	<init>
 		p	1		world
 	f	Lfd;	aI	world
 	f	F	aT	pitch
+	f	Z	be	isRemoved
+	f	D	aO	z
+	m	(DDD)V	b	b
+		p	3	d2	y
+		p	5	d3	z
+		p	1	d	x
+	m	(DDDFF)V	c	setPosition
+	m	()V	w_	tick
+	m	(Lc;)V	a	onStruckByLightning
+		p	1	c2	lightningBolt
+	f	F	aS	yaw
+	f	I	bz	air
+	m	()V	u_	updateCape
+	m	([F)Lsp;	a	writeFloatsToNBT
+		p	1		floats
+	m	(III)V	c	setInventorySlot
+	m	()Ljava/lang/String;	q_	getTexture
+	f	D	aN	y
+	m	(Lgs;)Z	a	interact
+		p	1		player
+	m	()Z	i_	isPushable
+	f	I	bL	z
+	f	Ljava/util/Random;	bs	random
+	m	()V	K	remove
+	f	Lsn;	aG	passenger
+	f	D	aR	zVelocity
 	m	(Ljava/lang/Object;)Z	equals	equals
 		p	1		object
+	m	()V	h	playDamageAnimation
 	m	(Lnu;)V	d	writeEntityToNBT
 		p	1		tag
 c	so	net/minecraft/packet/SpawnObjectPacket
+	f	I	b	x
+	f	I	a	entityID
+	f	I	d	z
+	f	I	c	y
+	f	I	f	yVelocity
+	f	I	e	xVelocity
+	f	I	h	type
+	f	I	g	zVelocity
 c	sp	net/minecraft/utility/nbt/ListNBTTag
 	f	Ljava/util/List;	a	value
 	m	(Lij;)V	a	add
@@ -1735,6 +2597,10 @@ c	sp	net/minecraft/utility/nbt/ListNBTTag
 c	sq	net/minecraft/generator/feature/OverworldCaveGenerator
 c	sr	net/minecraft/client/camera/Frustum
 c	ss	net/minecraft/block/StairBlock
+	f	Luu;	a	base
+	m	(ILuu;)V	<init>	<init>
+		p	1	n	id
+		p	2	uu2	base
 c	sv	net/minecraft/packet/RelativeEntityPositionPacket
 c	sw	net/minecraft/ChatMessage
 	m	(Ljava/lang/String;)V	<init>	<init>
@@ -1747,8 +2613,29 @@ c	sz	net/minecraft/utility/nbt/DoubleNBTTag
 		p	1		value
 	f	D	a	value
 c	ta	net/minecraft/item/AxeItem
+	f	[Luu;	bk	effectiveBlocks
+	m	(ILbu;)V	<init>	<init>
+		p	2	bu2	tier
+		p	1	n	id
 c	tb	net/minecraft/client/renderer/MinecartRenderer
 c	tc	net/minecraft/block/FurnaceBlock
+	f	Z	b	isActive
+	m	(Lfd;III)V	h	h
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
+	f	Z	c	keepInventory
+	m	(IZ)V	<init>	<init>
+		p	2	bl	isActive
+		p	1	n	id
+	f	Ljava/util/Random;	a	random
+	m	(ZLfd;III)V	a	a
+		p	0	bl	isActive
+		p	1	fd2	world
+		p	4	n3	z
+		p	2	n	x
+		p	3	n2	y
 c	td	net/minecraft/client/model/ChickenModel
 c	te	net/minecraft/utility/json/JSONNodeBuilders
 c	tf	net/minecraft/biome/SwamplandBiome
@@ -1778,6 +2665,8 @@ c	ti	net/minecraft/network/NetworkHandler
 		p	1		packet
 	m	(Lkb;)V	a	handlePacket
 		p	1		packet
+	m	(Ljava/lang/String;[Ljava/lang/Object;)V	a	a
+		p	1	string	reason
 	m	(Lgj;)V	a	handlePacket
 		p	1		packet
 	m	(Lof;)V	a	handlePacket
@@ -1822,6 +2711,7 @@ c	ti	net/minecraft/network/NetworkHandler
 		p	1		packet
 	m	(Lmp;)V	a	handlePacket
 		p	1		packet
+	m	(Lef;)V	a	handlePacket
 	m	(Lyr;)V	a	handlePacket
 		p	1		packet
 	m	(Ls;)V	a	handlePacket
@@ -1856,13 +2746,28 @@ c	ti	net/minecraft/network/NetworkHandler
 	m	(La;)V	a	handlePacket
 		p	1		packet
 c	tj	net/minecraft/client/thread/SkinDownloadThread
-c	tk	net/minecraft/entity/player/MultiplayerPlayerEntity
+c	tk	net/minecraft/entity/player/MultiplayerPlayer
+	m	(Lnet/minecraft/client/Minecraft;Lfd;Lgr;Lnb;)V	<init>	<init>
+		p	4		networkHandler
+		p	3		session
+		p	2		world
+		p	1		minecraft
+	m	(Lvr;I)V	b	b
+		p	2	integer	amount
+		p	1	vr	statistic
 c	tl	net/minecraft/block/MushroomBlock
 c	tn	net/minecraft/blockentity/NoteBlockEntity
+	m	(Lfd;III)V	a	play
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	fd	world
 	m	()V	a	changePitch
 	f	B	a	pitch
 c	tp	net/minecraft/recipes/OreRecipes
 	m	(Lhk;)V	a	addRecipes
+		p	1		recipes
+	f	[[Ljava/lang/Object;	a	ores
 c	tq	net/minecraft/world/converter/AlphaWorldConverter
 c	tr	net/minecraft/item/MusicDiscItem
 	f	Ljava/lang/String;	a	name
@@ -1870,15 +2775,59 @@ c	tr	net/minecraft/item/MusicDiscItem
 		p	1		id
 		p	2		name
 c	ts	net/minecraft/packet/EntityActionPacket
+	c	This packet is sent by the client for sneaking and leaving a bed.\n- 1 is sent to start sneaking.\n- 2 is sent to stop sneaking.\n- 3 is sent to leave a bed.
+	f	I	a	entityID
+	f	I	b	actionType
+	m	(Lsn;I)V	<init>	<init>
+		p	2	n	action
+		p	1	sn2	entity
+c	tt	net/minecraft/recipes/ShapelessRecipe
+	f	Liz;	a	result
+	m	(Liz;Ljava/util/List;)V	<init>	<init>
+		p	1	iz2	result
 c	tv	net/minecraft/packet/SetBlockPacket
+	f	I	d	blockID
+	f	I	c	z
+	f	I	e	blockMetadata
+	f	I	b	y
+	f	I	a	x
 c	tw	net/minecraft/statistic/CraftingStatistic
 c	tx	net/minecraft/client/thread/IsometricPreviewThread
 c	ua	net/minecraft/utility/json/JSONTrueNodeBuilder
 c	ub	net/minecraft/client/gui/GUI
+	m	(Lsj;Ljava/lang/String;III)V	a	drawCenteredText
+		p	3		x
+		p	4		y
+		p	5		color
+		p	1		fontRenderer
+		p	2		text
+	m	(Lsj;Ljava/lang/String;III)V	b	drawText
+		p	2		text
+		p	3		x
+		p	4		y
+		p	5		color
+		p	1		fontRenderer
 c	uc	net/minecraft/utility/json/JSONNullNodeBuilder
+c	ud	ud
+	m	(Ljava/io/DataOutputStream;)V	a	writeToStream
+		p	1	dataOutputStream	dataOutputStream
+	m	(Ljava/util/List;Ljava/io/DataOutputStream;)V	a	writeListToStream
+	m	(Ljava/io/DataInputStream;)Ljava/util/List;	a	readFromStream
+	m	(ILjava/lang/Object;)V	b	set
+		p	1	n	index
+		p	2	object	object
+	m	(I)B	a	getByte
+		p	1	n	index
 c	ue	net/minecraft/client/screen/PlayerInventoryScreen
 c	uf	net/minecraft/utility/noise/OctaveNoiseGenerator
 c	uh	net/minecraft/packet/EntityPacket
+	f	Z	g	isLookPacket
+	f	B	b	x
+	f	B	c	y
+	f	B	d	z
+	f	B	e	yaw
+	f	B	f	pitch
+	f	I	a	entityID
 c	ui	net/minecraft/packet/SignPacket
 	m	(III[Ljava/lang/String;)V	<init>	<init>
 		p	1		x
@@ -1890,24 +2839,61 @@ c	ui	net/minecraft/packet/SignPacket
 	f	I	b	y
 	f	I	c	z
 c	uj	net/minecraft/block/SignBlock
+	f	Ljava/lang/Class;	a	blockEntityClass
+	f	Z	b	isPost
+	m	(ILjava/lang/Class;Z)V	<init>	<init>
+		p	3	bl	isPost
+		p	1	n	id
+		p	2	clazz	blockEntityClass
 c	uk	net/minecraft/blockentity/PistonBlockEntity
+	f	Z	i	isExtended
+	m	(IIIZZ)V	<init>	<init>
+		p	4	bl	isExtended
+		p	3	n3	direction
+		p	2	n2	blockMetadata
+		p	1	n	blockID
+	m	()I	a	getBlockID
+	m	()Z	b	isExtended
+	f	I	a	blockID
+	f	I	b	blockMetadata
+	f	I	c	direction
+	m	()I	d	getDirection
 c	ul	net/minecraft/utility/nbt/ShortNBTTag
 	m	(S)V	<init>	<init>
 		p	1		value
 	f	S	a	value
 c	um	net/minecraft/block/CakeBlock
+	m	(II)V	<init>	<init>
+		p	2	integer2	texture
+		p	1	integer1	id
+	m	(Lfd;IIILgs;)V	c	eatSlice
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	fd	world
+		p	5	gs	player
+		p	4	integer4	z
 c	uo	net/minecraft/client/input/MovementHandler
 c	up	net/minecraft/client/screen/ControlScreen
 c	uq	net/minecraft/client/gui/HUD
-	m	(Ljava/lang/String;)V	a	sendChatMessage
+	m	(Ljava/lang/String;)V	a	addChatMessage
+		p	1		message
+	f	Lnet/minecraft/client/Minecraft;	g	minecraft
 	m	(Lnet/minecraft/client/Minecraft;)V	<init>	<init>
 		p	1		minecraft
+	f	Ljava/util/Random;	f	random
+	m	()V	b	clearChatMessages
+	f	Ljava/util/List;	e	chatMessages
+	f	Lbb;	d	itemRenderer
+	m	(Ljava/lang/String;)V	c	addTranslatedChatMessage
+		p	1		message
 	m	(Ljava/lang/String;)V	b	showNowPlayingMessage
+		p	1		message
 c	ur	net/minecraft/utility/Teleporter
 c	us	net/minecraft/MinecraftException
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		message
 c	uu	net/minecraft/block/Block
+	m	()Z	c	isOpaque
 	f	Lwb;	ae	DANDELION
 	f	Lct;	e	WOOD_SOUND
 	f	Luu;	aV	SNOW_BLOCK
@@ -1920,6 +2906,7 @@ c	uu	net/minecraft/block/Block
 	f	Luu;	W	STICKY_PISTON_BASE
 	f	Luu;	x	COBBLESTONE
 	f	[I	s	brightnessTable
+	m	(FFFFFF)V	a	setSize
 	f	Luu;	F	SAND
 	f	Luu;	bh	CAKE
 	m	(Lfd;IIILsn;)V	b	walkOn
@@ -1945,6 +2932,12 @@ c	uu	net/minecraft/block/Block
 	f	Luu;	aW	CACTUS
 	f	Luu;	P	LAPIS
 	m	()Ljava/lang/String;	o	getTranslationKey
+	m	(Lfd;IIILls;)V	a	onPlacedByPlayer
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+		p	5	ls2	living
 	f	Luu;	ax	DIAMOND_ORE
 	f	Lct;	f	DIRT_SOUND
 	f	Luu;	X	COBWEB
@@ -1952,15 +2945,27 @@ c	uu	net/minecraft/block/Block
 	m	(ILjava/util/Random;)I	a	getIDDropped
 		p	1		metadata
 		p	2		random
+	m	()I	b	getRenderType
 	f	Z	br	statsEnabled
 	f	Luu;	ba	FENCE
 	f	Luu;	aF	WOODEN_DOOR
+	m	(Lxp;IIII)I	a	getTexture
+		p	5	n4	side
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
 	f	Lyq;	as	FIRE
 	f	Luu;	bi	REDSTONE_REPEATER
+	m	(I)I	b_	getDroppedMetadata
+		p	1	n	metadata
 	f	Luu;	aN	WOODEN_PRESSURE_PLATE
 	f	Luu;	G	GRAVEL
 	f	Luu;	ao	BOOKSHELF
 	m	(Lfd;III)V	d	onExplode
+		p	1	fd2	world
+		p	3	n2	y
+		p	2	n	x
+		p	4	n3	z
 	m	(II)I	a	getTexture
 		p	2		metadata
 		p	1		side
@@ -1969,13 +2974,28 @@ c	uu	net/minecraft/block/Block
 		p	1		id
 		p	2		material
 	f	I	bn	id
+	m	(Lxp;III)I	b	getColor
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
 	f	Luu;	aT	SNOW
 	f	Luu;	au	WOODEN_STAIRS
 	f	Ljb;	Z	DEAD_BUSH
+	m	(I)I	b	b
+		p	1	n	metadata
 	m	()Ljava/lang/String;	n	getNameTranslationKey
 	f	Lct;	k	WOOL_SOUND
+	m	(Lfd;III)Leq;	f	getSelectionAABB
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
 	f	Luu;	aC	FURNACE
 	f	Luu;	D	LAVA
+	m	(Lxp;III)V	a	setSize
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
 	m	(Lfd;IIII)V	g	drop
 		p	4		z
 		p	5		metadata
@@ -2000,6 +3020,11 @@ c	uu	net/minecraft/block/Block
 	f	Luu;	av	CHEST
 	f	I	bm	textureIndex
 	f	Luu;	aU	ICE
+	m	(Lxp;IIII)Z	b	shouldRenderSide
+		p	5	n4	side
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
 	f	Lct;	l	SAND_SOUND
 	m	(Lfd;IIII)V	e	onPlace
 		p	4		z
@@ -2008,9 +3033,20 @@ c	uu	net/minecraft/block/Block
 		p	3		y
 		p	1		world
 	f	Luu;	w	DIRT
+	m	(Lfd;III)Leq;	e	getCollisionAABB
+		p	4	integer4	z
+		p	3	integer3	y
+		p	2	integer2	x
+		p	1	fd	world
 	m	()F	m	getHardness
 	f	Luu;	E	FLOWING_LAVA
 	f	Luu;	bg	JACK_O_LANTERN
+	m	(Lfd;IIILsn;)V	a	onCollisionWithEntity
+		p	5	sn	entity
+		p	2	integer2	x
+		p	1	fd	world
+		p	4	integer4	z
+		p	3	integer3	y
 	m	(Lgs;)F	a	a
 		p	1		player
 	f	Luu;	aD	ACTIVE_FURNACE
@@ -2023,19 +3059,43 @@ c	uu	net/minecraft/block/Block
 	f	Luu;	S	NOTE_BLOCK
 	f	[Luu;	m	blocks
 	f	Luu;	aZ	JUKEBOX
+	m	()Z	v_	canCollideWith
+	m	(Lxp;IIII)Z	c	c
+		p	4	integer4	z
+		p	5	n4	metadata
+		p	2	integer2	x
+		p	3	integer3	y
+	m	(Lfd;IIII)Z	d	d
+		p	5	n4	n4
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
 	f	Lct;	i	METAL_SOUND
 	f	F	bp	blastResistance
 	f	Luu;	bd	SOUL_SAND
 	f	Luu;	aA	WHEAT
+	m	(Lfd;IIIII)V	a	onAction
+		p	1	fd2	world
+		p	2	n	x
+		p	5	n4	instrument
+		p	6	n5	pitch
+		p	3	n2	y
+		p	4	n3	z
 	f	Luu;	B	WATER
 	f	Luu;	aj	IRON
+	m	()V	g	setDefaultSize
 	m	()Luu;	l	setUnbreakable
 	f	Luu;	bl	TRAPDOOR
 	f	Luu;	aI	STONE_STAIRS
 	m	(F)Luu;	c	setHardness
 		p	1		hardness
 	f	Lak;	bf	PORTAL
-	m	(Lfd;III)Z	g	canBlockBeAt
+	m	(Lfd;III)Z	g	canBeAt
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
 	f	Luu;	J	COAL_ORE
 	f	F	bo	hardness
 	f	Luu;	aS	STONE_BUTTON
@@ -2044,6 +3104,12 @@ c	uu	net/minecraft/block/Block
 	f	Lwp;	v	GRASS_BLOCK
 	f	Luu;	at	MOB_SPAWNER
 	f	Lct;	j	GLASS_SOUND
+	m	(Lfd;IIII)V	c	c
+		p	4	n3	z
+		p	5	n4	metadata
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
 	f	Lln;	bA	material
 	f	Luu;	aB	FARMLAND
 	f	Luu;	C	FLOWING_WATER
@@ -2067,6 +3133,12 @@ c	uu	net/minecraft/block/Block
 	f	[I	q	opacity
 	f	Luu;	ay	DIAMOND
 	f	Lct;	g	GRASS_SOUND
+	m	(Lfd;IIII)V	b	onNotifiedByNeighbor
+		p	5	n4	metadata
+		p	3	integer3	y
+		p	4	integer4	z
+		p	1	fd	world
+		p	2	integer2	x
 	f	Luu;	z	SAPLING
 	m	(F)Luu;	a	setBrightness
 		p	1		lightValue
@@ -2093,6 +3165,12 @@ c	uu	net/minecraft/block/Block
 	f	Luu;	bj	ACTIVE_REDSTONE_REPEATER
 	f	Luu;	aO	REDSTONE_ORE
 	f	Luu;	H	GOLD_ORE
+	m	(Lfd;IIILjava/util/Random;)V	a	tick
+		p	5	random	random
+		p	1	fd	world
+		p	2	integer2	x
+		p	3	integer3	y
+		p	4	integer4	z
 	m	()Luu;	j	disableNotifyingNeighborsOnMetadataUpdate
 	m	(Lfd;IIILgs;)V	b	onLeftClick
 		p	5		player
@@ -2102,7 +3180,18 @@ c	uu	net/minecraft/block/Block
 		p	2		x
 	f	Luu;	ar	TORCH
 	f	Lwb;	ah	RED_MUSHROOM
+	m	(Lfd;IIII)Z	a	canBePlacedAt
+		p	4	n3	z
+		p	5	n4	side
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
 	f	Luu;	aQ	REDSTONE_TORCH
+	m	(Lfd;III)Z	a	canBePlacedAt
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
 	f	Luu;	R	SANDSTONE
 	f	Luu;	az	CRAFTING_TABLE
 	f	Luu;	aY	SUGAR_CANE
@@ -2125,6 +3214,12 @@ c	uu	net/minecraft/block/Block
 	m	(I)Luu;	g	setOpacity
 		p	1		opacity
 	f	Luu;	ai	GOLD
+	m	(Lfd;IIILjava/util/Random;)V	b	randomTick
+		p	4	n3	z
+		p	5	random	random
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
 	m	(Lfd;III)V	b	onRemove
 		p	3		y
 		p	2		x
@@ -2135,12 +3230,17 @@ c	uu	net/minecraft/block/Block
 c	uv	net/minecraft/world/source/MultiplayerWorldSource
 c	uw	net/minecraft/entity/monster/SlimeEntity
 c	ux	net/minecraft/packet/EntityMetadataPacket
+	f	Ljava/util/List;	b	metadata
+	m	()Ljava/util/List;	b	getMetadata
+	f	I	a	entityID
 c	uy	net/minecraft/item/LeavesItem
 c	uz	net/minecraft/entity/monster/ZombieEntity
 c	va	net/minecraft/client/renderer/CowRenderer
 c	vc	net/minecraft/item/SignItem
 c	vd	net/minecraft/item/BoatItem
 c	ve	net/minecraft/block/BedBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	vf	net/minecraft/HitPosition
 	f	I	b	x
 	f	I	c	y
@@ -2158,15 +3258,39 @@ c	vf	net/minecraft/HitPosition
 	m	(Lsn;)V	<init>	<init>
 		p	1		entity
 c	vg	net/minecraft/block/LogBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	vh	net/minecraft/packet/PlayerLookPacket
+	m	(FFZ)V	<init>	<init>
+		p	1	f	yaw
+		p	2	f2	pitch
+		p	3	bl	isOnGround
 c	vj	net/minecraft/client/thread/SendSyncedStatisticsThread
 	f	Lcj;	b	syncer
 c	vk	net/minecraft/client/thread/ReceiveSyncedStatisticsThread
 c	vl	net/minecraft/block/FarmlandBlock
+	m	(Lfd;III)Z	h	h
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+	m	(I)V	<init>	<init>
+		p	1	n	id
+	m	(Lfd;III)Z	i	hasNearbyWater
 c	vm	net/minecraft/block/TorchBlock
 	m	(II)V	<init>	<init>
 		p	1		id
 		p	2		texture
+	m	(Lfd;III)Z	h	h
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+	m	(Lfd;III)Z	i	tryDrop
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
 c	vn	net/minecraft/utility/json/JSONConstants
 	f	Lvn;	b	TRUE
 	f	Lvn;	a	NULL
@@ -2175,17 +3299,59 @@ c	vp	net/minecraft/client/texturepack/CustomTexturePack
 	f	Ljava/util/zip/ZipFile;	e	file
 c	vq	net/minecraft/inventory/slot/SmeltingResultInventorySlot
 c	vr	net/minecraft/statistic/Statistic
+	f	Lwk;	j	TIME
+	f	Lwk;	i	BASIC
+	f	Lwk;	k	DISTANCE
+	f	Ljava/text/DecimalFormat;	c	DECIMAL
 c	vs	net/minecraft/client/texture/WaterDynamicTexture
 c	vt	net/minecraft/packet/SpawnPaintingPacket
+	f	Ljava/lang/String;	f	name
+	f	I	a	entityID
+	f	I	b	x
+	f	I	c	y
+	f	I	d	z
+	f	I	e	direction
+	m	(Lqv;)V	<init>	<init>
+		p	1	qv2	entity
 c	vu	net/minecraft/client/screen/HUDOverlayScreen
 c	vv	net/minecraft/entity/projectile/EggEntity
-c	vw	net/minecraft/packet/NotePacket
+c	vw	net/minecraft/packet/BlockActionPacket
+	f	I	b	y
+	f	I	c	z
+	f	I	d	instrumentOrState
+	f	I	e	pitchOrDirection
+	f	I	a	x
 c	vx	net/minecraft/client/screen/ConnectScreen
 c	vy	net/minecraft/utility/MouseUtility
 c	vz	net/minecraft/client/gui/Slider
 c	wa	net/minecraft/item/ArmorItem
+	f	I	bk	type
+	f	I	bl	effectiveness
+	f	[I	bn	effectiveness
+	f	[I	bo	maxDurability
+	f	I	a	tier
+	m	(IIII)V	<init>	<init>
+		p	4	n4	type
+		p	1	n	id
+		p	3	n3	texture
+		p	2	n2	tier
+	f	I	bm	texture
 c	wb	net/minecraft/block/FlowerBlock
+	m	(I)Z	d	canGrowOn
+		p	1	n	blockID
+	m	(II)V	<init>	<init>
+		p	2	n2	material
+		p	1	n	id
+	m	(Lfd;III)V	h	tryDrop
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
 c	wc	net/minecraft/item/ShovelItem
+	m	(ILbu;)V	<init>	<init>
+		p	1	n	id
+		p	2	bu2	tier
+	f	[Luu;	bk	effectiveBlocks
 c	wd	net/minecraft/dimension/NetherDimension
 c	we	net/minecraft/client/renderer/WolfRenderer
 c	wf	wf
@@ -2200,20 +3366,42 @@ c	wf	wf
 	f	I	a	x
 c	wg	net/minecraft/utility/json/JSONListener
 c	wh	net/minecraft/entity/animal/PigEntity
+	m	(Z)V	a	setSaddled
+		p	1	bl2	isSaddled
+	m	()Z	v	isSaddled
 c	wi	net/minecraft/utility/NibbleArray
 c	wk	net/minecraft/statistic/StatisticType
 c	wl	net/minecraft/inventory/CraftingResultInventory
 c	wn	net/minecraft/client/model/SquidModel
 c	wo	net/minecraft/block/RedstoneRepeaterBlock
+	f	Z	c	isActive
+	m	(IZ)V	<init>	<init>
+		p	2	bl	isActive
+		p	1	n	id
+	m	(Lfd;IIII)Z	f	f
+		p	1	fd2	world
+		p	2	n	x
+		p	3	n2	y
+		p	4	n3	z
 c	wp	net/minecraft/block/GrassBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	wq	net/minecraft/entity/FlyingEntity
 c	wr	net/minecraft/item/MapItem
+	m	(SLfd;)Liu;	a	a
+		p	1	fd2	world
 c	ws	net/minecraft/generator/TaigaGenerator
 c	wt	wt
 	m	(Lxa;)Lbf;	a	a
 		p	1		dimension
 	m	()Lei;	c	getWorldInfo
 c	wu	net/minecraft/packet/SetMultipleBlocksPacket
+	f	[B	e	metadataArray
+	f	[B	d	blockIDArray
+	f	I	f	length
+	f	[S	c	coordinateArray
+	f	I	b	chunkY
+	f	I	a	chunkX
 c	ww	net/minecraft/entity/animal/ChickenEntity
 c	wx	net/minecraft/generator/PumpkinGenerator
 c	wz	wz
@@ -2224,17 +3412,35 @@ c	wz	wz
 	f	Lnet/minecraft/client/Minecraft;	a	minecraft
 	f	Ljava/lang/String;	b	hostname
 c	xa	net/minecraft/dimension/Dimension
-	m	()Lcl;	b	getGenerator
+	m	()Lcl;	b	createGenerator
+	m	()F	d	getCloudHeight
+	m	()Z	f	canRespawn
 	f	Lfd;	a	world
+	m	()V	a	createBiomeManager
+	f	Z	d	isNether
+	m	()Z	c	hasVoidSky
+	m	(FF)[F	a	getSunriseAndSunsetColors
+	m	(Lfd;)V	a	setWorld
+		p	1	fd2	world
+	m	(I)Lxa;	a	getDimension
+		p	0	n	id
+	m	(II)Z	a	canSpawnOn
+		p	2	n2	z
+		p	1	n	x
+	f	Lxv;	b	biomeManager
 c	xb	net/minecraft/utility/nbt/StringNBTTag
 	f	Ljava/lang/String;	a	value
 	m	(Ljava/lang/String;)V	<init>	<init>
 		p	1		value
 c	xc	net/minecraft/recipes/WeaponRecipes
 	m	(Lhk;)V	a	addRecipes
+		p	1		recipes
+	f	[[Ljava/lang/Object;	b	swords
 c	xd	net/minecraft/particle/RainParticle
 c	xe	net/minecraft/utility/json/InvalidSyntaxException
 c	xf	net/minecraft/block/SpongeBlock
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	xg	net/minecraft/client/thread/NetworkMasterThread
 	m	(Lpf;)V	<init>	<init>
 		p	1		networkManager
@@ -2259,16 +3465,76 @@ c	xo	net/minecraft/generator/LiquidGenerator
 		p	1		blockID
 c	xp	xp
 	m	(III)I	a	getBlockID
+		p	2	integer2	y
+		p	1	integer1	x
+		p	3	integer3	z
+	m	(III)Low;	b	getBlockEntity
+		p	1	integer1	x
+		p	2	integer2	y
+		p	3	integer3	z
+	m	(III)F	c	c
+		p	1	var1	x
+		p	3	var3	z
+		p	2	var2	y
+	m	()Lxv;	a	getBiomeManager
+	m	(III)Z	g	isBlockOpaqueCube
+		p	1	var1	x
+		p	3	var3	z
+		p	2	var2	y
+	m	(III)Lln;	f	getBlockMaterial
+		p	1	var1	x
+		p	3	var3	z
+		p	2	var2	y
+	m	(III)Z	h	isBlockCube
+		p	2	var2	y
+		p	1	var1	x
+		p	3	var3	z
 	m	(III)I	e	getBlockMetadata
+		p	2	var2	y
+		p	1	var1	x
+		p	3	var3	z
 c	xq	net/minecraft/block/DispenserBlock
+	f	Ljava/util/Random;	a	random
+	m	(Lfd;III)V	h	h
+		p	2	n	x
+		p	1	fd2	world
+		p	4	n3	z
+		p	3	n2	y
+	m	(Lfd;IIILjava/util/Random;)V	c	dispense
+		p	5	random	random
+		p	4	n3	z
+		p	1	fd2	world
+		p	3	n2	y
+		p	2	n	x
+	m	(I)V	<init>	<init>
+		p	1	n	id
 c	xr	net/minecraft/block/LeverBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
+	m	(Lfd;III)Z	h	tryDrop
+		p	4	n3	z
+		p	2	n	x
+		p	3	n2	y
+		p	1	fd2	world
 c	xs	net/minecraft/generator/nether/NetherFireGenerator
 c	xt	net/minecraft/entity/water/SquidEntity
+c	xv	net/minecraft/biome/BiomeManager
+	m	(Lyy;)Lkd;	a	getBiomeAt
+	m	(Lfd;)V	<init>	<init>
+		p	1	fd2	world
+	m	(II)Lkd;	a	getBiomeAt
+		p	1	n	chunkX
+		p	2	n2	chunkY
 c	xw	net/minecraft/particle/ParticleEntity
 	c	A lightweight entity that can emit off other blocks/items to give a visual effect.
+	m	(Lnw;FFFFFF)V	a	a
+		p	1	nw2	tessellator
 c	xx	net/minecraft/MinecraftError
 c	xy	net/minecraft/client/renderer/SheepRenderer
-c	xz	net/minecraft/entity/player/OtherMultiplayerPlayerEntity
+c	xz	net/minecraft/entity/player/OtherMultiplayerPlayer
+	m	(Lfd;Ljava/lang/String;)V	<init>	<init>
+		p	1		world
 c	ya	net/minecraft/entity/monster/ZombiePigmanEntity
 c	yb	net/minecraft/client/BaseLoadingScreen
 	m	(I)V	a	setProgress
@@ -2280,12 +3546,20 @@ c	yf	net/minecraft/world/source/OverworldGenerator
 c	yg	net/minecraft/client/renderer/GiantZombieRenderer
 c	yh	net/minecraft/generator/TreeGenerator
 c	yi	net/minecraft/block/NetherrackBlock
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
 c	yj	net/minecraft/biome/RainforestBiome
 c	yk	net/minecraft/blockentity/SignBlockEntity
 	f	[Ljava/lang/String;	a	lines
 	f	Z	c	unsaved
 	f	I	b	cursorLine
 c	yl	net/minecraft/entity/vehicle/MinecartEntity
+	m	(Lfd;DDDI)V	<init>	<init>
+		p	6	d3	z
+		p	4	d2	y
+		p	2	d	x
+		p	1	fd2	world
 c	ym	net/minecraft/item/PaintingItem
 c	yn	net/minecraft/client/camera/Camera
 c	yo	net/minecraft/client/sound/SoundManager
@@ -2298,8 +3572,38 @@ c	yp	net/minecraft/utility/json/Functor
 	m	(Ljava/lang/Object;)Z	a	equals
 		p	1		node
 c	yq	net/minecraft/block/FireBlock
+	m	(Lfd;III)I	i	i
+		p	4	n3	z
+		p	3	n2	y
+		p	2	n	x
+		p	1	fd2	world
+	m	(Lfd;IIII)I	f	f
+		p	3	n2	y
+		p	2	n	x
+		p	4	n3	z
+		p	1	fd2	world
+	m	(II)V	<init>	<init>
+		p	1	n	id
+		p	2	n2	texture
+	m	(Lfd;IIIILjava/util/Random;I)V	a	tryToCatchBlockOnFire
+		p	6	random	random
+		p	3	n2	y
+		p	4	n3	z
+		p	1	fd2	world
+		p	2	n	x
+	m	(III)V	a	setBurnSpeed
+		p	1	n	blockID
+	m	(Lxp;III)Z	c	canCatchBlockOnFire
 c	yr	net/minecraft/packet/DisconnectPacket
+	f	Ljava/lang/String;	a	reason
+	m	(Ljava/lang/String;)V	<init>	<init>
+		p	1	string	reason
 c	ys	net/minecraft/block/SlabBlock
+	m	(IZ)V	<init>	<init>
+		p	2	bl	isFull
+		p	1	n	id
+	f	Z	b	isFull
+	f	[Ljava/lang/String;	a	translationKeys
 c	yt	net/minecraft/utility/json/JSONEscapedString
 c	yu	net/minecraft/entity/weather/WeatherEntity
 c	yv	net/minecraft/inventory/slot/CraftingInventorySlot
@@ -2307,6 +3611,12 @@ c	net/minecraft/client/MinecraftApplet	net/minecraft/client/MinecraftApplet
 	m	()V	a	startGame
 	m	()V	b	stopGame
 c	yw	net/minecraft/item/FoodItem
+	m	(IIZ)V	<init>	<init>
+		p	1	n	id
+		p	3	bl	isPreferredByWolf
+		p	2	n2	healAmount
+	m	()I	l	getHealAmount
+	m	()Z	m	isPreferredByWolf
+	f	Z	bk	isPreferredByWolf
+	f	I	a	healAmount
 c	yx	net/minecraft/client/renderer/SpiderRenderer
-c	paulscode/sound/codecs/CodecJOrbis	paulscode/sound/codecs/CodecJOrbis
-	m	()Ljava/io/InputStream;	openInputStream	openInputStream
