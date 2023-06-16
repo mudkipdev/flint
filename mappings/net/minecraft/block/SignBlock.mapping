@@ -1,0 +1,7 @@
+CLASS uj net/minecraft/block/SignBlock
+	FIELD a blockEntityClass Ljava/lang/Class;
+	FIELD b isPost Z
+	METHOD <init> <init> (ILjava/lang/Class;Z)V
+		ARG 1 id
+		ARG 2 blockEntityClass
+		ARG 3 isPost

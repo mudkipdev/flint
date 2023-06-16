@@ -1,0 +1,3 @@
+CLASS net/minecraft/client/MinecraftApplet net/minecraft/client/MinecraftApplet
+	METHOD a startGame ()V
+	METHOD b stopGame ()V

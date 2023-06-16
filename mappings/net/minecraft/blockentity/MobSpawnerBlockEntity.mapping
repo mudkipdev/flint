@@ -1,0 +1,8 @@
+CLASS cy net/minecraft/blockentity/MobSpawnerBlockEntity
+	FIELD a delay I
+	FIELD i mob Ljava/lang/String;
+	METHOD a getMob ()Ljava/lang/String;
+	METHOD a setMob (Ljava/lang/String;)V
+		ARG 1 mob
+	METHOD b hasNearbyPlayers ()Z
+	METHOD d updateDelay ()V

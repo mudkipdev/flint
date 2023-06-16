@@ -1,0 +1,5 @@
+CLASS xg net/minecraft/client/thread/NetworkMasterThread
+	FIELD a networkManager Lpf;
+	METHOD <init> <init> (Lpf;)V
+		ARG 1 networkManager
+	METHOD run run ()V

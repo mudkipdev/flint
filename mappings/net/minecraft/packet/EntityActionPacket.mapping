@@ -1,0 +1,10 @@
+CLASS ts net/minecraft/packet/EntityActionPacket
+	COMMENT This packet is sent by the client for sneaking and leaving a bed.
+	COMMENT - 1 is sent to start sneaking.
+	COMMENT - 2 is sent to stop sneaking.
+	COMMENT - 3 is sent to leave a bed.
+	FIELD a entityID I
+	FIELD b actionType I
+	METHOD <init> <init> (Lsn;I)V
+		ARG 1 entity
+		ARG 2 action

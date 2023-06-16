@@ -1,0 +1,2 @@
+CLASS gu argo/JSONNode
+	METHOD a getType ()Lat;

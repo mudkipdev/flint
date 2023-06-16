@@ -1,0 +1,2 @@
+CLASS kw kw
+	FIELD s random Ljava/util/Random;

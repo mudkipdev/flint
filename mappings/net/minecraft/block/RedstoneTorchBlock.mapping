@@ -1,0 +1,16 @@
+CLASS db net/minecraft/block/RedstoneTorchBlock
+	FIELD a isActive Z
+	METHOD <init> <init> (IIZ)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 isActive
+	METHOD a a (Lfd;IIIZ)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD h h (Lfd;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

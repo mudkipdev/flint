@@ -1,0 +1,6 @@
+CLASS yo net/minecraft/client/sound/SoundManager
+	FIELD a soundSystem Lpaulscode/sound/SoundSystem;
+	FIELD f options Lkv;
+	METHOD a playSound (Ljava/lang/String;FF)V
+	METHOD a a (Lkv;)V
+		ARG 1 options

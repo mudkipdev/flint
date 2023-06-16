@@ -1,0 +1,10 @@
+CLASS nm net/minecraft/packet/AnimationPacket
+	COMMENT This packet is sent by both the client and the server for swinging your arm (1),
+	COMMENT and leaving a bed (3) which is server bound only. The client instead uses the
+	COMMENT Entity Action packet for leaving a bed.
+	COMMENT @see net.minecraft.packet.EntityActionPacket
+	FIELD a entityID I
+	FIELD b animationType I
+	METHOD <init> <init> (Lsn;I)V
+		ARG 1 entity
+		ARG 2 animationType

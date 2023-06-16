@@ -1,0 +1,2 @@
+CLASS np net/minecraft/client/sound/MUSInputStream
+	FIELD b codec Lio;

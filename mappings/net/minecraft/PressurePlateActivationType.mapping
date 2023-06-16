@@ -1,0 +1,7 @@
+CLASS rt net/minecraft/PressurePlateActivationType
+	FIELD a EVERYTHING Lrt;
+		COMMENT Any entity can activate this pressure plate.
+	FIELD b MOBS Lrt;
+		COMMENT All living entities can activate this pressure plate.
+	FIELD c PLAYERS Lrt;
+		COMMENT Only players can activate this pressure plate.

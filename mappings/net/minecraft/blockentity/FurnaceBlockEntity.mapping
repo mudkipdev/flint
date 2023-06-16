@@ -1,0 +1,10 @@
+CLASS sk net/minecraft/blockentity/FurnaceBlockEntity
+	FIELD a burnTime I
+	FIELD b maxBurnTime I
+	FIELD c smeltTime I
+	FIELD i items [Liz;
+	METHOD a getMaxBurnTime (Liz;)I
+		ARG 1 itemStack
+	METHOD b isBurning ()Z
+	METHOD k smelt ()V
+	METHOD l canSmeltNow ()Z

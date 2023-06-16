@@ -1,0 +1,8 @@
+CLASS oj net/minecraft/packet/InventoryTransactionPacket
+	FIELD a windowID I
+	FIELD b transactionID S
+	FIELD c isAccepted Z
+	METHOD <init> <init> (ISZ)V
+		ARG 1 windowID
+		ARG 2 transactionID
+		ARG 3 isAccepted

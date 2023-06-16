@@ -1,0 +1,18 @@
+CLASS gp net/minecraft/inventory/slot/InventorySlot
+	FIELD d index I
+	FIELD e inventory Llw;
+	METHOD <init> <init> (Llw;III)V
+		ARG 1 inventory
+		ARG 2 index
+	METHOD a getItemStack ()Liz;
+	METHOD a decreaseQuantity (I)Liz;
+		ARG 1 amount
+	METHOD a update (Liz;)V
+		ARG 1 itemStack
+	METHOD b isNotEmpty ()Z
+	METHOD b equip (Liz;)Z
+		ARG 1 itemStack
+	METHOD c update ()V
+	METHOD c c (Liz;)V
+		ARG 1 itemStack
+	METHOD d getMaxQuantity ()I

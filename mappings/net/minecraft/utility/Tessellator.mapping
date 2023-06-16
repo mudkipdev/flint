@@ -1,0 +1,2 @@
+CLASS nw net/minecraft/utility/Tessellator
+	FIELD a instance Lnw;

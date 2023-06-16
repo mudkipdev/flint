@@ -1,0 +1,2 @@
+CLASS vp net/minecraft/client/texturepack/CustomTexturePack
+	FIELD e file Ljava/util/zip/ZipFile;

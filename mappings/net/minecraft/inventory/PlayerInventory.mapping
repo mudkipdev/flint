@@ -1,0 +1,9 @@
+CLASS ix net/minecraft/inventory/PlayerInventory
+	FIELD a items [Liz;
+	FIELD b armor [Liz;
+	METHOD <init> <init> (Lgs;)V
+		ARG 1 player
+	METHOD a pickBlock (IZ)V
+		ARG 1 id
+	METHOD b getHeldItemStack ()Liz;
+	METHOD c consumeItem (I)Z

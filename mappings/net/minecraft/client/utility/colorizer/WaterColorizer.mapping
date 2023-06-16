@@ -1,0 +1,4 @@
+CLASS hw net/minecraft/client/utility/colorizer/WaterColorizer
+	FIELD a buffer [I
+	METHOD a setBuffer ([I)V
+		ARG 0 buffer

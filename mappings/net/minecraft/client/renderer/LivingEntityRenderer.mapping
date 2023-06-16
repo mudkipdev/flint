@@ -1,0 +1,9 @@
+CLASS gv net/minecraft/client/renderer/LivingEntityRenderer
+	METHOD a a (Lls;F)V
+		ARG 1 creeper
+	METHOD a a (Lls;FF)I
+		ARG 1 creeper
+	METHOD a a (Lls;IF)Z
+		ARG 1 creeper
+	METHOD b b (Lls;IF)Z
+		ARG 1 creeper

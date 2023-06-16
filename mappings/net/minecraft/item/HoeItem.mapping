@@ -1,0 +1,4 @@
+CLASS la net/minecraft/item/HoeItem
+	METHOD <init> <init> (ILbu;)V
+		ARG 1 id
+		ARG 2 tier

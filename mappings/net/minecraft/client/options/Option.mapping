@@ -1,0 +1,27 @@
+CLASS ht net/minecraft/client/options/Option
+	FIELD a MUSIC_VOLUME Lht;
+	FIELD b SOUND_VOLUME Lht;
+	FIELD c INVERTED_MOUSE Lht;
+	FIELD d MOUSE_SENSITIVITY Lht;
+	FIELD e RENDER_DISTANCE Lht;
+	FIELD f VIEW_BOBBING Lht;
+	FIELD g ANAGLYPH Lht;
+	FIELD h ADVANCED_OPENGL Lht;
+	FIELD i FRAMERATE_LIMIT Lht;
+	FIELD j DIFFICULTY Lht;
+	FIELD k GRAPHICS Lht;
+	FIELD l AMBIENT_OCCLUSION Lht;
+	FIELD m GUI_SCALE Lht;
+	FIELD n isFloat Z
+	FIELD o isBoolean Z
+	FIELD p translationKey Ljava/lang/String;
+	METHOD <init> <init> (Ljava/lang/String;ILjava/lang/String;ZZ)V
+		ARG 3 translationKey
+		ARG 4 isFloat
+		ARG 5 isBoolean
+	METHOD a isFloat ()Z
+	METHOD a getOption (I)Lht;
+		ARG 0 value
+	METHOD b isBoolean ()Z
+	METHOD c getValue ()I
+	METHOD d getTranslationKey ()Ljava/lang/String;

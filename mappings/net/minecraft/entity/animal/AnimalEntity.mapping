@@ -1,0 +1,2 @@
+CLASS bg net/minecraft/entity/animal/AnimalEntity
+	COMMENT An animal is a peaceful entity that spawns on grass.

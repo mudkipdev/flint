@@ -1,0 +1,2 @@
+CLASS eg net/minecraft/blockentity/JukeboxBlockEntity
+	FIELD a musicDisc I

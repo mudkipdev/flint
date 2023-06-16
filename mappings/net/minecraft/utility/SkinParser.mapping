@@ -1,0 +1,3 @@
+CLASS nf net/minecraft/utility/SkinParser
+	METHOD a parseSkin (Ljava/awt/image/BufferedImage;)Ljava/awt/image/BufferedImage;
+		ARG 1 image

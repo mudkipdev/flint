@@ -1,0 +1,10 @@
+CLASS jh net/minecraft/client/utility/colorizer/FoliageColorizer
+	FIELD a buffer [I
+	METHOD a getSpruceLeavesColor ()I
+	METHOD a sample (DD)I
+		ARG 0 x
+		ARG 2 y
+	METHOD a setBuffer ([I)V
+		ARG 0 buffer
+	METHOD b getBirchLeavesColor ()I
+	METHOD c getOakLeavesColor ()I

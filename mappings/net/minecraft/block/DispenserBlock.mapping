@@ -1,0 +1,15 @@
+CLASS xq net/minecraft/block/DispenserBlock
+	FIELD a random Ljava/util/Random;
+	METHOD <init> <init> (I)V
+		ARG 1 id
+	METHOD c dispense (Lfd;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD h h (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

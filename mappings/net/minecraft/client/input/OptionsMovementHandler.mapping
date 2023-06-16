@@ -1,0 +1,2 @@
+CLASS lr net/minecraft/client/input/OptionsMovementHandler
+	FIELD g options Lkv;

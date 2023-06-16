@@ -1,0 +1,6 @@
+CLASS yl net/minecraft/entity/vehicle/MinecartEntity
+	METHOD <init> <init> (Lfd;DDDI)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

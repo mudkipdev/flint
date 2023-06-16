@@ -1,0 +1,5 @@
+CLASS pf net/minecraft/network/NetworkManager
+	FIELD r writeThread Ljava/lang/Thread;
+	FIELD s readThread Ljava/lang/Thread;
+	METHOD a disconnect (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason

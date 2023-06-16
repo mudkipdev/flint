@@ -1,0 +1,5 @@
+CLASS qd net/minecraft/item/SwordItem
+	FIELD a damage I
+	METHOD <init> <init> (ILbu;)V
+		ARG 1 id
+		ARG 2 tier

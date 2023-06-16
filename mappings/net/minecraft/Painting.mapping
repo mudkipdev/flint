@@ -1,0 +1,43 @@
+CLASS iq net/minecraft/Painting
+	FIELD A name Ljava/lang/String;
+	FIELD B x I
+	FIELD C y I
+	FIELD D width I
+	FIELD E height I
+	FIELD a KEBAB Liq;
+	FIELD b AZTEC Liq;
+	FIELD c ALBAN Liq;
+	FIELD d AZTEC2 Liq;
+	FIELD e BOMB Liq;
+	FIELD f PLANT Liq;
+	FIELD g WASTELAND Liq;
+	FIELD h POOL Liq;
+	FIELD i COURBET Liq;
+	FIELD j SEA Liq;
+	FIELD k SUNSET Liq;
+	FIELD l CREEBET Liq;
+	FIELD m WANDERER Liq;
+	FIELD n GRAHAM Liq;
+	FIELD o MATCH Liq;
+	FIELD p BUST Liq;
+	FIELD q STAGE Liq;
+	FIELD r VOID Liq;
+	FIELD s SKULL_AND_ROSES Liq;
+	FIELD t FIGHTERS Liq;
+	FIELD u POINTER Liq;
+	FIELD v PIGSCENE Liq;
+	FIELD w BURNING_SKULL Liq;
+	FIELD x SKELETON Liq;
+	FIELD y DONKEY_KONG Liq;
+	FIELD z maxNameLength I
+	METHOD <init> <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
+		ARG 3 name
+			COMMENT The name of the painting.
+		ARG 4 x
+			COMMENT The starting X of the painting in <code>/art/kz.png</code>.
+		ARG 5 y
+			COMMENT The starting Y of the painting in <code>/art/kz.png</code>.
+		ARG 6 width
+			COMMENT The width of the painting texture in pixels.
+		ARG 7 height
+			COMMENT The height of the painting texture in pixels.

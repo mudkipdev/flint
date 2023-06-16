@@ -1,0 +1,2 @@
+CLASS bd net/minecraft/client/canvas/IsometricPreviewCanvas
+	FIELD d world Lfd;

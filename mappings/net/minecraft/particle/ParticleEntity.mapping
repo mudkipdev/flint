@@ -1,0 +1,4 @@
+CLASS xw net/minecraft/particle/ParticleEntity
+	COMMENT A lightweight entity that can emit off other blocks/items to give a visual effect.
+	METHOD a a (Lnw;FFFFFF)V
+		ARG 1 tessellator

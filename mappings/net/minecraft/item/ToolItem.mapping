@@ -1,0 +1,9 @@
+CLASS dq net/minecraft/item/ToolItem
+	FIELD a tier Lbu;
+	FIELD bk effectiveBlocks [Luu;
+	FIELD bl miningSpeed F
+	FIELD bm damage I
+	METHOD <init> <init> (IILbu;[Luu;)V
+		ARG 1 id
+		ARG 3 tier
+		ARG 4 effectiveBlocks

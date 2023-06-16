@@ -1,0 +1,2 @@
+CLASS yc net/minecraft/client/screen/EditSignScreen
+	FIELD a headerMessage Ljava/lang/String;

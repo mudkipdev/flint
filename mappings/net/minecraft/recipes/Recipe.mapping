@@ -1,0 +1,7 @@
+CLASS dt net/minecraft/recipes/Recipe
+	METHOD a getSize ()I
+	METHOD a matches (Lmq;)Z
+		ARG 1 craftingInventory
+	METHOD b getResult ()Liz;
+	METHOD b createResult (Lmq;)Liz;
+		ARG 1 craftingInventory

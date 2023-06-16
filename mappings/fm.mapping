@@ -1,0 +1,2 @@
+CLASS fm fm
+	FIELD b worldDirectory Ljava/io/File;

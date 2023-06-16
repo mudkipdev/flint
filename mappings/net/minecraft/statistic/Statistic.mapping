@@ -1,0 +1,5 @@
+CLASS vr net/minecraft/statistic/Statistic
+	FIELD c DECIMAL Ljava/text/DecimalFormat;
+	FIELD i BASIC Lwk;
+	FIELD j TIME Lwk;
+	FIELD k DISTANCE Lwk;

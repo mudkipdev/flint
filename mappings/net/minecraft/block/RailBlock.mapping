@@ -1,0 +1,20 @@
+CLASS pc net/minecraft/block/RailBlock
+	FIELD a isSpecial Z
+	METHOD <init> <init> (IIZ)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 isSpecial
+	METHOD a a (II)I
+		COMMENT @return The index of the block texture.
+		COMMENT The side of the block to display the texture on.
+		COMMENT The metadata value of the block.
+	METHOD a isSpecial (Lpc;)Z
+		ARG 0 block
+	METHOD d isRail (I)Z
+		ARG 0 blockID
+	METHOD h isRail (Lfd;III)Z
+		ARG 0 world
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i isSpecial ()Z

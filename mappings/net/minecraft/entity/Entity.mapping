@@ -1,0 +1,74 @@
+CLASS sn net/minecraft/entity/Entity
+	FIELD aD id I
+	FIELD aG passenger Lsn;
+	FIELD aH vehicle Lsn;
+	FIELD a lastEntityID I
+	FIELD aI world Lfd;
+	FIELD aM x D
+	FIELD aN y D
+	FIELD aO z D
+	FIELD aP xVelocity D
+	FIELD aQ yVelocity D
+	FIELD aR zVelocity D
+	FIELD aS yaw F
+	FIELD aT pitch F
+	FIELD aX isOnGround Z
+	FIELD bA skinURL Ljava/lang/String;
+	FIELD bB capeURL Ljava/lang/String;
+	FIELD bD metadata Lud;
+	FIELD bJ x I
+	FIELD bK y I
+	FIELD bL z I
+	FIELD bc isInWeb Z
+	FIELD be isRemoved Z
+	FIELD bk fallDistance F
+	FIELD bs random Ljava/util/Random;
+	FIELD bz air I
+	METHOD <init> <init> (Lfd;)V
+		ARG 1 world
+	METHOD K remove ()V
+	METHOD S stepInPortal ()V
+	METHOD a a (DDDFFI)V
+		ARG 1 double1
+	METHOD a onStruckByLightning (Lc;)V
+		ARG 1 lightningBolt
+	METHOD a interact (Lgs;)Z
+		ARG 1 player
+	METHOD a readFromNBT (Lnu;)V
+		ARG 1 compoundTag
+	METHOD a attack (Lsn;I)Z
+		ARG 1 attacker
+		ARG 2 damage
+	METHOD a writeDoublesToNBT ([D)Lsp;
+		ARG 1 doubles
+	METHOD a writeFloatsToNBT ([F)Lsp;
+		ARG 1 floats
+	METHOD ad getMetadata ()Lud;
+	METHOD aj getName ()Ljava/lang/String;
+	METHOD b initialize ()V
+	METHOD b b (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD b writeToNBT (Lnu;)V
+		ARG 1 compoundTag
+	METHOD c setPosition (DDDFF)V
+	METHOD c setInventorySlot (III)V
+	METHOD d d (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+	METHOD d writeEntityToNBT (Lnu;)V
+		ARG 1 tag
+	METHOD e readEntityFromNBT (Lnu;)V
+		ARG 1 tag
+	METHOD equals equals (Ljava/lang/Object;)Z
+		ARG 1 object
+	METHOD h playDamageAnimation ()V
+	METHOD i mount (Lsn;)V
+		ARG 1 entity
+	METHOD i_ isPushable ()Z
+	METHOD q_ getTexture ()Ljava/lang/String;
+	METHOD u_ updateCape ()V
+	METHOD w_ tick ()V
+	METHOD x_ getShadowSize ()F
