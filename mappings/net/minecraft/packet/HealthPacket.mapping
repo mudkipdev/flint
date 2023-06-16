@@ -1,0 +1,2 @@
+CLASS eu net/minecraft/packet/HealthPacket
+	FIELD a health I

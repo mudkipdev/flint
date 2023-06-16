@@ -1,0 +1,5 @@
+CLASS iw net/minecraft/packet/OpenWindowPacket
+	FIELD a windowID I
+	FIELD b inventoryType I
+	FIELD c title Ljava/lang/String;
+	FIELD d inventorySize I

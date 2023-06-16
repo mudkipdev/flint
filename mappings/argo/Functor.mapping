@@ -1,0 +1,3 @@
+CLASS yp argo/Functor
+	METHOD a equals (Ljava/lang/Object;)Z
+		ARG 1 node

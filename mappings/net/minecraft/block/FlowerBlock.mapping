@@ -1,0 +1,11 @@
+CLASS wb net/minecraft/block/FlowerBlock
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 material
+	METHOD d canGrowOn (I)Z
+		ARG 1 blockID
+	METHOD h tryDrop (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

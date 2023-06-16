@@ -1,0 +1,4 @@
+CLASS kt net/minecraft/generator/DeadBushGenerator
+	FIELD a blockID I
+	METHOD <init> <init> (I)V
+		ARG 1 blockID

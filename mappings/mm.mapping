@@ -1,0 +1,4 @@
+CLASS mm mm
+	FIELD D networkHandler Lnb;
+	FIELD E worldSource Luv;
+	METHOD b getEntityFromID (I)Lsn;

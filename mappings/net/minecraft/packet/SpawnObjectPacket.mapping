@@ -1,0 +1,9 @@
+CLASS so net/minecraft/packet/SpawnObjectPacket
+	FIELD a entityID I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e xVelocity I
+	FIELD f yVelocity I
+	FIELD g zVelocity I
+	FIELD h type I

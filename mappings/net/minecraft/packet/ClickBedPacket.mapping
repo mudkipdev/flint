@@ -1,0 +1,6 @@
+CLASS jz net/minecraft/packet/ClickBedPacket
+	FIELD a entityID I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e type I

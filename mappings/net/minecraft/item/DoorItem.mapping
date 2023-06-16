@@ -1,0 +1,5 @@
+CLASS hu net/minecraft/item/DoorItem
+	FIELD a material Lln;
+	METHOD <init> <init> (ILln;)V
+		ARG 1 id
+		ARG 2 material

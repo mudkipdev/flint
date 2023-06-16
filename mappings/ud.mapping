@@ -1,0 +1,10 @@
+CLASS ud ud
+	METHOD a getByte (I)B
+		ARG 1 index
+	METHOD a readFromStream (Ljava/io/DataInputStream;)Ljava/util/List;
+	METHOD a writeToStream (Ljava/io/DataOutputStream;)V
+		ARG 1 dataOutputStream
+	METHOD a writeListToStream (Ljava/util/List;Ljava/io/DataOutputStream;)V
+	METHOD b set (ILjava/lang/Object;)V
+		ARG 1 index
+		ARG 2 object

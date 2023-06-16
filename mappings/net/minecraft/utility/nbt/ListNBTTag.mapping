@@ -1,0 +1,8 @@
+CLASS sp net/minecraft/utility/nbt/ListNBTTag
+	FIELD a value Ljava/util/List;
+	FIELD b typeID B
+	METHOD a get (I)Lij;
+		ARG 1 index
+	METHOD a add (Lij;)V
+		ARG 1 tag
+	METHOD c getSize ()I

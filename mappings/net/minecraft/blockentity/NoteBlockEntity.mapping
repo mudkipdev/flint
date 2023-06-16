@@ -1,0 +1,8 @@
+CLASS tn net/minecraft/blockentity/NoteBlockEntity
+	FIELD a pitch B
+	METHOD a changePitch ()V
+	METHOD a play (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

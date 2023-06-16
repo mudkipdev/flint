@@ -1,0 +1,4 @@
+CLASS mv net/minecraft/packet/FurnaceProgressPacket
+	FIELD a windowID I
+	FIELD b bar I
+	FIELD c value I

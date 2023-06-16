@@ -1,0 +1,16 @@
+CLASS bs net/minecraft/block/RedstoneOreBlock
+	FIELD a isLit Z
+	METHOD <init> <init> (IIZ)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 isLit
+	METHOD h light (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i spawnParticles (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

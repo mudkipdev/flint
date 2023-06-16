@@ -1,0 +1,9 @@
+CLASS tk net/minecraft/entity/player/MultiplayerPlayer
+	METHOD <init> <init> (Lnet/minecraft/client/Minecraft;Lfd;Lgr;Lnb;)V
+		ARG 1 minecraft
+		ARG 2 world
+		ARG 3 session
+		ARG 4 networkHandler
+	METHOD b b (Lvr;I)V
+		ARG 1 statistic
+		ARG 2 amount

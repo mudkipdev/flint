@@ -1,0 +1,14 @@
+CLASS lk net/minecraft/entity/MobType
+	FIELD a MONSTER Llk;
+	FIELD b ANIMAL Llk;
+	FIELD c WATER Llk;
+	FIELD d mobClass Ljava/lang/Class;
+	FIELD f survivableMaterial Lln;
+	FIELD g isPeaceful Z
+	METHOD <init> <init> (Ljava/lang/String;ILjava/lang/Class;ILln;Z)V
+		ARG 3 mobClass
+		ARG 5 survivableMaterial
+		ARG 6 isPeaceful
+	METHOD a getMobClass ()Ljava/lang/Class;
+	METHOD c getSurvivableMaterial ()Lln;
+	METHOD d isPeaceful ()Z

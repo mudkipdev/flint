@@ -1,0 +1,8 @@
+CLASS fa net/minecraft/packet/WeatherPacket
+	FIELD a entityID I
+	FIELD b type I
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	METHOD <init> <init> (Lsn;)V
+		ARG 1 entity

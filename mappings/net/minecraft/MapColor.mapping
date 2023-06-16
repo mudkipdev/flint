@@ -1,0 +1,21 @@
+CLASS dx net/minecraft/MapColor
+	FIELD a colors [Ldx;
+	FIELD b TRANSPARENT Ldx;
+	FIELD c GRASS Ldx;
+	FIELD d SAND Ldx;
+	FIELD e WOOL Ldx;
+	FIELD f TNT Ldx;
+	FIELD g ICE Ldx;
+	FIELD h IRON Ldx;
+	FIELD i LEAVES Ldx;
+	FIELD j SNOW Ldx;
+	FIELD k CLAY Ldx;
+	FIELD l DIRT Ldx;
+	FIELD m STONE Ldx;
+	FIELD n WATER Ldx;
+	FIELD o WOOD Ldx;
+	FIELD p color I
+	FIELD q id I
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 color

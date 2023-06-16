@@ -1,0 +1,5 @@
+CLASS rk net/minecraft/item/SeedsItem
+	FIELD a blockID I
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 blockID

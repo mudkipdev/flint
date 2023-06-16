@@ -1,0 +1,2 @@
+CLASS ke net/minecraft/client/gui/Button
+	FIELD f id I

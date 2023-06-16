@@ -1,0 +1,2 @@
+CLASS vj net/minecraft/client/thread/SendSyncedStatisticsThread
+	FIELD b syncer Lcj;

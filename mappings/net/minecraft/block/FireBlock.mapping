@@ -1,0 +1,23 @@
+CLASS yq net/minecraft/block/FireBlock
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 texture
+	METHOD a setBurnSpeed (III)V
+		ARG 1 blockID
+	METHOD a tryToCatchBlockOnFire (Lfd;IIIILjava/util/Random;I)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 6 random
+	METHOD c canCatchBlockOnFire (Lxp;III)Z
+	METHOD f f (Lfd;IIII)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i i (Lfd;III)I
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

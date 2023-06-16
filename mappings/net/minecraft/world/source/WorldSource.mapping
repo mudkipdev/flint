@@ -1,0 +1,2 @@
+CLASS cl net/minecraft/world/source/WorldSource
+	METHOD c getName ()Ljava/lang/String;

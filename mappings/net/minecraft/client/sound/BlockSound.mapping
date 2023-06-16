@@ -1,0 +1,12 @@
+CLASS ct net/minecraft/client/sound/BlockSound
+	FIELD a key Ljava/lang/String;
+	FIELD b volume F
+	FIELD c pitch F
+	METHOD <init> <init> (Ljava/lang/String;FF)V
+		ARG 1 key
+		ARG 2 volume
+		ARG 3 pitch
+	METHOD a getBreakKey ()Ljava/lang/String;
+	METHOD b getVolume ()F
+	METHOD c getPitch ()F
+	METHOD d getKey ()Ljava/lang/String;

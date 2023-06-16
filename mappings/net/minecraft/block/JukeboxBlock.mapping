@@ -1,0 +1,15 @@
+CLASS fo net/minecraft/block/JukeboxBlock
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 texture
+	METHOD b_ ejectMusicDisc (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD f play (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata

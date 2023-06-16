@@ -1,0 +1,6 @@
+CLASS qb net/minecraft/client/options/Keybind
+	FIELD a translationKey Ljava/lang/String;
+	FIELD b keyCode I
+	METHOD <init> <init> (Ljava/lang/String;I)V
+		ARG 1 name
+		ARG 2 keyCode

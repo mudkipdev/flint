@@ -1,0 +1,30 @@
+CLASS kd net/minecraft/biome/Biome
+	FIELD a RAINFOREST Lkd;
+	FIELD b SWAMPLAND Lkd;
+	FIELD c SEASONAL_FOREST Lkd;
+	FIELD d FOREST Lkd;
+	FIELD e SAVANNA Lkd;
+	FIELD f SHRUBLAND Lkd;
+	FIELD g TAIGA Lkd;
+	FIELD h DESERT Lkd;
+	FIELD i PLAINS Lkd;
+	FIELD j ICE_DESERT Lkd;
+	FIELD k TUNDRA Lkd;
+	FIELD l NETHER Lkd;
+	FIELD m SKY Lkd;
+	FIELD n name Ljava/lang/String;
+	FIELD s monsters Ljava/util/List;
+	FIELD t mobs Ljava/util/List;
+	FIELD u waterMobs Ljava/util/List;
+	FIELD v canSnow Z
+	FIELD w canRain Z
+	METHOD a getSkyColor (F)I
+		ARG 1 temperature
+	METHOD a setName (Ljava/lang/String;)Lkd;
+	METHOD a a (Ljava/util/Random;)Lpg;
+		ARG 1 random
+	METHOD a getSpawnableMobs (Llk;)Ljava/util/List;
+		ARG 1 mobType
+	METHOD b enableSnow ()Lkd;
+	METHOD c canSnow ()Z
+	METHOD e disableRain ()Lkd;

@@ -1,0 +1,109 @@
+CLASS fd net/minecraft/world/World
+	FIELD B isMultiplayer Z
+	FIELD J everyoneSleeping Z
+	FIELD d players Ljava/util/List;
+	FIELD e weatherEffects Ljava/util/List;
+	FIELD r random Ljava/util/Random;
+	FIELD s isNew Z
+	FIELD t dimension Lxa;
+	FIELD v source Lcl;
+	FIELD x info Lei;
+	METHOD <init> <init> (Lfd;Lxa;)V
+		ARG 1 world
+	METHOD <init> <init> (Lwt;Ljava/lang/String;J)V
+		ARG 2 name
+		ARG 3 seed
+	METHOD <init> <init> (Lwt;Ljava/lang/String;JLxa;)V
+		ARG 2 name
+		ARG 3 seed
+	METHOD <init> <init> (Lwt;Ljava/lang/String;Lxa;J)V
+		ARG 2 name
+		ARG 3 dimension
+		ARG 4 seed
+	METHOD A isEveryoneSleeping ()Z
+	METHOD a getClosestPlayer (DDDD)Lgs;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 7 range
+	METHOD a playSound (DDDLjava/lang/String;FF)V
+	METHOD a getTopBlockID (II)I
+	METHOD a setBlockWithMetadata (IIIII)Z
+	METHOD a canPlaceBlockAt (IIIIZI)Z
+	METHOD a setBlockEntity (IIILow;)V
+	METHOD a a (Lgs;III)Z
+		ARG 1 player
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a playEffect (Lgs;IIIII)V
+	METHOD a getEntitiesOfTypeWithinAABB (Ljava/lang/Class;Leq;)Ljava/util/List;
+	METHOD a spawnParticle (Ljava/lang/String;DDDDDD)V
+	METHOD a playMusicDisc (Ljava/lang/String;III)V
+	METHOD a addWeatherEffect (Lsn;)Z
+		ARG 1 entity
+	METHOD a getClosestPlayerToEntity (Lsn;D)Lgs;
+		ARG 1 entity
+		ARG 2 range
+	METHOD a createExplosion (Lsn;DDDF)Lqx;
+		ARG 1 entity
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 size
+	METHOD a playSoundAtEntity (Lsn;Ljava/lang/String;FF)V
+		ARG 1 entity
+		ARG 2 key
+	METHOD b createWorldSource ()Lcl;
+	METHOD b setBlockWithMetadataAndNotifyNeighbors (IIIII)Z
+	METHOD b updateBlockEntity (IIILow;)V
+	METHOD b addEntity (Lsn;)Z
+	METHOD b getEntitiesWithinAABB (Lsn;Leq;)Ljava/util/List;
+	METHOD c setBlock (IIII)Z
+	METHOD d isAirBlock (III)Z
+	METHOD d setBlockMetadataAndNotifyNeighbors (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 metadata
+	METHOD d triggerAction (IIIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 instrumentOrState
+		ARG 5 pitchOrDirection
+	METHOD e findTopBlockY (II)I
+		ARG 1 x
+		ARG 2 z
+	METHOD e setBlockMetadata (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 metadata
+	METHOD e playEffect (IIIII)V
+	METHOD e removeEntity (Lsn;)V
+		ARG 1 entity
+	METHOD f doesChunkExist (II)Z
+	METHOD f setBlockAndNotifyNeighbors (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 blockID
+	METHOD g tickEntities ()V
+	METHOD g notifyNeighbors (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i doesBlockExist (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD i notifyNeighboringBlocks (IIII)V
+	METHOD l canSeeSky (III)Z
+	METHOD p removeBlockEntity (III)V
+	METHOD r isBlockPowered (III)Z
+	METHOD t canRainOnBlock (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD x getInfo ()Lei;

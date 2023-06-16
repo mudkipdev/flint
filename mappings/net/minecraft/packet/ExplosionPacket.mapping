@@ -1,0 +1,6 @@
+CLASS rm net/minecraft/packet/ExplosionPacket
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D
+	FIELD d size F
+	FIELD e affectedBlocks Ljava/util/Set;

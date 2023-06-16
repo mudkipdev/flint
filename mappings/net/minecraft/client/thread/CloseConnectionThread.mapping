@@ -1,0 +1,4 @@
+CLASS xh net/minecraft/client/thread/CloseConnectionThread
+	FIELD a networkManager Lpf;
+	METHOD <init> <init> (Lpf;)V
+		ARG 1 networkManager

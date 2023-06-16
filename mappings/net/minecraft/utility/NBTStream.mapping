@@ -1,0 +1,11 @@
+CLASS as net/minecraft/utility/NBTStream
+	METHOD a a (Ljava/io/DataInput;)Lnu;
+		ARG 0 dataInput
+	METHOD a a (Ljava/io/InputStream;)Lnu;
+		ARG 0 inputStream
+	METHOD a a (Lnu;Ljava/io/DataOutput;)V
+		ARG 0 compoundTag
+		ARG 1 dataOutput
+	METHOD a a (Lnu;Ljava/io/OutputStream;)V
+		ARG 0 compoundTag
+		ARG 1 outputStream

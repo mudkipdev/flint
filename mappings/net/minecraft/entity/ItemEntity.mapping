@@ -1,0 +1,9 @@
+CLASS hl net/minecraft/entity/ItemEntity
+	FIELD a itemStack Liz;
+	FIELD c pickupDelay I
+	METHOD <init> <init> (Lfd;DDDLiz;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+		ARG 8 itemStack

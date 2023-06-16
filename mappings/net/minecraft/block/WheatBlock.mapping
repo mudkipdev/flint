@@ -1,0 +1,11 @@
+CLASS ni net/minecraft/block/WheatBlock
+	METHOD d_ d_ (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD i i (Lfd;III)F
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

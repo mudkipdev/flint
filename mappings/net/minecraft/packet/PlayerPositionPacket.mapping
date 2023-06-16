@@ -1,0 +1,6 @@
+CLASS af net/minecraft/packet/PlayerPositionPacket
+	METHOD <init> <init> (DDDDZ)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
+		ARG 9 isOnGround

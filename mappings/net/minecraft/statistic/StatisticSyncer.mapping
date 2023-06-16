@@ -1,0 +1,3 @@
+CLASS cj net/minecraft/statistic/StatisticSyncer
+	METHOD <init> <init> (Lgr;Lxi;Ljava/io/File;)V
+		ARG 1 session

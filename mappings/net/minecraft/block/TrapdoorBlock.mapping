@@ -1,0 +1,10 @@
+CLASS oq net/minecraft/block/TrapdoorBlock
+	METHOD a a (Lfd;IIIZ)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD d d (I)V
+		ARG 1 metadata
+	METHOD e isOpen (I)Z
+		ARG 0 metadata

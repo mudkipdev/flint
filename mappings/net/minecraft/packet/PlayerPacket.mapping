@@ -1,0 +1,11 @@
+CLASS ig net/minecraft/packet/PlayerPacket
+	FIELD a x D
+	FIELD b y D
+	FIELD d z D
+	FIELD e yaw F
+	FIELD f pitch F
+	FIELD g isOnGround Z
+	FIELD h isPositionPacket Z
+	FIELD i isLookPacket Z
+	METHOD <init> <init> (Z)V
+		ARG 1 isOnGround

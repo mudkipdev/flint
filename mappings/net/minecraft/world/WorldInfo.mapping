@@ -1,0 +1,71 @@
+CLASS ei net/minecraft/world/WorldInfo
+	FIELD a seed J
+	FIELD b spawnX I
+	FIELD c spawnY I
+	FIELD d spawnZ I
+	FIELD e time J
+	FIELD f lastPlayedAt J
+	FIELD g size J
+	FIELD h player Lnu;
+	FIELD i dimension I
+	FIELD j name Ljava/lang/String;
+	FIELD k version I
+	FIELD l raining Z
+	FIELD m rainTime I
+	FIELD n thundering Z
+	FIELD o thunderTime I
+	METHOD <init> <init> (JLjava/lang/String;)V
+		ARG 1 seed
+		ARG 3 name
+	METHOD <init> <init> (Lei;)V
+		ARG 1 worldInfo
+	METHOD <init> <init> (Lnu;)V
+		ARG 1 tag
+	METHOD a setSpawnX (I)V
+		ARG 1 x
+	METHOD a setSpawn (III)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setTime (J)V
+		ARG 1 time
+	METHOD a setName (Ljava/lang/String;)V
+		ARG 1 name
+	METHOD a writeToNBT (Ljava/util/List;)Lnu;
+		ARG 1 players
+	METHOD a setPlayer (Lnu;)V
+		ARG 1 playerTag
+	METHOD a writeToNBT (Lnu;Lnu;)V
+		ARG 1 tag
+		ARG 2 playerTag
+	METHOD a setThundering (Z)V
+		ARG 1 isThundering
+	METHOD b getSeed ()J
+	METHOD b setSpawnY (I)V
+		ARG 1 y
+	METHOD b setSize (J)V
+		ARG 1 size
+	METHOD b setRaining (Z)V
+		ARG 1 isRaining
+	METHOD c getSpawnX ()I
+	METHOD c setSpawnZ (I)V
+		ARG 1 z
+	METHOD d getSpawnY ()I
+	METHOD d setVersion (I)V
+		ARG 1 version
+	METHOD e getSpawnZ ()I
+	METHOD e setThunderTime (I)V
+		ARG 1 thunderTime
+	METHOD f getTime ()J
+	METHOD f setRainTime (I)V
+		ARG 1 rainTime
+	METHOD g getSize ()J
+	METHOD h getPlayer ()Lnu;
+	METHOD i getDimension ()I
+	METHOD j getName ()Ljava/lang/String;
+	METHOD k getVersion ()I
+	METHOD l getLastPlayedAt ()J
+	METHOD m isThundering ()Z
+	METHOD n getThunderTime ()I
+	METHOD o isRaining ()Z
+	METHOD p getRainTime ()I

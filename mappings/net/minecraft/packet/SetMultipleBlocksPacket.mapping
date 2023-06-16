@@ -1,0 +1,7 @@
+CLASS wu net/minecraft/packet/SetMultipleBlocksPacket
+	FIELD a chunkX I
+	FIELD b chunkY I
+	FIELD c coordinateArray [S
+	FIELD d blockIDArray [B
+	FIELD e metadataArray [B
+	FIELD f length I

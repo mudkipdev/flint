@@ -1,0 +1,2 @@
+CLASS hg net/minecraft/packet/TimePacket
+	FIELD a time J
