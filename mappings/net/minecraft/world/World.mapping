@@ -31,7 +31,11 @@ CLASS fd net/minecraft/world/World
 	METHOD a setBlockWithMetadata (IIIII)Z
 	METHOD a canPlaceBlockAt (IIIIZI)Z
 	METHOD a setBlockEntity (IIILow;)V
-	METHOD a a (Lgs;III)Z
+	METHOD a setTime (J)V
+		ARG 1 time
+	METHOD a setSpawnPosition (Lbr;)V
+		ARG 1 spawnPosition
+	METHOD a (Lgs;III)Z
 		ARG 1 player
 		ARG 2 x
 		ARG 3 y
@@ -102,8 +106,11 @@ CLASS fd net/minecraft/world/World
 	METHOD l canSeeSky (III)Z
 	METHOD p removeBlockEntity (III)V
 	METHOD r isBlockPowered (III)Z
+	METHOD s getSeed ()J
+	METHOD t getTime ()J
 	METHOD t canRainOnBlock (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
+	METHOD u getSpawnPosition ()Lbr;
 	METHOD x getInfo ()Lei;

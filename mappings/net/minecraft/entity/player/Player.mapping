@@ -1,6 +1,7 @@
 CLASS gs net/minecraft/entity/player/Player
 	FIELD D fish Llx;
 	FIELD a timeInBed I
+	FIELD b spawnPosition Lbr;
 	FIELD c inventory Lix;
 	FIELD g score I
 	FIELD j isSwinging Z
