@@ -1,4 +1,4 @@
-CLASS jn net/minecraft/client/OS2
+CLASS jn net/minecraft/client/IsometricViewerOS
 	FIELD a LINUX Ljn;
 	FIELD b SOLARIS Ljn;
 	FIELD c WINDOWS Ljn;

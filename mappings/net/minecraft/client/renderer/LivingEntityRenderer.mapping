@@ -5,5 +5,7 @@ CLASS gv net/minecraft/client/renderer/LivingEntityRenderer
 		ARG 1 creeper
 	METHOD a a (Lls;IF)Z
 		ARG 1 creeper
+	METHOD b (Lls;F)V
+		ARG 1 player
 	METHOD b b (Lls;IF)Z
 		ARG 1 creeper

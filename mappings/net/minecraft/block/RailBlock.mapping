@@ -5,9 +5,6 @@ CLASS pc net/minecraft/block/RailBlock
 		ARG 2 texture
 		ARG 3 isSpecial
 	METHOD a a (II)I
-		COMMENT @return The index of the block texture.
-		COMMENT The side of the block to display the texture on.
-		COMMENT The metadata value of the block.
 	METHOD a isSpecial (Lpc;)Z
 		ARG 0 block
 	METHOD d isRail (I)Z

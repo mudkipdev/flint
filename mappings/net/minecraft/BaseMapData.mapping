@@ -1,5 +1,0 @@
-CLASS hm net/minecraft/BaseMapData
-	METHOD a readFromNBT (Lnu;)V
-		ARG 1 compoundTag
-	METHOD b writeToNBT (Lnu;)V
-		ARG 1 compoundTag

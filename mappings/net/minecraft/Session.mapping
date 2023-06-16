@@ -1,8 +1,5 @@
 CLASS gr net/minecraft/Session
 	FIELD a blocks Ljava/util/List;
-		COMMENT The list of blocks for this session. This is used for the creative inventory.
-		COMMENT
-		COMMENT @see net.minecraft.client.controller.CreativePlayerController
 	FIELD b username Ljava/lang/String;
 	FIELD c sessionID Ljava/lang/String;
 	FIELD d multiplayerPassword Ljava/lang/String;

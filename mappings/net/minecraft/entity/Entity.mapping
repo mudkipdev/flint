@@ -23,6 +23,7 @@ CLASS sn net/minecraft/entity/Entity
 	FIELD be isRemoved Z
 	FIELD bk fallDistance F
 	FIELD bs random Ljava/util/Random;
+	FIELD bw maxAir I
 	FIELD bz air I
 	METHOD <init> <init> (Lfd;)V
 		ARG 1 world
@@ -34,6 +35,7 @@ CLASS sn net/minecraft/entity/Entity
 		ARG 1 lightningBolt
 	METHOD a interact (Lgs;)Z
 		ARG 1 player
+	METHOD a isInMaterial (Lln;)Z
 	METHOD a readFromNBT (Lnu;)V
 		ARG 1 compoundTag
 	METHOD a attack (Lsn;I)Z
@@ -53,13 +55,23 @@ CLASS sn net/minecraft/entity/Entity
 	METHOD b writeToNBT (Lnu;)V
 		ARG 1 compoundTag
 	METHOD c setPosition (DDDFF)V
+	METHOD c setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
 	METHOD c setInventorySlot (III)V
+	METHOD c addKillToStatistics (Lsn;I)V
+		ARG 1 entity
+		ARG 2 score
 	METHOD d d (DDD)V
 		ARG 1 x
 		ARG 3 y
 		ARG 5 z
 	METHOD d writeEntityToNBT (Lnu;)V
 		ARG 1 tag
+	METHOD e setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD e readEntityFromNBT (Lnu;)V
 		ARG 1 tag
 	METHOD equals equals (Ljava/lang/Object;)Z

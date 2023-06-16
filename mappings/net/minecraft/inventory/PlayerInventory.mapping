@@ -1,9 +1,40 @@
 CLASS ix net/minecraft/inventory/PlayerInventory
 	FIELD a items [Liz;
 	FIELD b armor [Liz;
+	FIELD c selectedInventorySlot I
+	FIELD d owner Lgs;
 	METHOD <init> <init> (Lgs;)V
-		ARG 1 player
+		ARG 1 owner
 	METHOD a pickBlock (IZ)V
 		ARG 1 id
+		ARG 2 isCreativeMode
+	METHOD a addItemStack (Liz;)Z
+		ARG 1 itemStack
+	METHOD a getDamageAgainst (Lsn;)I
+		ARG 1 entity
+	METHOD a writeToNBT (Lsp;)Lsp;
+		ARG 1 listTag
 	METHOD b getHeldItemStack ()Liz;
-	METHOD c consumeItem (I)Z
+	METHOD b changeSelectedInventorySlot (I)V
+		ARG 1 amount
+	METHOD b (Liz;)V
+		ARG 1 itemStack
+	METHOD b readFromNBT (Lsp;)V
+		ARG 1 listTag
+	METHOD b canDropBlock (Luu;)Z
+		ARG 1 block
+	METHOD c consumeItemStack (I)Z
+		ARG 1 itemID
+	METHOD c (Liz;)Z
+		ARG 1 itemStack
+	METHOD d getArmorSlot (I)Liz;
+		ARG 1 armorSlot
+	METHOD d getInventorySlotContaining (Liz;)I
+		ARG 1 itemStack
+	METHOD e stepAnimationFrames ()V
+	METHOD e (Liz;)I
+		ARG 1 itemStack
+	METHOD f getInventorySlotContaining (I)I
+		ARG 1 itemID
+	METHOD g dropItems ()V
+	METHOD j getAvailableInventorySlot ()I

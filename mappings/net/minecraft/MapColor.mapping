@@ -1,5 +1,4 @@
 CLASS dx net/minecraft/MapColor
-	COMMENT Defines a color to display for a certain block in a map.
 	FIELD a colors [Ldx;
 	FIELD b TRANSPARENT Ldx;
 	FIELD c GRASS Ldx;
@@ -19,6 +18,4 @@ CLASS dx net/minecraft/MapColor
 	FIELD q id I
 	METHOD <init> <init> (II)V
 		ARG 1 id
-			COMMENT The unique ID of the color.
 		ARG 2 color
-			COMMENT The color as a decimal value.

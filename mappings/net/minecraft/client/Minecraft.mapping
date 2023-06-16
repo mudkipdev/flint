@@ -2,6 +2,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
 	FIELD B soundManager Lyo;
 	FIELD D texturePacks Lik;
+	FIELD J isRunning Z
 	FIELD K debugInfo Ljava/lang/String;
 	FIELD Q isFullscreen Z
 	FIELD R hasCrashed Z
@@ -28,7 +29,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD <init> <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
 		ARG 2 canvas
 		ARG 3 applet
-	METHOD A middleClick ()V
+	METHOD A onMiddleClick ()V
 	METHOD B startPaidChecker ()V
 	METHOD a click (I)V
 		ARG 1 button
@@ -47,8 +48,8 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 		ARG 1 message
 	METHOD b b (Lmh;)V
 		ARG 1 crash
+	METHOD f stop ()V
 	METHOD g focus ()V
-		COMMENT Locks the mouse and focuses the game window.
 	METHOD j toggleFullscreen ()V
 	METHOD t shouldHideHUD ()Z
 	METHOD u shouldUseFancyGraphics ()Z

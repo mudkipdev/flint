@@ -32,12 +32,7 @@ CLASS iq net/minecraft/Painting
 	FIELD z maxNameLength I
 	METHOD <init> <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
 		ARG 3 name
-			COMMENT The name of the painting.
 		ARG 4 x
-			COMMENT The starting X of the painting in <code>/art/kz.png</code>.
 		ARG 5 y
-			COMMENT The starting Y of the painting in <code>/art/kz.png</code>.
 		ARG 6 width
-			COMMENT The width of the painting texture in pixels.
 		ARG 7 height
-			COMMENT The height of the painting texture in pixels.
