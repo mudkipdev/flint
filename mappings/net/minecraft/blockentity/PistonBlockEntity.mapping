@@ -1,6 +1,6 @@
 CLASS uk net/minecraft/blockentity/PistonBlockEntity
 	FIELD a blockID I
-	FIELD b blockMetadata I
+	FIELD b metadata I
 	FIELD c direction I
 	FIELD i isExtended Z
 	METHOD <init> <init> (IIIZZ)V

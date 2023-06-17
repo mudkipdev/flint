@@ -1,0 +1,3 @@
+CLASS fm net/minecraft/world/storage/DefaultStorageHandler
+	FIELD b worldDirectory Ljava/io/File;
+	METHOD a getDirectory ()Ljava/io/File;

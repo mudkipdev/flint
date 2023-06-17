@@ -36,6 +36,8 @@ CLASS sn net/minecraft/entity/Entity
 	METHOD a interact (Lgs;)Z
 		ARG 1 player
 	METHOD a isInMaterial (Lln;)Z
+	METHOD a killEntity (Lls;)V
+		ARG 1 living
 	METHOD a readFromNBT (Lnu;)V
 		ARG 1 compoundTag
 	METHOD a attack (Lsn;I)Z
@@ -46,6 +48,7 @@ CLASS sn net/minecraft/entity/Entity
 	METHOD a writeFloatsToNBT ([F)Lsp;
 		ARG 1 floats
 	METHOD ad getMetadata ()Lud;
+	METHOD ag isInWater ()Z
 	METHOD aj getName ()Ljava/lang/String;
 	METHOD b initialize ()V
 	METHOD b b (DDD)V

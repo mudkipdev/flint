@@ -1,2 +1,5 @@
 CLASS cl net/minecraft/world/source/WorldSource
+	METHOD a doesChunkExist (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
 	METHOD c getName ()Ljava/lang/String;

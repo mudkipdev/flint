@@ -3,5 +3,5 @@ CLASS xv net/minecraft/biome/BiomeManager
 		ARG 1 world
 	METHOD a getBiomeAt (II)Lkd;
 		ARG 1 chunkX
-		ARG 2 chunkY
+		ARG 2 chunkZ
 	METHOD a getBiomeAt (Lyy;)Lkd;

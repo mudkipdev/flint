@@ -13,12 +13,17 @@ CLASS gs net/minecraft/entity/player/Player
 	METHOD G getHeldItemStack ()Liz;
 	METHOD H destroyHeldItemStack ()V
 	METHOD J playSwingAnimation ()V
+	METHOD O isFullySleeping ()Z
+	METHOD P getTimeInBed ()I
+	METHOD Q getSpawnPosition ()Lbr;
 	METHOD a showCraftingTableScreen (III)V
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD a showBlockEntityScreen (Laz;)V
 		ARG 1 dispenser
+	METHOD a setSpawnPosition (Lbr;)V
+		ARG 1 coordinates
 	METHOD a dropItemStack (Liz;)V
 		ARG 1 itemStack
 	METHOD a dropItemStack (Liz;Z)V
@@ -28,6 +33,8 @@ CLASS gs net/minecraft/entity/player/Player
 		ARG 1 inventory
 	METHOD a showBlockEntityScreen (Lsk;)V
 		ARG 1 furnace
+	METHOD a incrementStatistic (Lvr;)V
+		ARG 1 statistic
 	METHOD a incrementStatistic (Lvr;I)V
 		ARG 1 statistic
 		ARG 2 amount
@@ -40,5 +47,9 @@ CLASS gs net/minecraft/entity/player/Player
 		ARG 1 entity
 	METHOD d hitEntity (Lsn;)V
 		ARG 1 entity
+	METHOD i handleMovementStatistics (DDD)V
+		ARG 1 xDelta
+		ARG 3 yDelta
+		ARG 5 zDelta
 	METHOD r closeScreen ()V
 	METHOD v respawn ()V

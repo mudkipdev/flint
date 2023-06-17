@@ -3,4 +3,4 @@ CLASS tv net/minecraft/packet/SetBlockPacket
 	FIELD b y I
 	FIELD c z I
 	FIELD d blockID I
-	FIELD e blockMetadata I
+	FIELD e metadata I

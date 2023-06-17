@@ -1,4 +1,0 @@
-CLASS wt wt
-	METHOD a a (Lxa;)Lbf;
-		ARG 1 dimension
-	METHOD c getWorldInfo ()Lei;

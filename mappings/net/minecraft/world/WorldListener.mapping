@@ -16,7 +16,7 @@ CLASS pm net/minecraft/world/WorldListener
 		ARG 5 z
 		ARG 6 data
 	METHOD a spawnParticle (Ljava/lang/String;DDDDDD)V
-		ARG 1 effect
+		ARG 1 particle
 		ARG 2 x
 		ARG 4 y
 		ARG 6 z

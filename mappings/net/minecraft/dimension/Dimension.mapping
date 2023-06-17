@@ -2,6 +2,7 @@ CLASS xa net/minecraft/dimension/Dimension
 	FIELD a world Lfd;
 	FIELD b biomeManager Lxv;
 	FIELD d isNether Z
+	FIELD e hasNoSky Z
 	METHOD a createBiomeManager ()V
 	METHOD a getSunriseAndSunsetColors (FF)[F
 	METHOD a getDimension (I)Lxa;
