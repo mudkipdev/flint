@@ -3,7 +3,7 @@ A set of deobfuscated names for Minecraft Beta 1.7.3's game code.
 
 ## Contributing
 Please use [Fabric](https://github.com/FabricMC/Enigma) or [Quilt](https://github.com/QuiltMC/enigma) Enigma to contribute.
-Copy and pasting names from projects like MCP is not allowed.
+Copy and pasting names from projects like MCP and official Mojang mappings is not allowed.
 
 ## Naming Conventions
 - American English is always used for names.
