@@ -3,6 +3,10 @@ CLASS kv net/minecraft/client/options/Options
 	FIELD B showDebugInfo Z
 	FIELD C lastMultiplayerServer Ljava/lang/String;
 	FIELD I guiScale I
+	FIELD J RENDER_DISTANCE_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD K DIFFICULTY_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD L GUI_SCALE_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD M PERFORMANCE_TRANSLATION_KEYS [Ljava/lang/String;
 	FIELD N file Ljava/io/File;
 	FIELD a musicVolume F
 	FIELD b soundVolume F

@@ -13,6 +13,8 @@ CLASS kd net/minecraft/biome/Biome
 	FIELD l NETHER Lkd;
 	FIELD m SKY Lkd;
 	FIELD n name Ljava/lang/String;
+	FIELD p topBlockID B
+	FIELD q fillBlockID B
 	FIELD s monsters Ljava/util/List;
 	FIELD t mobs Ljava/util/List;
 	FIELD u waterMobs Ljava/util/List;
@@ -21,7 +23,7 @@ CLASS kd net/minecraft/biome/Biome
 	METHOD a getSkyColor (F)I
 		ARG 1 temperature
 	METHOD a setName (Ljava/lang/String;)Lkd;
-	METHOD a a (Ljava/util/Random;)Lpg;
+	METHOD a chooseTreeGenerator (Ljava/util/Random;)Lpg;
 		ARG 1 random
 	METHOD a getSpawnableMobs (Llk;)Ljava/util/List;
 		ARG 1 mobType

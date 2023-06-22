@@ -1,0 +1,4 @@
+CLASS bm
+	FIELD a blockEntity Lsk;
+	METHOD <init> (Lix;Lsk;)V
+		ARG 2 blockEntity

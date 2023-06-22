@@ -1,5 +1,20 @@
 CLASS vr net/minecraft/statistic/Statistic
-	FIELD c DECIMAL Ljava/text/DecimalFormat;
-	FIELD i BASIC Lwk;
-	FIELD j TIME Lwk;
-	FIELD k DISTANCE Lwk;
+	FIELD a type Lwk;
+	FIELD b numberFormat Ljava/text/NumberFormat;
+	FIELD c decimalFormat Ljava/text/DecimalFormat;
+	FIELD e id I
+	FIELD f name Ljava/lang/String;
+	FIELD i number Lwk;
+	FIELD j time Lwk;
+	FIELD k distance Lwk;
+	METHOD <init> (ILjava/lang/String;)V
+		ARG 1 id
+		ARG 2 name
+	METHOD <init> (ILjava/lang/String;Lwk;)V
+		ARG 1 id
+		ARG 2 name
+		ARG 3 type
+	METHOD a format (I)Ljava/lang/String;
+		ARG 1 value
+	METHOD i getNumberFormat ()Ljava/text/NumberFormat;
+	METHOD j getDecimalFormat ()Ljava/text/DecimalFormat;

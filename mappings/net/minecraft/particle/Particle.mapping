@@ -1,0 +1,8 @@
+CLASS xw net/minecraft/particle/Particle
+	METHOD <init> (Lfd;DDDDDD)V
+		ARG 1 world
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z
+	METHOD a a (Lnw;FFFFFF)V
+		ARG 1 tessellator

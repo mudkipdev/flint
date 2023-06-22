@@ -2,6 +2,7 @@ CLASS xv net/minecraft/biome/BiomeManager
 	METHOD <init> <init> (Lfd;)V
 		ARG 1 world
 	METHOD a getBiomeAt (II)Lkd;
-		ARG 1 chunkX
-		ARG 2 chunkZ
+		ARG 1 x
+		ARG 2 z
 	METHOD a getBiomeAt (Lyy;)Lkd;
+		ARG 1 coordinates

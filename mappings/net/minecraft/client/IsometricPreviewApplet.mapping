@@ -1,4 +1,0 @@
-CLASS net/minecraft/isom/IsomPreviewApplet net/minecraft/client/IsometricPreviewApplet
-	FIELD a canvas Lbd;
-	METHOD start start ()V
-	METHOD stop stop ()V

@@ -40,3 +40,6 @@ CLASS eq net/minecraft/utility/physics/AABB
 		ARG 9 maxY
 		ARG 11 maxZ
 	METHOD d offset (DDD)Leq;
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z

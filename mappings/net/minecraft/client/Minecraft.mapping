@@ -4,6 +4,7 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	FIELD D texturePacks Lik;
 	FIELD J isRunning Z
 	FIELD K debugInfo Ljava/lang/String;
+	FIELD L isTakingScreenshot Z
 	FIELD Q isFullscreen Z
 	FIELD R hasCrashed Z
 	FIELD S capabilities Lcx;
@@ -55,3 +56,4 @@ CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
 	METHOD u shouldUseFancyGraphics ()Z
 	METHOD w shouldShowDebugInfo ()Z
 	METHOD y getOS ()Lpd;
+	METHOD z tryTakeScreenshot ()V

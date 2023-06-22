@@ -4,3 +4,5 @@ CLASS mm net/minecraft/client/world/ClientWorld
 	FIELD G entities Ljava/util/Set;
 	FIELD H skins Ljava/util/Set;
 	METHOD b getEntityFromID (I)Lsn;
+	METHOD c removeEntity (I)Lsn;
+		ARG 1 id

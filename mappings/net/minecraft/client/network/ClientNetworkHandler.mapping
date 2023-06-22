@@ -3,6 +3,7 @@ CLASS nb net/minecraft/client/network/ClientNetworkHandler
 	FIELD d isDisconnected Z
 	FIELD e networkManager Lpf;
 	FIELD f minecraft Lnet/minecraft/client/Minecraft;
+	FIELD g world Lmm;
 	METHOD <init> <init> (Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
 		ARG 1 minecraft
 		ARG 2 hostname

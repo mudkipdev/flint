@@ -1,3 +1,0 @@
-CLASS jg net/minecraft/HitType
-	FIELD a BLOCK Ljg;
-	FIELD b ENTITY Ljg;

@@ -1,3 +1,0 @@
-CLASS cb net/minecraft/client/panel/CrashReportPanel
-	METHOD <init> <init> (Lmh;)V
-		ARG 1 crash

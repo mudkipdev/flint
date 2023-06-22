@@ -1,3 +1,0 @@
-CLASS xw net/minecraft/particle/ParticleEntity
-	METHOD a a (Lnw;FFFFFF)V
-		ARG 1 tessellator

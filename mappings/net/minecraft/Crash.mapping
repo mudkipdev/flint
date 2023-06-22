@@ -1,6 +1,0 @@
-CLASS mh net/minecraft/Crash
-	FIELD a message Ljava/lang/String;
-	FIELD b throwable Ljava/lang/Throwable;
-	METHOD <init> <init> (Ljava/lang/String;Ljava/lang/Throwable;)V
-		ARG 1 message
-		ARG 2 throwable

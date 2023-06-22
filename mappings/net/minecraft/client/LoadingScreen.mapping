@@ -1,2 +1,4 @@
 CLASS mk net/minecraft/client/LoadingScreen
 	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft

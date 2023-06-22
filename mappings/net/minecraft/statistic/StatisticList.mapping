@@ -5,6 +5,7 @@ CLASS jl net/minecraft/statistic/StatisticList
 	FIELD D CRAFT_ITEM [Lvr;
 	FIELD E USE_ITEM [Lvr;
 	FIELD F BREAK_ITEM [Lvr;
+	FIELD a idToStatisticMap Ljava/util/Map;
 	FIELD f START_GAME Lvr;
 	FIELD g CREATE_WORLD Lvr;
 	FIELD h LOAD_WORLD Lvr;
@@ -27,6 +28,7 @@ CLASS jl net/minecraft/statistic/StatisticList
 	FIELD y DEATH Lvr;
 	FIELD z KILL_MOB Lvr;
 	METHOD a getStatisticFromID (I)Lvr;
+		ARG 0 id
 	METHOD a replaceSimilarBlocks ([Lvr;)V
 		ARG 0 blocks
 	METHOD a replaceBlock ([Lvr;II)V
