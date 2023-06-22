@@ -21,6 +21,7 @@ CLASS ei net/minecraft/world/WorldInfo
 		ARG 1 worldInfo
 	METHOD <init> <init> (Lnu;)V
 		ARG 1 tag
+	METHOD a createPlayerCompoundTag ()Lnu;
 	METHOD a setSpawnX (I)V
 		ARG 1 x
 	METHOD a setSpawn (III)V

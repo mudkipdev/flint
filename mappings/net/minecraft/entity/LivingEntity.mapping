@@ -14,8 +14,10 @@ CLASS ls net/minecraft/entity/LivingEntity
 		ARG 1 itemStack
 	METHOD g getSound ()Ljava/lang/String;
 	METHOD i getDeathSound ()Ljava/lang/String;
+	METHOD j getDroppedItem ()I
 	METHOD j_ getHurtSound ()Ljava/lang/String;
 	METHOD k getVolume ()F
 	METHOD o livingTick ()V
 	METHOD p isOnLadder ()Z
+	METHOD r_ getHeldItem ()Liz;
 	METHOD y canMove ()Z
