@@ -1,3 +1,0 @@
-CLASS us net/minecraft/MinecraftException
-	METHOD <init> <init> (Ljava/lang/String;)V
-		ARG 1 message

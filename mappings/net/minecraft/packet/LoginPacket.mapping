@@ -1,8 +1,0 @@
-CLASS nz net/minecraft/packet/LoginPacket
-	FIELD a protocolVersionOrEntityID I
-	FIELD b username Ljava/lang/String;
-	FIELD c worldSeed J
-	FIELD d dimension B
-	METHOD <init> <init> (Ljava/lang/String;I)V
-		ARG 1 username
-		ARG 2 protocolVersionOrEntityID

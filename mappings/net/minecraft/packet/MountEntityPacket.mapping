@@ -1,3 +1,0 @@
-CLASS ns net/minecraft/packet/MountEntityPacket
-	FIELD a entityID I
-	FIELD b vehicleID I

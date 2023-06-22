@@ -1,9 +1,0 @@
-CLASS ef net/minecraft/packet/ChunkPacket
-	FIELD a x I
-	FIELD b y I
-	FIELD c z I
-	FIELD d xSize I
-	FIELD e ySize I
-	FIELD f zSize I
-	FIELD g blockData [B
-	FIELD h blockDataLength I

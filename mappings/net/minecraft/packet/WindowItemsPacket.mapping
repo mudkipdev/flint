@@ -1,3 +1,0 @@
-CLASS kb net/minecraft/packet/WindowItemsPacket
-	FIELD a windowID I
-	FIELD b items [Liz;

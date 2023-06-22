@@ -1,0 +1,2 @@
+CLASS rv net/minecraft/network/packet/DespawnEntityPacket
+	FIELD a entityID I

@@ -1,4 +1,0 @@
-CLASS fy net/minecraft/client/canvas/LogoCanvas
-	FIELD a image Ljava/awt/image/BufferedImage;
-	METHOD paint paint (Ljava/awt/Graphics;)V
-		ARG 1 graphics

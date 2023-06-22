@@ -1,0 +1,2 @@
+CLASS mn net/minecraft/network/packet/CloseWindowPacket
+	FIELD a windowID I

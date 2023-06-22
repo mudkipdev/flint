@@ -1,0 +1,6 @@
+CLASS vw net/minecraft/network/packet/BlockActionPacket
+	FIELD a x I
+	FIELD b y I
+	FIELD c z I
+	FIELD d instrumentOrState I
+	FIELD e pitchOrDirection I

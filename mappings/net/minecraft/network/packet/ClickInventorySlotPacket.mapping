@@ -1,0 +1,14 @@
+CLASS qs net/minecraft/network/packet/ClickInventorySlotPacket
+	FIELD a windowID I
+	FIELD b inventorySlot I
+	FIELD c mouseButton I
+	FIELD d transactionID S
+	FIELD e itemStack Liz;
+	FIELD f isShiftClick Z
+	METHOD <init> <init> (IIIZLiz;S)V
+		ARG 1 windowID
+		ARG 2 slot
+		ARG 3 mouseButton
+		ARG 4 isShiftClick
+		ARG 5 itemStack
+		ARG 6 transactionID

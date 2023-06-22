@@ -1,3 +1,0 @@
-CLASS cx net/minecraft/client/utility/Capabilities
-	FIELD a shouldCheckOcclusion Z
-	METHOD a canUseOcclusion ()Z

@@ -1,5 +1,0 @@
-CLASS vh net/minecraft/packet/PlayerLookPacket
-	METHOD <init> <init> (FFZ)V
-		ARG 1 yaw
-		ARG 2 pitch
-		ARG 3 isOnGround
