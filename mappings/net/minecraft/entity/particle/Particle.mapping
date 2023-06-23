@@ -1,4 +1,4 @@
-CLASS xw net/minecraft/particle/Particle
+CLASS xw net/minecraft/entity/particle/Particle
 	METHOD <init> (Lfd;DDDDDD)V
 		ARG 1 world
 		ARG 2 x
