@@ -1,0 +1,4 @@
+CLASS qp net/minecraft/utility/nbt/ByteNBTTag
+	FIELD a value B
+	METHOD <init> <init> (B)V
+		ARG 1 value

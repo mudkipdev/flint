@@ -1,0 +1,6 @@
+CLASS ok ok
+	FIELD a droppedChunks Ljava/util/Set;
+	FIELD f chunks Ljava/util/List;
+	METHOD <init> <init> (Lfd;Lbf;Lcl;)V
+		ARG 1 world
+		ARG 3 worldSource

@@ -1,0 +1,3 @@
+CLASS n n
+	FIELD k world Lfd;
+	FIELD t minecraft Lnet/minecraft/client/Minecraft;

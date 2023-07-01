@@ -1,0 +1,6 @@
+CLASS bj net/minecraft/entity/Spawnable
+	FIELD a entityClass Ljava/lang/Class;
+	FIELD b chance I
+	METHOD <init> <init> (Ljava/lang/Class;I)V
+		ARG 1 entityClass
+		ARG 2 chance

@@ -1,0 +1,19 @@
+CLASS bu net/minecraft/item/ToolTier
+	FIELD a WOOD Lbu;
+	FIELD b STONE Lbu;
+	FIELD c IRON Lbu;
+	FIELD d DIAMOND Lbu;
+	FIELD e GOLD Lbu;
+	FIELD f level I
+	FIELD g durability I
+	FIELD h miningSpeed F
+	FIELD i damage I
+	METHOD <init> <init> (Ljava/lang/String;IIIFI)V
+		ARG 3 level
+		ARG 4 durability
+		ARG 5 miningSpeed
+		ARG 6 damage
+	METHOD a getDurability ()I
+	METHOD b getMiningSpeed ()F
+	METHOD c getDamage ()I
+	METHOD d getLevel ()I

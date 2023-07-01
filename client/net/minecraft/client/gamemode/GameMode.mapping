@@ -1,0 +1,36 @@
+CLASS ob net/minecraft/client/gamemode/GameMode
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> <init> (Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraft
+	METHOD a closeInventory (ILgs;)V
+		ARG 1 windowID
+		ARG 2 player
+	METHOD a setWorld (Lfd;)V
+		ARG 1 world
+	METHOD a setPlayer (Lgs;)V
+		ARG 1 player
+	METHOD a clickBlock (Lgs;Lfd;Liz;IIII)Z
+		ARG 1 player
+		ARG 2 world
+		ARG 3 itemStack
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 metadata
+	METHOD a rightClickEntity (Lgs;Lsn;)V
+		ARG 1 attacker
+		ARG 2 entity
+	METHOD b getReachDistance ()F
+	METHOD b mineBlock (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b createPlayer (Lfd;)Lgs;
+		ARG 1 world
+	METHOD b respawn (Lgs;)V
+		ARG 1 player
+	METHOD b leftClickEntity (Lgs;Lsn;)V
+		ARG 1 attacker
+		ARG 2 entity
+	METHOD c tick ()V
+	METHOD d shouldDrawSurvivalHUD ()Z

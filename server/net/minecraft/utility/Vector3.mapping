@@ -1,0 +1,4 @@
+CLASS ba net/minecraft/utility/Vector3
+	FIELD a x D
+	FIELD b y D
+	FIELD c z D

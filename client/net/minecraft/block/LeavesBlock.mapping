@@ -1,0 +1,12 @@
+CLASS bk net/minecraft/block/LeavesBlock
+	FIELD c baseTextureIndex I
+	METHOD <init> <init> (II)V
+		ARG 1 id
+		ARG 2 texture
+	METHOD a setFancyGraphics (Z)V
+		ARG 1 fancyGraphics
+	METHOD h h (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

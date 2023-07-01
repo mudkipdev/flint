@@ -1,0 +1,4 @@
+CLASS mb net/minecraft/server/command/CommandExecutor
+	METHOD b sendMessage (Ljava/lang/String;)V
+		ARG 1 message
+	METHOD d getName ()Ljava/lang/String;

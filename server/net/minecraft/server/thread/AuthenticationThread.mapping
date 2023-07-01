@@ -1,0 +1,6 @@
+CLASS cv net/minecraft/server/thread/AuthenticationThread
+	FIELD a packet Liv;
+	FIELD b networkHandler Lee;
+	METHOD <init> (Lee;Liv;)V
+		ARG 1 networkHandler
+		ARG 2 packet

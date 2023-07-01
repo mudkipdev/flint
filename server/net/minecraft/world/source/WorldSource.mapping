@@ -1,0 +1,6 @@
+CLASS bl net/minecraft/world/source/WorldSource
+	METHOD a doesChunkExist (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD a (ZLpj;)Z
+		ARG 2 progressListener

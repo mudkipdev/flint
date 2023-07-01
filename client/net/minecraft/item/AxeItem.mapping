@@ -1,0 +1,5 @@
+CLASS ta net/minecraft/item/AxeItem
+	FIELD bk effectiveBlocks [Luu;
+	METHOD <init> <init> (ILbu;)V
+		ARG 1 id
+		ARG 2 tier

@@ -1,0 +1,186 @@
+CLASS gm net/minecraft/item/Item
+	FIELD A DIAMOND_AXE Lgm;
+	FIELD B STICK Lgm;
+	FIELD C BOWL Lgm;
+	FIELD D MUSHROOM_STEW Lgm;
+	FIELD E GOLDEN_SWORD Lgm;
+	FIELD F GOLDEN_SHOVEL Lgm;
+	FIELD G GOLDEN_PICKAXE Lgm;
+	FIELD H GOLDEN_AXE Lgm;
+	FIELD I STRING Lgm;
+	FIELD J FEATHER Lgm;
+	FIELD K GUNPOWDER Lgm;
+	FIELD L WOODEN_HOE Lgm;
+	FIELD M STONE_HOE Lgm;
+	FIELD N IRON_HOE Lgm;
+	FIELD O DIAMOND_HOE Lgm;
+	FIELD P GOLD_HOE Lgm;
+	FIELD Q WHEAT_SEEDS Lgm;
+	FIELD R WHEAT Lgm;
+	FIELD S BREAD Lgm;
+	FIELD T LEATHER_HELMET Lgm;
+	FIELD U LEATHER_CHESTPLATE Lgm;
+	FIELD V LEATHER_LEGGINGS Lgm;
+	FIELD W LEATHER_BOOTS Lgm;
+	FIELD X CHAIN_HELMET Lgm;
+	FIELD Y CHAIN_CHESTPLATE Lgm;
+	FIELD Z CHAIN_LEGGINGS Lgm;
+	FIELD aA REDSTONE_DUST Lgm;
+	FIELD aB SNOWBALL Lgm;
+	FIELD aC BOAT Lgm;
+	FIELD aD LEATHER Lgm;
+	FIELD aE MILK Lgm;
+	FIELD aF BRICK Lgm;
+	FIELD aG CLAY Lgm;
+	FIELD aH SUGAR_CANE Lgm;
+	FIELD a maxMetadata I
+	FIELD aI PAPER Lgm;
+	FIELD aJ BOOK Lgm;
+	FIELD aK SLIMEBALL Lgm;
+	FIELD aL MINECART_WITH_CHEST Lgm;
+	FIELD aM MINECART_WITH_FURNACE Lgm;
+	FIELD aN EGG Lgm;
+	FIELD aO COMPASS Lgm;
+	FIELD aP FISHING_ROD Lgm;
+	FIELD aQ CLOCK Lgm;
+	FIELD aR GLOWSTONE_DUST Lgm;
+	FIELD aS RAW_FISH Lgm;
+	FIELD aT COOKED_FISH Lgm;
+	FIELD aU DYE Lgm;
+	FIELD aV BONE Lgm;
+	FIELD aW SUGAR Lgm;
+	FIELD aX CAKE Lgm;
+	FIELD aY BED Lgm;
+	FIELD aZ REDSTONE_REPEATER Lgm;
+	FIELD aa CHAIN_BOOTS Lgm;
+	FIELD ab IRON_HELMET Lgm;
+	FIELD ac IRON_CHESTPLATE Lgm;
+	FIELD ad IRON_LEGGINGS Lgm;
+	FIELD ae IRON_BOOTS Lgm;
+	FIELD af DIAMOND_HELMET Lgm;
+	FIELD ag DIAMOND_CHESTPLATE Lgm;
+	FIELD ah DIAMOND_LEGGINGS Lgm;
+	FIELD ai DIAMOND_BOOTS Lgm;
+	FIELD aj GOLDEN_HELMET Lgm;
+	FIELD ak GOLDEN_CHESTPLATE Lgm;
+	FIELD al GOLDEN_LEGGINGS Lgm;
+	FIELD am GOLDEN_BOOTS Lgm;
+	FIELD an FLINT Lgm;
+	FIELD ao RAW_PORKCHOP Lgm;
+	FIELD ap COOKED_PORKCHOP Lgm;
+	FIELD aq PAINTING Lgm;
+	FIELD ar GOLDEN_APPLE Lgm;
+	FIELD as SIGN Lgm;
+	FIELD at WOODEN_DOOR Lgm;
+	FIELD au BUCKET Lgm;
+	FIELD av WATER_BUCKET Lgm;
+	FIELD aw LAVA_BUCKET Lgm;
+	FIELD ax MINECART Lgm;
+	FIELD ay SADDLE Lgm;
+	FIELD az IRON_DOOR Lgm;
+	FIELD b random Ljava/util/Random;
+	FIELD ba COOKIE Lgm;
+	FIELD bb MAP Lwr;
+	FIELD bc SHEARS Lbl;
+	FIELD bd _13_MUSIC_DISC Lgm;
+	FIELD be CAT_MUSIC_DISC Lgm;
+	FIELD bf id I
+	FIELD bg maxQuantity I
+	FIELD bh textureIndex I
+	FIELD bj isMetadataAllowed Z
+	FIELD bl translationKey Ljava/lang/String;
+	FIELD c items [Lgm;
+	FIELD d IRON_SHOVEL Lgm;
+	FIELD e IRON_PICKAXE Lgm;
+	FIELD f IRON_AXE Lgm;
+	FIELD g FLINT_AND_STEEL Lgm;
+	FIELD h APPLE Lgm;
+	FIELD i BOW Lgm;
+	FIELD j ARROW Lgm;
+	FIELD k COAL Lgm;
+	FIELD l DIAMOND Lgm;
+	FIELD m IRON_INGOT Lgm;
+	FIELD n GOLD_INGOT Lgm;
+	FIELD o IRON_SWORD Lgm;
+	FIELD p WOODEN_SWORD Lgm;
+	FIELD q WOODEN_SHOVEL Lgm;
+	FIELD r WOODEN_PICKAXE Lgm;
+	FIELD s WOODEN_AXE Lgm;
+	FIELD t STONE_SWORD Lgm;
+	FIELD u STONE_SHOVEL Lgm;
+	FIELD v STONE_PICKAXE Lgm;
+	FIELD w STONE_AXE Lgm;
+	FIELD x DIAMOND_SWORD Lgm;
+	FIELD y DIAMOND_SHOVEL Lgm;
+	FIELD z DIAMOND_PICKAXE Lgm;
+	METHOD <init> <init> (I)V
+		ARG 1 id
+	METHOD a getTranslationKey ()Ljava/lang/String;
+	METHOD a getTexture (I)I
+		ARG 1 metadata
+	METHOD a setTexturePosition (II)Lgm;
+		ARG 1 x
+		ARG 2 y
+	METHOD a getTranslationKey (Liz;)Ljava/lang/String;
+		ARG 1 itemStack
+	METHOD a breakBlock (Liz;IIIILls;)Z
+		ARG 1 itemStack
+		ARG 2 itemID
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 living
+	METHOD a onRightClick (Liz;Lfd;Lgs;)Liz;
+		ARG 1 itemStack
+		ARG 2 world
+		ARG 3 player
+	METHOD a a (Liz;Lfd;Lsn;IZ)V
+		ARG 1 itemStack
+		ARG 2 world
+		ARG 3 entity
+	METHOD a onClickBlock (Liz;Lgs;Lfd;IIII)Z
+		ARG 1 itemStack
+		ARG 2 player
+		ARG 3 world
+		ARG 4 x
+		ARG 5 y
+		ARG 6 z
+		ARG 7 metadata
+	METHOD a onRightClickEntity (Liz;Lls;)V
+		ARG 1 itemStack
+		ARG 2 living
+	METHOD a hitEntity (Liz;Lls;Lls;)Z
+		ARG 1 itemStack
+		ARG 2 victim
+		ARG 3 attacker
+	METHOD a getMiningSpeedAgainst (Liz;Luu;)F
+		ARG 1 itemStack
+		ARG 2 block
+	METHOD a setTranslationKey (Ljava/lang/String;)Lgm;
+		ARG 1 translationKey
+	METHOD a getDamageAgainst (Lsn;)I
+		ARG 1 entity
+	METHOD a canDropBlock (Luu;)Z
+		ARG 1 block
+	METHOD a setMetadataAllowed (Z)Lgm;
+		ARG 1 isMetadataAllowed
+	METHOD b is3D ()Z
+	METHOD b getTexture (Liz;)I
+		ARG 1 itemStack
+	METHOD b b (Liz;Lfd;Lgs;)V
+		ARG 1 itemStack
+		ARG 2 world
+		ARG 3 gs2
+	METHOD c setTextureIndex (I)Lgm;
+		ARG 1 textureIndex
+	METHOD d getMaxQuantity ()I
+	METHOD d setMaxQuantity (I)Lgm;
+		ARG 1 maxQuantity
+	METHOD e isMetadataAllowed ()Z
+	METHOD e setMaxMetadata (I)Lgm;
+		ARG 1 maxMetadata
+	METHOD f getMaxMetadata ()I
+	METHOD f getColorMultiplier (I)I
+		ARG 1 metadata
+	METHOD g canDamage ()Z
+	METHOD k getNameTranslationKey ()Ljava/lang/String;

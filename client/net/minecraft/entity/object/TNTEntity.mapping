@@ -1,0 +1,3 @@
+CLASS qw net/minecraft/entity/object/TNTEntity
+	FIELD a ticksUntilExplosion I
+	METHOD k explode ()V

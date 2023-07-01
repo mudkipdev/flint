@@ -1,0 +1,4 @@
+CLASS bt net/minecraft/server/thread/TimerHackThread
+	FIELD a server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server

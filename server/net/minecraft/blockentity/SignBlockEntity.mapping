@@ -1,0 +1,7 @@
+CLASS pq net/minecraft/blockentity/SignBlockEntity
+	FIELD a lines [Ljava/lang/String;
+	FIELD b cursorLine I
+	FIELD c unsaved Z
+	METHOD a isUnsaved ()Z
+	METHOD a setUnsaved (Z)V
+		ARG 1 isUnsaved

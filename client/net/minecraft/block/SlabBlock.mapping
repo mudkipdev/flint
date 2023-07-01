@@ -1,0 +1,6 @@
+CLASS ys net/minecraft/block/SlabBlock
+	FIELD a translationKeys [Ljava/lang/String;
+	FIELD b isFull Z
+	METHOD <init> <init> (IZ)V
+		ARG 1 id
+		ARG 2 isFull

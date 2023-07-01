@@ -1,0 +1,337 @@
+CLASS uu net/minecraft/block/Block
+	FIELD A BEDROCK Luu;
+	FIELD B WATER Luu;
+	FIELD C FLOWING_WATER Luu;
+	FIELD D LAVA Luu;
+	FIELD E FLOWING_LAVA Luu;
+	FIELD F SAND Luu;
+	FIELD G GRAVEL Luu;
+	FIELD H GOLD_ORE Luu;
+	FIELD I IRON_ORE Luu;
+	FIELD J COAL_ORE Luu;
+	FIELD K LOG Luu;
+	FIELD L LEAVES Lbk;
+	FIELD M SPONGE Luu;
+	FIELD N GLASS Luu;
+	FIELD O LAPIS_ORE Luu;
+	FIELD P LAPIS Luu;
+	FIELD Q DISPENSER Luu;
+	FIELD R SANDSTONE Luu;
+	FIELD S NOTE_BLOCK Luu;
+	FIELD T BED Luu;
+	FIELD U POWERED_RAIL Luu;
+	FIELD V DETECTOR_RAIL Luu;
+	FIELD W STICKY_PISTON_BASE Luu;
+	FIELD X COBWEB Luu;
+	FIELD Y TALL_GRASS Lru;
+	FIELD Z DEAD_BUSH Ljb;
+	FIELD aA WHEAT Luu;
+	FIELD aB FARMLAND Luu;
+	FIELD aC FURNACE Luu;
+	FIELD aD ACTIVE_FURNACE Luu;
+	FIELD aE SIGN Luu;
+	FIELD aF WOODEN_DOOR Luu;
+	FIELD aG LADDER Luu;
+	FIELD aH RAIL Luu;
+	FIELD aI STONE_STAIRS Luu;
+	FIELD aJ WALLED_SIGN Luu;
+	FIELD aK LEVER Luu;
+	FIELD aL STONE_PRESSURE_PLATE Luu;
+	FIELD a translationKey Ljava/lang/String;
+	FIELD aM IRON_DOOR Luu;
+	FIELD aN WOODEN_PRESSURE_PLATE Luu;
+	FIELD aO REDSTONE_ORE Luu;
+	FIELD aP LIT_REDSTONE_ORE Luu;
+	FIELD aQ REDSTONE_TORCH Luu;
+	FIELD aR ACTIVE_REDSTONE_TORCH Luu;
+	FIELD aS STONE_BUTTON Luu;
+	FIELD aT SNOW_LAYER Luu;
+	FIELD aU ICE Luu;
+	FIELD aV SNOW Luu;
+	FIELD aW CACTUS Luu;
+	FIELD aX CLAY Luu;
+	FIELD aY SUGAR_CANE Luu;
+	FIELD aZ JUKEBOX Luu;
+	FIELD aa PISTON_BASE Luu;
+	FIELD ab PISTON_EXTENSION Lh;
+	FIELD ac WOOL Luu;
+	FIELD ae DANDELION Lwb;
+	FIELD af ROSE Lwb;
+	FIELD ag BROWN_MUSHROOM Lwb;
+	FIELD ah RED_MUSHROOM Lwb;
+	FIELD ai GOLD Luu;
+	FIELD aj IRON Luu;
+	FIELD ak DOUBLE_SLAB Luu;
+	FIELD al SLAB Luu;
+	FIELD am BRICKS Luu;
+	FIELD an TNT Luu;
+	FIELD ao BOOKSHELF Luu;
+	FIELD ap MOSSY_COBBLESTONE Luu;
+	FIELD aq OBSIDIAN Luu;
+	FIELD ar TORCH Luu;
+	FIELD as FIRE Lyq;
+	FIELD at MOB_SPAWNER Luu;
+	FIELD au WOODEN_STAIRS Luu;
+	FIELD av CHEST Luu;
+	FIELD aw REDSTONE_DUST Luu;
+	FIELD ax DIAMOND_ORE Luu;
+	FIELD ay DIAMOND Luu;
+	FIELD az CRAFTING_TABLE Luu;
+	FIELD bA material Lln;
+	FIELD bB slipperiness F
+	FIELD ba FENCE Luu;
+	FIELD bb PUMPKIN Luu;
+	FIELD bc NETHERRACK Luu;
+	FIELD bd SOUL_SAND Luu;
+	FIELD be GLOWSTONE Luu;
+	FIELD bf PORTAL Lak;
+	FIELD bg JACK_O_LANTERN Luu;
+	FIELD bh CAKE Luu;
+	FIELD bi REDSTONE_REPEATER Luu;
+	FIELD bj ACTIVE_REDSTONE_REPEATER Luu;
+	FIELD bk LOCKED_CHEST Luu;
+	FIELD bl TRAPDOOR Luu;
+	FIELD bm textureIndex I
+	FIELD bn id I
+	FIELD bo hardness F
+	FIELD bp blastResistance F
+	FIELD br hasStats Z
+	FIELD by sound Lct;
+	FIELD d DEFAULT_SOUND Lct;
+	FIELD e WOOD_SOUND Lct;
+	FIELD f DIRT_SOUND Lct;
+	FIELD g GRASS_SOUND Lct;
+	FIELD h STONE_SOUND Lct;
+	FIELD i METAL_SOUND Lct;
+	FIELD j GLASS_SOUND Lct;
+	FIELD k WOOL_SOUND Lct;
+	FIELD l SAND_SOUND Lct;
+	FIELD m blocks [Luu;
+	FIELD o opaquenessTable [Z
+	FIELD p hasBlockEntityTable [Z
+	FIELD q opacityTable [I
+	FIELD s brightnessTable [I
+	FIELD t neighborNotificationsOnMetadataUpdateTable [Z
+	FIELD u STONE Luu;
+	FIELD v GRASS_BLOCK Lwp;
+	FIELD w DIRT Luu;
+	FIELD x COBBLESTONE Luu;
+	FIELD y WOODEN_PLANKS Luu;
+	FIELD z SAPLING Luu;
+	METHOD <init> <init> (IILln;)V
+		ARG 1 id
+		ARG 2 textureIndex
+		ARG 3 material
+	METHOD <init> <init> (ILln;)V
+		ARG 1 id
+		ARG 2 material
+	METHOD a setBrightness (F)Luu;
+		ARG 1 lightValue
+	METHOD a setSize (FFFFFF)V
+	METHOD a getTexture (I)I
+		ARG 1 side
+	METHOD a getTexture (II)I
+		ARG 1 side
+		ARG 2 metadata
+	METHOD a getIDDropped (ILjava/util/Random;)I
+		ARG 1 metadata
+		ARG 2 random
+	METHOD a setSound (Lct;)Luu;
+		ARG 1 sound
+	METHOD a canBePlacedAt (Lfd;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a canBePlacedAt (Lfd;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD a drop (Lfd;IIIIF)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+		ARG 6 chance
+	METHOD a onAction (Lfd;IIIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 instrument
+		ARG 6 pitch
+	METHOD a a (Lfd;IIILbt;Lbt;)Lvf;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a onRightClick (Lfd;IIILgs;)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD a a (Lfd;IIILiz;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 itemStack
+	METHOD a tick (Lfd;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD a onPlacedByPlayer (Lfd;IIILls;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 living
+	METHOD a onCollisionWithEntity (Lfd;IIILsn;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD a mine (Lfd;Lgs;IIII)V
+		ARG 1 world
+		ARG 2 player
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 metadata
+	METHOD a a (Lgs;)F
+		ARG 1 player
+	METHOD a setTranslationKey (Ljava/lang/String;)Luu;
+		ARG 1 translationKey
+	METHOD a getQuantityDropped (Ljava/util/Random;)I
+		ARG 1 random
+	METHOD a setSize (Lxp;III)V
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a getTexture (Lxp;IIII)I
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD b getRenderType ()I
+	METHOD b setBlastResistance (F)Luu;
+		ARG 1 blastResistance
+	METHOD b b (I)I
+		ARG 1 metadata
+	METHOD b onRemove (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b onNotifiedByNeighbor (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+	METHOD b onLeftClick (Lfd;IIILgs;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 player
+	METHOD b randomTick (Lfd;IIILjava/util/Random;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 random
+	METHOD b walkOn (Lfd;IIILsn;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 entity
+	METHOD b getColor (Lxp;III)I
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD b shouldRenderSide (Lxp;IIII)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 side
+	METHOD b_ getDroppedMetadata (I)I
+		ARG 1 metadata
+	METHOD c isOpaque ()Z
+	METHOD c setHardness (F)Luu;
+		ARG 1 hardness
+	METHOD c onAdd (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD c c (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+	METHOD c c (Lxp;IIII)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+	METHOD d shouldRenderNormally ()Z
+	METHOD d onExplode (Lfd;III)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD d d (Lfd;IIII)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 n4
+	METHOD e getCollisionAABB (Lfd;III)Leq;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD e onPlace (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+	METHOD f getSelectionAABB (Lfd;III)Leq;
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g setDefaultSize ()V
+	METHOD g setOpacity (I)Luu;
+		ARG 1 opacity
+	METHOD g canBeAt (Lfd;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD g drop (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 metadata
+	METHOD h getMobility ()I
+	METHOD j disableNotifyingNeighborsOnMetadataUpdate ()Luu;
+	METHOD l setUnbreakable ()Luu;
+	METHOD m getHardness ()F
+	METHOD n getNameTranslationKey ()Ljava/lang/String;
+	METHOD o getTranslationKey ()Ljava/lang/String;
+	METHOD p isStatsEnabled ()Z
+	METHOD q disableStats ()Luu;
+	METHOD v_ canCollideWith ()Z

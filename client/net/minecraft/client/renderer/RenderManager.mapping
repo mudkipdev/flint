@@ -1,0 +1,3 @@
+CLASS th net/minecraft/client/renderer/RenderManager
+	FIELD a instance Lth;
+	FIELD o renderMap Ljava/util/Map;

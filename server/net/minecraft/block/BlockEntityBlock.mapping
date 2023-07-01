@@ -1,0 +1,2 @@
+CLASS lb net/minecraft/block/BlockEntityBlock
+	METHOD a_ createBlockEntity ()Ljh;

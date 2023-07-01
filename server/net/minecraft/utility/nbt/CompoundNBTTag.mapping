@@ -1,0 +1,60 @@
+CLASS iq net/minecraft/utility/nbt/CompoundNBTTag
+	FIELD a tags Ljava/util/Map;
+	METHOD a setByte (Ljava/lang/String;B)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setDouble (Ljava/lang/String;D)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setFloat (Ljava/lang/String;F)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setInteger (Ljava/lang/String;I)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setLong (Ljava/lang/String;J)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a set (Ljava/lang/String;Lfo;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setCompoundTag (Ljava/lang/String;Liq;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setString (Ljava/lang/String;Ljava/lang/String;)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setShort (Ljava/lang/String;S)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setBoolean (Ljava/lang/String;Z)V
+		ARG 1 key
+		ARG 2 value
+	METHOD a setByteArray (Ljava/lang/String;[B)V
+		ARG 1 key
+		ARG 2 value
+	METHOD b hasTag (Ljava/lang/String;)Z
+		ARG 1 key
+	METHOD c getValues ()Ljava/util/Collection;
+	METHOD c getByte (Ljava/lang/String;)B
+		ARG 1 key
+	METHOD d getShort (Ljava/lang/String;)S
+		ARG 1 key
+	METHOD e getInteger (Ljava/lang/String;)I
+		ARG 1 key
+	METHOD f getLong (Ljava/lang/String;)J
+		ARG 1 key
+	METHOD g getFloat (Ljava/lang/String;)F
+		ARG 1 key
+	METHOD h getDouble (Ljava/lang/String;)D
+		ARG 1 key
+	METHOD i getString (Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+	METHOD j getByteArray (Ljava/lang/String;)[B
+		ARG 1 key
+	METHOD k getCompoundTag (Ljava/lang/String;)Liq;
+		ARG 1 key
+	METHOD l getList (Ljava/lang/String;)Llr;
+		ARG 1 key
+	METHOD m getBoolean (Ljava/lang/String;)Z
+		ARG 1 key

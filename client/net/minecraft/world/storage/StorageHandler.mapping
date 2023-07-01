@@ -1,0 +1,6 @@
+CLASS wt net/minecraft/world/storage/StorageHandler
+	METHOD a saveWorldInfo (Lei;Ljava/util/List;)V
+		ARG 1 worldInfo
+	METHOD a a (Lxa;)Lbf;
+		ARG 1 dimension
+	METHOD c getWorldInfo ()Lei;

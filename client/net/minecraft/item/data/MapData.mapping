@@ -1,0 +1,6 @@
+CLASS iu net/minecraft/item/data/MapData
+	FIELD b xCenter I
+	FIELD c zCenter I
+	FIELD d dimension B
+	FIELD e scale B
+	FIELD f pixels [B

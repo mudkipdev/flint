@@ -1,0 +1,18 @@
+CLASS xa net/minecraft/world/dimension/Dimension
+	FIELD a world Lfd;
+	FIELD b biomeManager Lxv;
+	FIELD d isHot Z
+	FIELD e hasNoSky Z
+	METHOD a createBiomeManager ()V
+	METHOD a getSunriseAndSunsetColors (FF)[F
+	METHOD a getDimension (I)Lxa;
+		ARG 0 id
+	METHOD a canSpawnAt (II)Z
+		ARG 1 x
+		ARG 2 z
+	METHOD a setWorld (Lfd;)V
+		ARG 1 world
+	METHOD b createGenerator ()Lcl;
+	METHOD c hasVoidSky ()Z
+	METHOD d getCloudHeight ()F
+	METHOD f canRespawn ()Z

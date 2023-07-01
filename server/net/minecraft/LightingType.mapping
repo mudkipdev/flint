@@ -1,0 +1,6 @@
+CLASS co net/minecraft/LightingType
+	FIELD a SKY Lco;
+	FIELD b BLOCK Lco;
+	FIELD c lightValue I
+	METHOD <init> (Ljava/lang/String;II)V
+		ARG 3 lightValue

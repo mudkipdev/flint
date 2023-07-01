@@ -1,0 +1,17 @@
+CLASS ky net/minecraft/server/Config
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b properties Ljava/util/Properties;
+	FIELD c file Ljava/io/File;
+	METHOD <init> (Ljava/io/File;)V
+		ARG 1 file
+	METHOD a generate ()V
+	METHOD a getInteger (Ljava/lang/String;I)I
+		ARG 1 key
+	METHOD a getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+		ARG 1 key
+	METHOD a getBoolean (Ljava/lang/String;Z)Z
+		ARG 1 key
+	METHOD b save ()V
+	METHOD b setBoolean (Ljava/lang/String;Z)V
+		ARG 1 key
+		ARG 2 value

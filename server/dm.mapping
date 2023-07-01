@@ -1,0 +1,2 @@
+CLASS dm
+	FIELD a server Lnet/minecraft/server/MinecraftServer;

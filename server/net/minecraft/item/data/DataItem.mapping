@@ -1,0 +1,2 @@
+CLASS bo net/minecraft/item/data/DataItem
+	METHOD b createPacket (Lfy;Ldj;Lem;)Lgt;

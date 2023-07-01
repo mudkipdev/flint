@@ -1,0 +1,19 @@
+CLASS fo net/minecraft/utility/nbt/NBTTag
+	FIELD a name Ljava/lang/String;
+	METHOD a getID ()B
+	METHOD a fromID (B)Lfo;
+		ARG 0 id
+	METHOD a writeTag (Lfo;Ljava/io/DataOutput;)V
+		ARG 0 tag
+		ARG 1 dataOutput
+	METHOD a read (Ljava/io/DataInput;)V
+		ARG 1 dataInput
+	METHOD a write (Ljava/io/DataOutput;)V
+		ARG 1 dataOutput
+	METHOD a setName (Ljava/lang/String;)Lfo;
+		ARG 1 name
+	METHOD b getName ()Ljava/lang/String;
+	METHOD b getNameForID (B)Ljava/lang/String;
+		ARG 0 id
+	METHOD b readTag (Ljava/io/DataInput;)Lfo;
+		ARG 0 dataInput

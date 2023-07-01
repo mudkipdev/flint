@@ -1,0 +1,2 @@
+CLASS cf net/minecraft/entity/projectile/FireballEntity
+	FIELD j isInGround Z

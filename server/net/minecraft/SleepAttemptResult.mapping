@@ -1,0 +1,6 @@
+CLASS bw net/minecraft/SleepAttemptResult
+	FIELD a SUCCESS Lbw;
+	FIELD b EXPLOSION Lbw;
+	FIELD c DAYTIME Lbw;
+	FIELD d TOO_FAR_AWAY Lbw;
+	FIELD e CANNOT_SLEEP Lbw;

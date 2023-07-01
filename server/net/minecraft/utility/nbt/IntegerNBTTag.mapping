@@ -1,0 +1,4 @@
+CLASS jq net/minecraft/utility/nbt/IntegerNBTTag
+	FIELD a value I
+	METHOD <init> (I)V
+		ARG 1 value

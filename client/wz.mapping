@@ -1,0 +1,7 @@
+CLASS wz wz
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD b hostname Ljava/lang/String;
+	FIELD c port I
+	METHOD <init> <init> (Lvx;Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 3 hostname
+		ARG 4 port

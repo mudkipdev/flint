@@ -1,0 +1,6 @@
+CLASS eb net/minecraft/LightingType
+	FIELD a SKY Leb;
+	FIELD b BLOCK Leb;
+	FIELD c lightValue I
+	METHOD <init> <init> (Ljava/lang/String;II)V
+		ARG 3 lightValue

@@ -1,0 +1,3 @@
+CLASS wr net/minecraft/item/MapItem
+	METHOD a a (SLfd;)Liu;
+		ARG 1 world

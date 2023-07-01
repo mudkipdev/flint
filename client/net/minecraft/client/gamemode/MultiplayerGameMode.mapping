@@ -1,0 +1,6 @@
+CLASS xk net/minecraft/client/gamemode/MultiplayerGameMode
+	FIELD k networkHandler Lnb;
+	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnb;)V
+		ARG 1 minecraft
+		ARG 2 networkHandler
+	METHOD e changeHeldItem ()V

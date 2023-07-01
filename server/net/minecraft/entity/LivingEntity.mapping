@@ -1,0 +1,2 @@
+CLASS hl net/minecraft/entity/LivingEntity
+	FIELD R texture Ljava/lang/String;

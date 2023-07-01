@@ -1,0 +1,3 @@
+CLASS ng net/minecraft/recipes/DyeRecipes
+	METHOD a addRecipes (Lhk;)V
+		ARG 1 recipes

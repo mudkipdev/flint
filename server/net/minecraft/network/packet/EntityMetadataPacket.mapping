@@ -1,0 +1,1 @@
+CLASS nc net/minecraft/network/packet/EntityMetadataPacket

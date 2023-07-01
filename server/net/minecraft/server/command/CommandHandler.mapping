@@ -1,0 +1,9 @@
+CLASS mc net/minecraft/server/command/CommandHandler
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD a (Ljava/lang/String;Ljava/lang/String;Lmb;)V
+		ARG 3 executor
+	METHOD a sendHelpMessage (Lmb;)V
+		ARG 1 executor

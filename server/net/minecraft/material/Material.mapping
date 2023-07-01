@@ -1,0 +1,43 @@
+CLASS hj net/minecraft/material/Material
+	FIELD A COBWEB Lhj;
+	FIELD B PISTON Lhj;
+	FIELD C mapColor Lcm;
+	FIELD D isFlammable Z
+	FIELD H mobility I
+	FIELD a AIR Lhj;
+	FIELD b GRASS Lhj;
+	FIELD c DIRT Lhj;
+	FIELD d WOOD Lhj;
+	FIELD e STONE Lhj;
+	FIELD f IRON Lhj;
+	FIELD g WATER Lhj;
+	FIELD h LAVA Lhj;
+	FIELD i LEAVES Lhj;
+	FIELD j PLANT Lhj;
+	FIELD k SPONGE Lhj;
+	FIELD l WOOL Lhj;
+	FIELD m FIRE Lhj;
+	FIELD n SAND Lhj;
+	FIELD o REDSTONE Lhj;
+	FIELD p GLASS Lhj;
+	FIELD q EXPLOSIVE Lhj;
+	FIELD r CORAL Lhj;
+		COMMENT This is speculation since Notch was planning to add coral blocks around the same time this was added.
+	FIELD s ICE Lhj;
+	FIELD t SNOW_LAYER Lhj;
+	FIELD u SNOW Lhj;
+	FIELD v CACTUS Lhj;
+	FIELD w CLAY Lhj;
+	FIELD x PUMPKIN Lhj;
+	FIELD y PORTAL Lhj;
+	FIELD z CAKE Lhj;
+	METHOD <init> (Lcm;)V
+		ARG 1 mapColor
+	METHOD a isSolid ()Z
+	METHOD d isLiquid ()Z
+	METHOD e isFlammable ()Z
+	METHOD i isDroppable ()Z
+	METHOD j getMobility ()I
+	METHOD k enableDroppingOnPush ()Lhj;
+	METHOD l disablePushing ()Lhj;
+	METHOD o enableFlammability ()Lhj;

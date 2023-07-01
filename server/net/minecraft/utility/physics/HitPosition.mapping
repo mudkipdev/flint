@@ -1,0 +1,16 @@
+CLASS nh net/minecraft/utility/physics/HitPosition
+	FIELD a type Lgd;
+	FIELD b blockX I
+	FIELD c blockY I
+	FIELD d blockZ I
+	FIELD e blockSide I
+	FIELD f vector Lba;
+	FIELD g entity Llq;
+	METHOD <init> (IIIILba;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 side
+		ARG 5 vector
+	METHOD <init> (Llq;)V
+		ARG 1 entity

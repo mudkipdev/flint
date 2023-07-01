@@ -1,0 +1,8 @@
+CLASS ha net/minecraft/server/network/ServerNetworkHandler
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b networkManager Ljl;
+	FIELD e player Ldl;
+	METHOD a disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD c (Ljava/lang/String;)V
+		ARG 1 message

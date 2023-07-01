@@ -1,0 +1,6 @@
+CLASS fc net/minecraft/block/PumpkinBlock
+	FIELD a isJackOLantern Z
+	METHOD <init> <init> (IIZ)V
+		ARG 1 id
+		ARG 2 texture
+		ARG 3 isJackOLantern

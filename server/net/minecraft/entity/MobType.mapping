@@ -1,0 +1,4 @@
+CLASS hh net/minecraft/entity/MobType
+	FIELD a MONSTER Lhh;
+	FIELD b ANIMAL Lhh;
+	FIELD c WATER Lhh;

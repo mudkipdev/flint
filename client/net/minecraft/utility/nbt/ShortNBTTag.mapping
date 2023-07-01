@@ -1,0 +1,4 @@
+CLASS ul net/minecraft/utility/nbt/ShortNBTTag
+	FIELD a value S
+	METHOD <init> <init> (S)V
+		ARG 1 value

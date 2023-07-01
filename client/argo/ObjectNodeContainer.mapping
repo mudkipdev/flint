@@ -1,0 +1,2 @@
+CLASS my argo/ObjectNodeContainer
+	FIELD b adapter Llt;

@@ -1,0 +1,32 @@
+CLASS lq net/minecraft/entity/Entity
+	FIELD aG entityID I
+	FIELD a lastEntityID I
+	FIELD aJ passenger Llq;
+	FIELD aK vehicle Llq;
+	FIELD aL world Ldj;
+	FIELD aP x D
+	FIELD aQ y D
+	FIELD aR z D
+	FIELD aS xVelocity D
+	FIELD aT yVelocity D
+	FIELD aU zVelocity D
+	FIELD aV yaw F
+	FIELD aW pitch F
+	FIELD aZ aabb Lcz;
+	FIELD bC air I
+	FIELD bE metadata Lmo;
+	FIELD bf isInWeb Z
+	FIELD bh isRemoved Z
+	FIELD bv random Ljava/util/Random;
+	FIELD bz maxAir I
+	METHOD <init> (Ldj;)V
+		ARG 1 world
+	METHOD J remove ()V
+	METHOD aa getMetadata ()Lmo;
+	METHOD b initialize ()V
+	METHOD d writeEntityToNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD e readEntityFromNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD equals (Ljava/lang/Object;)Z
+		ARG 1 object

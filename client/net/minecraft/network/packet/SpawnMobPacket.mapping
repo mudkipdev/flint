@@ -1,0 +1,13 @@
+CLASS jm net/minecraft/network/packet/SpawnMobPacket
+	FIELD a entityID I
+	FIELD b type B
+	FIELD c x I
+	FIELD d y I
+	FIELD e z I
+	FIELD f yaw B
+	FIELD g pitch B
+	FIELD h metadata Lud;
+	FIELD i receivedMetadata Ljava/util/List;
+	METHOD <init> <init> (Lls;)V
+		ARG 1 mob
+	METHOD b getReceivedMetadata ()Ljava/util/List;

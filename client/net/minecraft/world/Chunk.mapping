@@ -1,0 +1,41 @@
+CLASS lm net/minecraft/world/Chunk
+	FIELD b blockArray [B
+	FIELD d world Lfd;
+	FIELD e metadataArray Lwi;
+	FIELD f skyLightArray Lwi;
+	FIELD g blockLightArray Lwi;
+	FIELD j chunkX I
+	FIELD k chunkZ I
+	METHOD <init> (Lfd;II)V
+		ARG 1 world
+		ARG 2 chunkX
+		ARG 3 chunkZ
+	METHOD <init> (Lfd;[BII)V
+		ARG 1 world
+		ARG 2 blockArray
+		ARG 3 chunkX
+		ARG 4 chunkZ
+	METHOD a isAt (II)Z
+		ARG 1 chunkX
+		ARG 2 chunkZ
+	METHOD a createRandomGenerator (J)Ljava/util/Random;
+	METHOD a getLightValue (Leb;III)I
+		ARG 1 lightingType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+	METHOD a setLightValue (Leb;IIII)V
+		ARG 1 lightingType
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 lightValue
+	METHOD b getMetadata (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD b setMetadata (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 value

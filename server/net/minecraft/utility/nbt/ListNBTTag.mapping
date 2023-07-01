@@ -1,0 +1,8 @@
+CLASS lr net/minecraft/utility/nbt/ListNBTTag
+	FIELD a tags Ljava/util/List;
+	FIELD b typeID B
+	METHOD a get (I)Lfo;
+		ARG 1 index
+	METHOD a add (Lfo;)V
+		ARG 1 tag
+	METHOD c getSize ()I

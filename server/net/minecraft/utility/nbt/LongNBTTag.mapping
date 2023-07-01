@@ -1,0 +1,4 @@
+CLASS hv net/minecraft/utility/nbt/LongNBTTag
+	FIELD a value J
+	METHOD <init> (J)V
+		ARG 1 value

@@ -1,0 +1,5 @@
+CLASS xj net/minecraft/client/thread/NetworkReaderThread
+	FIELD a networkManager Lpf;
+	METHOD <init> <init> (Lpf;Ljava/lang/String;)V
+		ARG 1 networkManager
+		ARG 2 name

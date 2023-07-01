@@ -1,0 +1,9 @@
+CLASS uf net/minecraft/utility/noise/PerlinOctaveNoiseGenerator
+	FIELD a noiseGenerators [Lam;
+	FIELD b octaves I
+	METHOD <init> (Ljava/util/Random;I)V
+		ARG 1 random
+		ARG 2 octaves
+	METHOD a sample (DD)D
+		ARG 1 x
+		ARG 3 y

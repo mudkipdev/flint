@@ -1,0 +1,3 @@
+CLASS ol net/minecraft/item/MapItem
+	METHOD a (Lfy;Ldj;)Lfv;
+		ARG 2 world

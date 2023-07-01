@@ -1,0 +1,9 @@
+CLASS dj net/minecraft/world/World
+	FIELD r random Ljava/util/Random;
+	FIELD s isNew Z
+	FIELD t dimension Los;
+	FIELD v source Lbl;
+	FIELD w storageHandler Lom;
+	FIELD x info Lct;
+	METHOD a getTopBlockIDAt (II)I
+	METHOD b updateBlockEntity (IIILjh;)V

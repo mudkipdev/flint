@@ -1,0 +1,5 @@
+CLASS vv net/minecraft/entity/projectile/EggEntity
+	FIELD f isInGround Z
+	METHOD <init> (Lfd;Lls;)V
+		ARG 1 world
+		ARG 2 owner

@@ -1,0 +1,2 @@
+CLASS jl net/minecraft/network/NetworkManager
+	METHOD a sendPacket (Lgt;)V

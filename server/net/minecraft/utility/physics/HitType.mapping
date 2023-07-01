@@ -1,0 +1,3 @@
+CLASS gd net/minecraft/utility/physics/HitType
+	FIELD a BLOCK Lgd;
+	FIELD b ENTITY Lgd;

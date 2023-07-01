@@ -1,0 +1,14 @@
+CLASS net/minecraft/server/MinecraftServer net/minecraft/server/MinecraftServer
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD d config Lky;
+	FIELD l isOnlineMode Z
+	FIELD m shouldSpawnAnimals Z
+	FIELD n isPVPAllowed Z
+	FIELD o isFlightAllowed Z
+	FIELD p commandHandler Lmc;
+	FIELD s commands Ljava/util/List;
+	METHOD a openFile (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 path
+	METHOD a executeCommand (Ljava/lang/String;Lmb;)V
+		ARG 1 command
+		ARG 2 executor

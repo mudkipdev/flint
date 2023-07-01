@@ -1,0 +1,58 @@
+CLASS kv net/minecraft/client/options/Options
+	FIELD A isThirdPerson Z
+	FIELD B showDebugInfo Z
+	FIELD C lastMultiplayerServer Ljava/lang/String;
+	FIELD I guiScale I
+	FIELD J RENDER_DISTANCE_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD K DIFFICULTY_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD L GUI_SCALE_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD M PERFORMANCE_TRANSLATION_KEYS [Ljava/lang/String;
+	FIELD N file Ljava/io/File;
+	FIELD a musicVolume F
+	FIELD b soundVolume F
+	FIELD c mouseSensitivity F
+	FIELD d invertedMouse Z
+	FIELD e renderDistance I
+	FIELD f viewBobbing Z
+	FIELD g anaglyph Z
+	FIELD h advancedOpenGL Z
+	FIELD i framerateLimit I
+	FIELD j fancyGraphics Z
+	FIELD k ambientOcclusion Z
+	FIELD l texturePack Ljava/lang/String;
+	FIELD m moveForwardKeybind Lqb;
+	FIELD n moveLeftKeybind Lqb;
+	FIELD o moveBackKeybind Lqb;
+	FIELD p moveRightKeybind Lqb;
+	FIELD q jumpKeybind Lqb;
+	FIELD r inventoryKeybind Lqb;
+	FIELD s dropItemKeybind Lqb;
+	FIELD t openChatKeybind Lqb;
+	FIELD u changeFogKeybind Lqb;
+	FIELD v sneakKeybind Lqb;
+	FIELD w keybinds [Lqb;
+	FIELD x minecraft Lnet/minecraft/client/Minecraft;
+	FIELD y difficulty I
+	FIELD z hideHUD Z
+	METHOD <init> <init> (Lnet/minecraft/client/Minecraft;Ljava/io/File;)V
+		ARG 1 minecraft
+		ARG 2 directory
+	METHOD a load ()V
+	METHOD a getKeybindName (I)Ljava/lang/String;
+		ARG 1 index
+	METHOD a setKeybind (II)V
+		ARG 1 index
+		ARG 2 keyCode
+	METHOD a getOption (Lht;)F
+		ARG 1 option
+	METHOD a setFloat (Lht;F)V
+		ARG 1 option
+		ARG 2 value
+	METHOD a setInteger (Lht;I)V
+		ARG 1 option
+		ARG 2 value
+	METHOD b save ()V
+	METHOD b getKeyName (I)Ljava/lang/String;
+		ARG 1 keybindIndex
+	METHOD c c (Lht;)Ljava/lang/String;
+		ARG 1 option

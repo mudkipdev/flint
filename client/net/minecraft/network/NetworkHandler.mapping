@@ -1,0 +1,106 @@
+CLASS ti net/minecraft/network/NetworkHandler
+	METHOD a handlePacket (La;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lai;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lca;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ldi;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lef;)V
+		ARG 1 packet
+	METHOD a handlePacket (Leu;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lfa;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lfn;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lgj;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lgx;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lhg;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lho;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lhq;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lig;)V
+		ARG 1 packet
+	METHOD a handlePacket (Liw;)V
+		ARG 1 packet
+	METHOD a a (Ljava/lang/String;[Ljava/lang/Object;)V
+		ARG 1 reason
+	METHOD a handlePacket (Ljf;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ljm;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ljv;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ljz;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lkb;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lmf;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lmn;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lmp;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lmv;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lnd;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lnm;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lns;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lnz;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lof;)V
+		ARG 1 packet
+	METHOD a handlePacket (Loj;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lox;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lpe;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lql;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lqs;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lrc;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lrg;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lrm;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lrv;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ls;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lse;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lso;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lts;)V
+		ARG 1 packet
+	METHOD a handlePacket (Ltv;)V
+		ARG 1 packet
+	METHOD a handlePacket (Luh;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lui;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lux;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lvt;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lvw;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lwu;)V
+		ARG 1 packet
+	METHOD a handlePacket (Lyr;)V
+		ARG 1 packet
+	METHOD c isServer ()Z
+	METHOD c handlePacket (Lki;)V
+		ARG 1 packet

@@ -1,0 +1,4 @@
+CLASS gg net/minecraft/statistic/StatisticList
+	FIELD D CRAFT_ITEM [Lns;
+	FIELD E USE_ITEM [Lns;
+	FIELD F BREAK_ITEM [Lns;

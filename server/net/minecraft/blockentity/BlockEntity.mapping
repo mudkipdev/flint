@@ -1,0 +1,20 @@
+CLASS jh net/minecraft/blockentity/BlockEntity
+	FIELD a nameToClassMap Ljava/util/Map;
+	FIELD b classToNameMap Ljava/util/Map;
+	FIELD d world Ldj;
+	FIELD e x I
+	FIELD f y I
+	FIELD g z I
+	METHOD a readFromNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD a addBlockEntity (Ljava/lang/Class;Ljava/lang/String;)V
+		ARG 0 blockEntityClass
+		ARG 1 name
+	METHOD b writeToNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD c loadBlockEntity (Liq;)Ljh;
+		ARG 0 compoundTag
+	METHOD e getBlockMetadata ()I
+	METHOD f createPacket ()Lgt;
+	METHOD g_ tick ()V
+	METHOD i update ()V

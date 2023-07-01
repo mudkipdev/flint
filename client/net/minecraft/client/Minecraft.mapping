@@ -1,0 +1,60 @@
+CLASS net/minecraft/client/Minecraft net/minecraft/client/Minecraft
+	FIELD A applet Lnet/minecraft/client/MinecraftApplet;
+	FIELD B soundManager Lyo;
+	FIELD D texturePacks Lik;
+	FIELD J isRunning Z
+	FIELD K debugInfo Ljava/lang/String;
+	FIELD L isTakingScreenshot Z
+	FIELD Q isFullscreen Z
+	FIELD R hasCrashed Z
+	FIELD S capabilities Lcx;
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD ab serverIPAddress Ljava/lang/String;
+	FIELD ac serverPort I
+	FIELD ad waterTexture Lvs;
+	FIELD ae lavaTexture Lcg;
+	FIELD af directory Ljava/io/File;
+	FIELD c gameMode Lob;
+	FIELD d width I
+	FIELD e height I
+	FIELD f world Lfd;
+	FIELD h player Ldc;
+	FIELD k session Lgr;
+	FIELD m canvas Ljava/awt/Canvas;
+	FIELD n isStandalone Z
+	FIELD q fontRenderer Lsj;
+	FIELD r screen Lda;
+	FIELD v hudScreen Luq;
+	FIELD y hit Lvf;
+	FIELD z options Lkv;
+	METHOD <init> <init> (Ljava/awt/Component;Ljava/awt/Canvas;Lnet/minecraft/client/MinecraftApplet;IIZ)V
+		ARG 2 canvas
+		ARG 3 applet
+	METHOD A onMiddleClick ()V
+	METHOD B startPaidChecker ()V
+	METHOD a click (I)V
+		ARG 1 button
+	METHOD a showScreen (Lda;)V
+		ARG 1 screen
+	METHOD a setWorld (Lfd;)V
+	METHOD a getDirectory (Ljava/lang/String;)Ljava/io/File;
+		ARG 0 name
+	METHOD a setServer (Ljava/lang/String;I)V
+		ARG 1 ipAddress
+		ARG 2 port
+	METHOD a crash (Lmh;)V
+		ARG 1 crash
+	METHOD b getDirectory ()Ljava/io/File;
+	METHOD b isCommand (Ljava/lang/String;)Z
+		ARG 1 message
+	METHOD b b (Lmh;)V
+		ARG 1 crash
+	METHOD f stop ()V
+	METHOD g focus ()V
+	METHOD j toggleFullscreen ()V
+	METHOD k tick ()V
+	METHOD t shouldHideHUD ()Z
+	METHOD u shouldUseFancyGraphics ()Z
+	METHOD w shouldShowDebugInfo ()Z
+	METHOD y getOS ()Lpd;
+	METHOD z tryTakeScreenshot ()V

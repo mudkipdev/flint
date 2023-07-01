@@ -1,0 +1,4 @@
+CLASS yf net/minecraft/world/source/OverworldGenerator
+	FIELD j random Ljava/util/Random;
+	FIELD p world Lfd;
+	FIELD u caveGenerator Lfv;

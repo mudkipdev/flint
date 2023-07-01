@@ -1,0 +1,6 @@
+CLASS nx net/minecraft/block/StationaryLiquidBlock
+	METHOD k canBurnBlock (Lfd;III)Z
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z

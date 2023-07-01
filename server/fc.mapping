@@ -1,0 +1,10 @@
+CLASS fc
+	FIELD c server Lnet/minecraft/server/MinecraftServer;
+	FIELD e maxPlayers I
+	FIELD j bannedPlayers Ljava/io/File;
+	FIELD k bannedIPAddresses Ljava/io/File;
+	FIELD l operators Ljava/io/File;
+	FIELD m whitelistedPlayers Ljava/io/File;
+	FIELD o isWhitelistEnabled Z
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server

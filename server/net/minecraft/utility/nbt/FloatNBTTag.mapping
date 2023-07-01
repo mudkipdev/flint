@@ -1,0 +1,4 @@
+CLASS k net/minecraft/utility/nbt/FloatNBTTag
+	FIELD a value F
+	METHOD <init> (F)V
+		ARG 1 value

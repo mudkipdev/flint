@@ -1,0 +1,14 @@
+CLASS wi net/minecraft/utility/NibbleArray
+	FIELD a data [B
+	METHOD <init> ([B)V
+		ARG 1 data
+	METHOD a hasInitialized ()Z
+	METHOD a getNibble (III)I
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD a setNibble (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 value

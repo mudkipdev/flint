@@ -1,0 +1,4 @@
+CLASS lx net/minecraft/utility/nbt/DoubleNBTTag
+	FIELD a value D
+	METHOD <init> (D)V
+		ARG 1 value

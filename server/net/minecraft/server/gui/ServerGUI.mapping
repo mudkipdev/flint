@@ -1,0 +1,12 @@
+CLASS nf net/minecraft/server/gui/ServerGUI
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 1 server
+	METHOD a createLeftPanel ()Ljavax/swing/JComponent;
+	METHOD a open (Lnet/minecraft/server/MinecraftServer;)V
+		ARG 0 server
+	METHOD a getServer (Lnf;)Lnet/minecraft/server/MinecraftServer;
+		ARG 0 gui
+	METHOD b createPlayerListComponent ()Ljavax/swing/JComponent;
+	METHOD c createRightPanel ()Ljavax/swing/JComponent;

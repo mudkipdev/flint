@@ -1,0 +1,2 @@
+CLASS ik net/minecraft/client/pack/TexturePackList
+	FIELD b texturePacks Ljava/util/List;

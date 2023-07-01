@@ -1,0 +1,4 @@
+CLASS ai net/minecraft/network/packet/ItemDataPacket
+	FIELD a itemID S
+	FIELD b itemMetadata S
+	FIELD c data [B

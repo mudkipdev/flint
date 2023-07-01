@@ -1,0 +1,12 @@
+CLASS dw dw
+	FIELD e inventorySlots Ljava/util/List;
+	FIELD f windowID I
+	METHOD a getItemStack (I)Liz;
+		ARG 1 inventorySlot
+	METHOD a setProgress (II)V
+		ARG 1 bar
+		ARG 2 burnTime
+	METHOD b getInventorySlot (I)Lgp;
+		ARG 1 inventorySlot
+	METHOD b canInteractWithPlayer (Lgs;)Z
+		ARG 1 player

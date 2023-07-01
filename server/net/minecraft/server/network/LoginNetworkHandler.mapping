@@ -1,0 +1,11 @@
+CLASS ee net/minecraft/server/network/LoginNetworkHandler
+	FIELD a logger Ljava/util/logging/Logger;
+	FIELD b networkManager Ljl;
+	FIELD d random Ljava/util/Random;
+	FIELD e server Lnet/minecraft/server/MinecraftServer;
+	METHOD <init> (Lnet/minecraft/server/MinecraftServer;Ljava/net/Socket;Ljava/lang/String;)V
+		ARG 1 server
+	METHOD a disconnect (Ljava/lang/String;)V
+		ARG 1 reason
+	METHOD b login (Liv;)V
+		ARG 1 packet

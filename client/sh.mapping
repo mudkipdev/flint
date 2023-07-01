@@ -1,0 +1,5 @@
+CLASS sh
+	FIELD a blockEntity Laz;
+	METHOD <init> (Llw;Laz;)V
+		ARG 1 inventory
+		ARG 2 blockEntity
