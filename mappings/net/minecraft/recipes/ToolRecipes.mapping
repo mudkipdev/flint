@@ -1,3 +1,0 @@
-CLASS ha net/minecraft/recipes/ToolRecipes
-	FIELD b tools [[Ljava/lang/Object;
-	METHOD a addRecipes (Lhk;)V

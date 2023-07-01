@@ -1,5 +1,0 @@
-CLASS vj net/minecraft/client/thread/SendSyncedStatisticsThread
-	FIELD b syncer Lcj;
-	METHOD <init> (Lcj;Ljava/util/Map;)V
-		ARG 1 syncer
-	METHOD run run ()V

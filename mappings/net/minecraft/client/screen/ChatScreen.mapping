@@ -1,2 +1,0 @@
-CLASS gc net/minecraft/client/screen/ChatScreen
-	FIELD a message Ljava/lang/String;

@@ -1,2 +1,0 @@
-CLASS js net/minecraft/blockentity/ChestBlockEntity
-	FIELD a items [Liz;

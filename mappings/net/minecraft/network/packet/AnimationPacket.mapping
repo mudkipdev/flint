@@ -1,6 +1,0 @@
-CLASS nm net/minecraft/network/packet/AnimationPacket
-	FIELD a entityID I
-	FIELD b animationType I
-	METHOD <init> <init> (Lsn;I)V
-		ARG 1 entity
-		ARG 2 animationType

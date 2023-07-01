@@ -1,4 +1,0 @@
-CLASS bd net/minecraft/client/isometric/IsometricPreviewCanvas
-	FIELD d world Lfd;
-	METHOD b start ()V
-	METHOD c stop ()V

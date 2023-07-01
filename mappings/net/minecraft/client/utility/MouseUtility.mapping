@@ -1,3 +1,0 @@
-CLASS vy net/minecraft/client/utility/MouseUtility
-	METHOD a lock ()V
-	METHOD b unlock ()V

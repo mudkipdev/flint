@@ -1,4 +1,0 @@
-CLASS vn argo/JSONConstants
-	FIELD a NULL Lvn;
-	FIELD b TRUE Lvn;
-	FIELD c FALSE Lvn;

@@ -1,4 +1,0 @@
-CLASS tp net/minecraft/recipes/OreRecipes
-	FIELD a ores [[Ljava/lang/Object;
-	METHOD a addRecipes (Lhk;)V
-		ARG 1 recipes

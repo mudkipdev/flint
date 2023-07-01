@@ -1,9 +1,0 @@
-CLASS vt net/minecraft/network/packet/SpawnPaintingPacket
-	FIELD a entityID I
-	FIELD b x I
-	FIELD c y I
-	FIELD d z I
-	FIELD e direction I
-	FIELD f name Ljava/lang/String;
-	METHOD <init> <init> (Lqv;)V
-		ARG 1 entity

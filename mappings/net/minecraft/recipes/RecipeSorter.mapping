@@ -1,7 +1,0 @@
-CLASS ky net/minecraft/recipes/RecipeSorter
-	FIELD a parent Lhk;
-	METHOD <init> (Lhk;)V
-		ARG 1 parent
-	METHOD compare compare (Ljava/lang/Object;Ljava/lang/Object;)I
-		ARG 1 one
-		ARG 2 two

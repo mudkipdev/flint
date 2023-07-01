@@ -1,4 +1,0 @@
-CLASS se net/minecraft/network/packet/PreChunkPacket
-	FIELD a chunkX I
-	FIELD b chunkZ I
-	FIELD c isLoad Z

@@ -1,8 +1,0 @@
-CLASS gr net/minecraft/client/Session
-	FIELD a blocks Ljava/util/List;
-	FIELD b username Ljava/lang/String;
-	FIELD c sessionID Ljava/lang/String;
-	FIELD d multiplayerPassword Ljava/lang/String;
-	METHOD <init> <init> (Ljava/lang/String;Ljava/lang/String;)V
-		ARG 1 username
-		ARG 2 sessionID

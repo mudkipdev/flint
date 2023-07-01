@@ -1,2 +1,0 @@
-CLASS ii net/minecraft/entity/PathfindingEntity
-	METHOD g_ getTarget ()Lsn;

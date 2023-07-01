@@ -1,5 +1,0 @@
-CLASS ss net/minecraft/block/StairBlock
-	FIELD a base Luu;
-	METHOD <init> <init> (ILuu;)V
-		ARG 1 id
-		ARG 2 base

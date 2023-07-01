@@ -1,5 +1,0 @@
-CLASS fv net/minecraft/generator/feature/FeatureGenerator
-	FIELD b random Ljava/util/Random;
-	METHOD a a (Lcl;Lfd;II[B)V
-		ARG 1 source
-		ARG 2 world

@@ -1,4 +1,0 @@
-CLASS lq net/minecraft/client/screen/MultiplayerScreen
-	FIELD a parentScreen Lda;
-	METHOD <init> <init> (Lda;)V
-		ARG 1 parentScreen

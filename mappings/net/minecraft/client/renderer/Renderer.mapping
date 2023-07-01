@@ -1,3 +1,0 @@
-CLASS bw net/minecraft/client/renderer/Renderer
-	METHOD a a (Lsn;DDDFF)V
-		ARG 1 entity

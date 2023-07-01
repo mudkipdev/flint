@@ -1,3 +1,0 @@
-CLASS cx net/minecraft/client/utility/GLCapabilities
-	FIELD a shouldCheckOcclusion Z
-	METHOD a canUseOcclusion ()Z

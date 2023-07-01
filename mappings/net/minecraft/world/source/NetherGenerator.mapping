@@ -1,4 +1,0 @@
-CLASS qn net/minecraft/world/source/NetherGenerator
-	FIELD h random Ljava/util/Random;
-	FIELD n world Lfd;
-	FIELD s caveGenerator Lfv;

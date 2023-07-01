@@ -1,7 +1,0 @@
-CLASS do
-	FIELD a translator Lnh;
-	METHOD a translate (Ljava/lang/String;)Ljava/lang/String;
-		ARG 0 key
-	METHOD a translate (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-		ARG 0 key
-		ARG 1 arguments

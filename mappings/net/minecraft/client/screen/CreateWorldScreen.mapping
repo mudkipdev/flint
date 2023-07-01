@@ -1,4 +1,0 @@
-CLASS fj net/minecraft/client/screen/CreateWorldScreen
-	FIELD a parentScreen Lda;
-	METHOD <init> <init> (Lda;)V
-		ARG 1 parentScreen

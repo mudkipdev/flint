@@ -1,3 +1,0 @@
-CLASS am net/minecraft/utility/noise/PerlinNoiseGenerator
-	METHOD <init> (Ljava/util/Random;)V
-		ARG 1 random

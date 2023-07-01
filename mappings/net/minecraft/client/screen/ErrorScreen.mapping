@@ -1,3 +1,0 @@
-CLASS ce net/minecraft/client/screen/ErrorScreen
-	FIELD a lineOne Ljava/lang/String;
-	FIELD i lineTwo Ljava/lang/String;

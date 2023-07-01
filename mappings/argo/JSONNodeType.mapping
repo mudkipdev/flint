@@ -1,8 +1,0 @@
-CLASS at argo/JSONNodeType
-	FIELD a OBJECT Lat;
-	FIELD b ARRAY Lat;
-	FIELD c STRING Lat;
-	FIELD d NUMBER Lat;
-	FIELD e TRUE Lat;
-	FIELD f FALSE Lat;
-	FIELD g NULL Lat;

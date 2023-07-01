@@ -1,3 +1,0 @@
-CLASS of net/minecraft/network/packet/StatisticPacket
-	FIELD a statisticID I
-	FIELD b amount I

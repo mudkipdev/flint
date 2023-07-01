@@ -1,3 +1,0 @@
-CLASS ca net/minecraft/network/packet/GameStatePacket
-	FIELD a translationKeys [Ljava/lang/String;
-	FIELD b state I

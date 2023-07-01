@@ -1,2 +1,0 @@
-CLASS fr net/minecraft/entity/monster/SkeletonEntity
-	FIELD a HELD_ITEM Liz;

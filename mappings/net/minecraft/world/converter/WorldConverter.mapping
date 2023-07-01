@@ -1,3 +1,0 @@
-CLASS nl net/minecraft/world/converter/WorldConverter
-	METHOD a getName ()Ljava/lang/String;
-	METHOD c clearFileCache ()V

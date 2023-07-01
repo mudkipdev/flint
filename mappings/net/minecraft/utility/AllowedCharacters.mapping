@@ -1,4 +1,0 @@
-CLASS fp net/minecraft/utility/AllowedCharacters
-	FIELD a allowedCharacters Ljava/lang/String;
-	FIELD b specialCharacters [C
-	METHOD a getAllowedCharacters ()Ljava/lang/String;

@@ -1,3 +1,0 @@
-CLASS pt net/minecraft/block/NoteBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

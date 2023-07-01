@@ -1,4 +1,0 @@
-CLASS pp net/minecraft/utility/nbt/IntegerNBTTag
-	FIELD a value I
-	METHOD <init> <init> (I)V
-		ARG 1 value

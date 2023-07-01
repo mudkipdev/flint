@@ -1,4 +1,0 @@
-CLASS og net/minecraft/inventory/LargeChestInventory
-	FIELD a name Ljava/lang/String;
-	FIELD b firstChest Llw;
-	FIELD c secondChest Llw;

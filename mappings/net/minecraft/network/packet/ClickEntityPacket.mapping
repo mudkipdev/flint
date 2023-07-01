@@ -1,8 +1,0 @@
-CLASS a net/minecraft/network/packet/ClickEntityPacket
-	FIELD a playerID I
-	FIELD b entityID I
-	FIELD c isLeftClick I
-	METHOD <init> <init> (III)V
-		ARG 1 playerID
-		ARG 2 entityID
-		ARG 3 isLeftClick

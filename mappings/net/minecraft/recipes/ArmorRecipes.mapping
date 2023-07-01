@@ -1,5 +1,0 @@
-CLASS z net/minecraft/recipes/ArmorRecipes
-	FIELD a shape [[Ljava/lang/String;
-	FIELD b ingredientsAndOutput [[Ljava/lang/Object;
-	METHOD a addRecipes (Lhk;)V
-		ARG 1 recipes

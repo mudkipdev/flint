@@ -1,5 +1,0 @@
-CLASS jp net/minecraft/block/TranslucentBlock
-	METHOD <init> <init> (IILln;Z)V
-		ARG 1 id
-		ARG 2 texture
-		ARG 3 material

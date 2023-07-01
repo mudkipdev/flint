@@ -1,2 +1,0 @@
-CLASS ox net/minecraft/network/packet/RespawnPacket
-	FIELD a dimension B

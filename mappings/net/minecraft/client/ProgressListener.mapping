@@ -1,3 +1,0 @@
-CLASS yb net/minecraft/client/ProgressListener
-	METHOD a setProgress (I)V
-		ARG 1 value

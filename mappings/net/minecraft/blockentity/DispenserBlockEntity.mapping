@@ -1,4 +1,0 @@
-CLASS az net/minecraft/blockentity/DispenserBlockEntity
-	FIELD a items [Liz;
-	FIELD b random Ljava/util/Random;
-	METHOD b dispenseItemStack ()Liz;

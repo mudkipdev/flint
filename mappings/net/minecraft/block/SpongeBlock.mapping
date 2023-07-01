@@ -1,3 +1,0 @@
-CLASS xf net/minecraft/block/SpongeBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

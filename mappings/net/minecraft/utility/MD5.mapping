@@ -1,3 +1,0 @@
-CLASS hf net/minecraft/utility/MD5
-	FIELD a string Ljava/lang/String;
-	METHOD a toMD5 (Ljava/lang/String;)Ljava/lang/String;

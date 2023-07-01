@@ -1,9 +1,0 @@
-CLASS vl net/minecraft/block/FarmlandBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id
-	METHOD h h (Lfd;III)Z
-		ARG 1 world
-		ARG 2 x
-		ARG 3 y
-		ARG 4 z
-	METHOD i hasNearbyWater (Lfd;III)Z

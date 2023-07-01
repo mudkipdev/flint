@@ -1,3 +1,0 @@
-CLASS ks net/minecraft/block/LockedChestBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

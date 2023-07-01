@@ -1,3 +1,0 @@
-CLASS ya net/minecraft/entity/monster/ZombiePigmanEntity
-	FIELD a anger I
-	FIELD f HELD_ITEM Liz;

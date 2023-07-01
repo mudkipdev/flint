@@ -1,2 +1,0 @@
-CLASS m net/minecraft/client/renderer/CreeperRenderer
-	FIELD a model Lko;

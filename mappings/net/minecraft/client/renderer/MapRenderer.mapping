@@ -1,5 +1,0 @@
-CLASS iy net/minecraft/client/renderer/MapRenderer
-	FIELD d fontRenderer Lsj;
-	METHOD <init> <init> (Lsj;Lkv;Lji;)V
-		ARG 1 fontRenderer
-		ARG 2 options

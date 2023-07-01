@@ -1,3 +1,0 @@
-CLASS us net/minecraft/StorageException
-	METHOD <init> <init> (Ljava/lang/String;)V
-		ARG 1 message

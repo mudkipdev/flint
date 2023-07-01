@@ -1,6 +1,0 @@
-CLASS jd net/minecraft/world/source/SkyGenerator
-	FIELD j random Ljava/util/Random;
-	FIELD p world Lfd;
-	METHOD <init> (Lfd;J)V
-		ARG 1 world
-		ARG 2 seed

@@ -1,4 +1,0 @@
-CLASS is net/minecraft/recipes/ShapedRecipe
-	FIELD e result Liz;
-	METHOD <init> <init> (II[Liz;Liz;)V
-		ARG 4 result

@@ -1,3 +1,0 @@
-CLASS av net/minecraft/client/texture/CompassDynamicTexture
-	METHOD <init> <init> (Lnet/minecraft/client/Minecraft;)V
-		ARG 1 minecraft

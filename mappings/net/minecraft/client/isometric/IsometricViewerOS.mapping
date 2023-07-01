@@ -1,6 +1,0 @@
-CLASS jn net/minecraft/client/isometric/IsometricViewerOS
-	FIELD a LINUX Ljn;
-	FIELD b SOLARIS Ljn;
-	FIELD c WINDOWS Ljn;
-	FIELD d MAC Ljn;
-	FIELD e OTHER Ljn;

@@ -1,3 +1,0 @@
-CLASS di net/minecraft/network/packet/CollectItemPacket
-	FIELD a entityID I
-	FIELD b playerID I

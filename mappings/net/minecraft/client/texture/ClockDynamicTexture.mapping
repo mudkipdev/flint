@@ -1,2 +1,0 @@
-CLASS ku net/minecraft/client/texture/ClockDynamicTexture
-	FIELD g minecraft Lnet/minecraft/client/Minecraft;

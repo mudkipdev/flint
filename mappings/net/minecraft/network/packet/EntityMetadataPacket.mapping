@@ -1,4 +1,0 @@
-CLASS ux net/minecraft/network/packet/EntityMetadataPacket
-	FIELD a entityID I
-	FIELD b metadata Ljava/util/List;
-	METHOD b getMetadata ()Ljava/util/List;

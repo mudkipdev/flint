@@ -1,3 +1,0 @@
-CLASS jy net/minecraft/recipes/BlockRecipes
-	METHOD a addRecipes (Lhk;)V
-		ARG 1 recipes

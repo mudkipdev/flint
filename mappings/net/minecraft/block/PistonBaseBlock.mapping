@@ -1,4 +1,0 @@
-CLASS jq net/minecraft/block/PistonBaseBlock
-	METHOD <init> <init> (IIZ)V
-		ARG 1 id
-		ARG 2 material

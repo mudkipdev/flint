@@ -1,4 +1,0 @@
-CLASS sw net/minecraft/client/ChatMessage
-	FIELD a message Ljava/lang/String;
-	METHOD <init> <init> (Ljava/lang/String;)V
-		ARG 1 message

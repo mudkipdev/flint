@@ -1,3 +1,0 @@
-CLASS i net/minecraft/client/pack/TexturePack
-	FIELD a name Ljava/lang/String;
-	FIELD b description Ljava/lang/String;

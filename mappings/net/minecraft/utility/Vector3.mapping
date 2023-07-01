@@ -1,8 +1,0 @@
-CLASS bt net/minecraft/utility/Vector3
-	FIELD a x D
-	FIELD b y D
-	FIELD c z D
-	METHOD a create (DDD)Lbt;
-		ARG 0 x
-		ARG 2 y
-		ARG 4 z

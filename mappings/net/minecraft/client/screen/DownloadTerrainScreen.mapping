@@ -1,4 +1,0 @@
-CLASS gg net/minecraft/client/screen/DownloadTerrainScreen
-	FIELD a networkHandler Lnb;
-	METHOD <init> <init> (Lnb;)V
-		ARG 1 networkHandler

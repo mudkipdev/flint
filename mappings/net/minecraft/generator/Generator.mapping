@@ -1,7 +1,0 @@
-CLASS pg net/minecraft/generator/Generator
-	METHOD a generate (Lfd;Ljava/util/Random;III)Z
-		ARG 1 world
-		ARG 2 random
-		ARG 3 x
-		ARG 4 y
-		ARG 5 z

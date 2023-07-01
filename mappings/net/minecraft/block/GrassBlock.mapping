@@ -1,3 +1,0 @@
-CLASS wp net/minecraft/block/GrassBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

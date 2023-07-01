@@ -1,3 +1,0 @@
-CLASS fi net/minecraft/block/CraftingTableBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

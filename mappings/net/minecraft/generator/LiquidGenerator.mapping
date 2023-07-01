@@ -1,4 +1,0 @@
-CLASS xo net/minecraft/generator/LiquidGenerator
-	FIELD a blockID I
-	METHOD <init> <init> (I)V
-		ARG 1 blockID

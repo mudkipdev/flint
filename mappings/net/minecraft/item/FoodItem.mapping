@@ -1,9 +1,0 @@
-CLASS yw net/minecraft/item/FoodItem
-	FIELD a healAmount I
-	FIELD bk isPreferredByWolf Z
-	METHOD <init> <init> (IIZ)V
-		ARG 1 id
-		ARG 2 healAmount
-		ARG 3 isPreferredByWolf
-	METHOD l getHealAmount ()I
-	METHOD m isPreferredByWolf ()Z

@@ -1,3 +1,0 @@
-CLASS ve net/minecraft/block/BedBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

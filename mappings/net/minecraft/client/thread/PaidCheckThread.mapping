@@ -1,2 +1,0 @@
-CLASS kp net/minecraft/client/thread/PaidCheckThread
-	FIELD a minecraft Lnet/minecraft/client/Minecraft;

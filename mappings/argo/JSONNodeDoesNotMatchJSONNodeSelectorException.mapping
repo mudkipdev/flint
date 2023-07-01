@@ -1,3 +1,0 @@
-CLASS ad argo/JSONNodeDoesNotMatchJSONNodeSelectorException
-	METHOD <init> <init> (Ljava/lang/String;)V
-		ARG 1 message

@@ -1,4 +1,0 @@
-CLASS fl net/minecraft/generator/MinableGenerator
-	FIELD a blockID I
-	METHOD <init> <init> (II)V
-		ARG 1 blockID

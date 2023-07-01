@@ -1,2 +1,0 @@
-CLASS kq net/minecraft/client/MinecraftImplementation
-	FIELD a frame Ljava/awt/Frame;

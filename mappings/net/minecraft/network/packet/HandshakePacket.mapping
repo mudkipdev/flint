@@ -1,4 +1,0 @@
-CLASS mp net/minecraft/network/packet/HandshakePacket
-	FIELD a usernameOrConnectionHash Ljava/lang/String;
-	METHOD <init> <init> (Ljava/lang/String;)V
-		ARG 1 usernameOrConnectionHash

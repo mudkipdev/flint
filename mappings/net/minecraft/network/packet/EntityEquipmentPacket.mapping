@@ -1,5 +1,0 @@
-CLASS s net/minecraft/network/packet/EntityEquipmentPacket
-	FIELD a entityID I
-	FIELD b inventorySlot I
-	FIELD c itemID I
-	FIELD d itemMetadata I

@@ -1,4 +1,0 @@
-CLASS hn net/minecraft/utility/nbt/ByteArrayNBTTag
-	FIELD a value [B
-	METHOD <init> <init> ([B)V
-		ARG 1 value

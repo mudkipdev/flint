@@ -1,5 +1,0 @@
-CLASS lv net/minecraft/item/GroundPlaceableItem
-	FIELD a block I
-	METHOD <init> <init> (ILuu;)V
-		ARG 1 id
-		ARG 2 block

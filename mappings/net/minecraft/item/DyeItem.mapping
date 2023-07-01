@@ -1,3 +1,0 @@
-CLASS km net/minecraft/item/DyeItem
-	FIELD a translationKeys [Ljava/lang/String;
-	FIELD bk colors [I

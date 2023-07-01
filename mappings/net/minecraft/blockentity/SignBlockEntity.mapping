@@ -1,4 +1,0 @@
-CLASS yk net/minecraft/blockentity/SignBlockEntity
-	FIELD a lines [Ljava/lang/String;
-	FIELD b cursorLine I
-	FIELD c unsaved Z

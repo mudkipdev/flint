@@ -1,3 +1,0 @@
-CLASS wk net/minecraft/statistic/StatisticType
-	METHOD a format (I)Ljava/lang/String;
-		ARG 1 value

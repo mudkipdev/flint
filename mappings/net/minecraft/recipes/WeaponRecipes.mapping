@@ -1,4 +1,0 @@
-CLASS xc net/minecraft/recipes/WeaponRecipes
-	FIELD b swords [[Ljava/lang/Object;
-	METHOD a addRecipes (Lhk;)V
-		ARG 1 recipes

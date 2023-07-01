@@ -1,4 +1,0 @@
-CLASS cd
-	METHOD <init> (Llw;Llw;)V
-		ARG 1 upperInventory
-		ARG 2 lowerInventory

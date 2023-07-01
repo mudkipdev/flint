@@ -1,3 +1,0 @@
-CLASS xz net/minecraft/entity/player/OtherMultiplayerPlayer
-	METHOD <init> <init> (Lfd;Ljava/lang/String;)V
-		ARG 1 world

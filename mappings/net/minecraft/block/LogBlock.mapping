@@ -1,3 +1,0 @@
-CLASS vg net/minecraft/block/LogBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

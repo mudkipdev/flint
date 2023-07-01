@@ -1,4 +1,0 @@
-CLASS it
-	FIELD a inventory Lmq;
-	FIELD b resultInventory Llw;
-	FIELD c world Lfd;

@@ -1,3 +1,0 @@
-CLASS rd net/minecraft/block/SandstoneBlock
-	METHOD <init> <init> (I)V
-		ARG 1 id

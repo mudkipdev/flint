@@ -1,5 +1,0 @@
-CLASS au net/minecraft/item/PickaxeItem
-	FIELD bk effectiveAgainst [Luu;
-	METHOD <init> <init> (ILbu;)V
-		ARG 1 id
-		ARG 2 tier
