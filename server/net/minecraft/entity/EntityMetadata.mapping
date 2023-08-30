@@ -1,1 +1,8 @@
 CLASS mo net/minecraft/entity/EntityMetadata
+	METHOD a getByte (I)B
+	METHOD a set (ILjava/lang/Object;)V
+		ARG 1 index
+		ARG 2 object
+	METHOD b (ILjava/lang/Object;)V
+		ARG 1 index
+		ARG 2 object

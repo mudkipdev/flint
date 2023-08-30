@@ -15,15 +15,35 @@ CLASS lq net/minecraft/entity/Entity
 	FIELD aZ aabb Lcz;
 	FIELD bC air I
 	FIELD bE metadata Lmo;
+	FIELD ba isOnGround Z
 	FIELD bf isInWeb Z
 	FIELD bh isRemoved Z
+	FIELD bn fallDistance F
 	FIELD bv random Ljava/util/Random;
+	FIELD by fire I
 	FIELD bz maxAir I
 	METHOD <init> (Ldj;)V
 		ARG 1 world
 	METHOD J remove ()V
+	METHOD a onStruckByLighting (Lc;)V
+		ARG 1 lightningBolt
+	METHOD a interact (Lem;)Z
+		ARG 1 player
+	METHOD a dropItemStack (Lfy;F)Lez;
+		ARG 1 itemStack
+		ARG 2 yOffset
+	METHOD a readFromNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD a attack (Llq;I)Z
+		ARG 1 attacker
+		ARG 2 damage
+	METHOD a writeDoublesToNBT ([D)Llr;
+	METHOD a writeFloatsToNBT ([F)Llr;
 	METHOD aa getMetadata ()Lmo;
 	METHOD b initialize ()V
+	METHOD b writeToNBT (Liq;)V
+		ARG 1 compoundTag
+	METHOD c setPosition (DDDFF)V
 	METHOD d writeEntityToNBT (Liq;)V
 		ARG 1 compoundTag
 	METHOD e readEntityFromNBT (Liq;)V

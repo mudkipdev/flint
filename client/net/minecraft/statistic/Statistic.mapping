@@ -1,5 +1,5 @@
 CLASS vr net/minecraft/statistic/Statistic
-	FIELD a type Lwk;
+	FIELD a formatter Lwk;
 	FIELD b numberFormat Ljava/text/NumberFormat;
 	FIELD c decimalFormat Ljava/text/DecimalFormat;
 	FIELD e id I
@@ -13,7 +13,7 @@ CLASS vr net/minecraft/statistic/Statistic
 	METHOD <init> (ILjava/lang/String;Lwk;)V
 		ARG 1 id
 		ARG 2 name
-		ARG 3 type
+		ARG 3 formatter
 	METHOD a format (I)Ljava/lang/String;
 		ARG 1 value
 	METHOD i getNumberFormat ()Ljava/text/NumberFormat;

@@ -1,1 +1,3 @@
 CLASS ny net/minecraft/statistic/Achievement
+	FIELD c requiredAchievement Lny;
+	FIELD l description Ljava/lang/String;

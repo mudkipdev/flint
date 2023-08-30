@@ -1,0 +1,15 @@
+CLASS hp net/minecraft/inventory/Inventory
+	METHOD a getInventorySize ()I
+	METHOD a decreaseQuantity (II)Lfy;
+		ARG 1 inventorySlot
+		ARG 2 amount
+	METHOD a setItemStack (ILfy;)V
+		ARG 1 inventorySlot
+		ARG 2 itemStack
+	METHOD a_ canInteractWithPlayer (Lem;)Z
+		ARG 1 player
+	METHOD c getInventoryName ()Ljava/lang/String;
+	METHOD d getMaxQuantity ()I
+	METHOD d_ getItemStack (I)Lfy;
+		ARG 1 inventorySlot
+	METHOD i updateInventory ()V

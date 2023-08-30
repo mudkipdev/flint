@@ -1,0 +1,2 @@
+CLASS fx
+	METHOD b getHeldItemStack ()Lfy;

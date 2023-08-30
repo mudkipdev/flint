@@ -1,4 +1,10 @@
 CLASS np net/minecraft/client/sound/MUSInputStream
 	FIELD b codec Lio;
+	FIELD d inputStream Ljava/io/InputStream;
+	METHOD <init> (Lio;Ljava/net/URL;Ljava/io/InputStream;)V
+		ARG 1 codec
+		ARG 2 url
+		ARG 3 inputStream
 	METHOD read read ()I
 	METHOD read read ([BII)I
+		ARG 1 byteArray

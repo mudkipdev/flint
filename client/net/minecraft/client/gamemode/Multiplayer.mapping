@@ -1,4 +1,4 @@
-CLASS xk net/minecraft/client/gamemode/MultiplayerGameMode
+CLASS xk net/minecraft/client/gamemode/Multiplayer
 	FIELD k networkHandler Lnb;
 	METHOD <init> (Lnet/minecraft/client/Minecraft;Lnb;)V
 		ARG 1 minecraft

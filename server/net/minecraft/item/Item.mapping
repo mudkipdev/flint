@@ -83,6 +83,7 @@ CLASS ej net/minecraft/item/Item
 	FIELD bc SHEARS Las;
 	FIELD bd _13_MUSIC_DISC Lej;
 	FIELD be CAT_MUSIC_DISC Lej;
+	FIELD bf id I
 	FIELD bl translationKey Ljava/lang/String;
 	FIELD c items [Lej;
 	FIELD d IRON_SHOVEL Lej;

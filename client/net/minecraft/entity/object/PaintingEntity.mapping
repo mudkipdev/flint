@@ -1,0 +1,22 @@
+CLASS qv net/minecraft/entity/object/PaintingEntity
+	FIELD a direction I
+	FIELD b x I
+	FIELD c y I
+	FIELD d z I
+	FIELD e painting Liq;
+	METHOD <init> <init> (Lfd;IIII)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+	METHOD <init> <init> (Lfd;IIIILjava/lang/String;)V
+		ARG 1 world
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 direction
+		ARG 6 name
+	METHOD b setDirection (I)V
+		ARG 1 direction
+	METHOD k canBePlacedHere ()Z

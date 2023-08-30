@@ -1,0 +1,5 @@
+CLASS fl net/minecraft/world/storage/PlayerStorageHandler
+	METHOD a savePlayer (Lem;)V
+		ARG 1 player
+	METHOD b loadPlayer (Lem;)V
+		ARG 1 player

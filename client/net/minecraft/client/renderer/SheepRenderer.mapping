@@ -1,1 +1,5 @@
 CLASS xy net/minecraft/client/renderer/SheepRenderer
+	METHOD <init> (Lko;Lko;F)V
+		ARG 1 furModel
+		ARG 2 model
+		ARG 3 shadowSize

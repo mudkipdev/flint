@@ -1,0 +1,2 @@
+CLASS ku net/minecraft/client/texture/ClockTexture
+	FIELD g minecraft Lnet/minecraft/client/Minecraft;

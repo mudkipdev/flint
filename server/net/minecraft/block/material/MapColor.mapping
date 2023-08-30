@@ -1,0 +1,16 @@
+CLASS cm net/minecraft/block/material/MapColor
+	FIELD a colors [Lcm;
+	FIELD b TRANSPARENT Lcm;
+	FIELD c GRASS Lcm;
+	FIELD d SAND Lcm;
+	FIELD e WOOL Lcm;
+	FIELD f FIRE Lcm;
+	FIELD g ICE Lcm;
+	FIELD h IRON Lcm;
+	FIELD i LEAVES Lcm;
+	FIELD j SNOW Lcm;
+	FIELD k CLAY Lcm;
+	FIELD l DIRT Lcm;
+	FIELD m STONE Lcm;
+	FIELD n WATER Lcm;
+	FIELD o WOOD Lcm;

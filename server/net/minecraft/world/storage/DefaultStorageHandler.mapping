@@ -1,1 +1,5 @@
 CLASS dq net/minecraft/world/storage/DefaultStorageHandler
+	FIELD a LOGGER Ljava/util/logging/Logger;
+	FIELD c playersDirectory Ljava/io/File;
+	FIELD d dataDirectory Ljava/io/File;
+	METHOD a loadPlayerData (Ljava/lang/String;)Liq;

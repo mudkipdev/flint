@@ -1,0 +1,2 @@
+CLASS fu net/minecraft/client/screen/TitleScreen
+	FIELD j splashText Ljava/lang/String;

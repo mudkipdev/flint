@@ -1,1 +1,2 @@
 CLASS gy net/minecraft/server/gui/StatisticsComponent
+	METHOD a update ()V

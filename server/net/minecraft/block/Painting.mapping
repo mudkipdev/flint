@@ -1,0 +1,38 @@
+CLASS fr net/minecraft/block/Painting
+	FIELD A name Ljava/lang/String;
+	FIELD B x I
+	FIELD C y I
+	FIELD D width I
+	FIELD E height I
+	FIELD a KEBAB Lfr;
+	FIELD b AZTEC Lfr;
+	FIELD c ALBAN Lfr;
+	FIELD d AZTEC2 Lfr;
+	FIELD e BOMB Lfr;
+	FIELD f PLANT Lfr;
+	FIELD g WASTELAND Lfr;
+	FIELD h POOL Lfr;
+	FIELD i COURBET Lfr;
+	FIELD j SEA Lfr;
+	FIELD k SUNSET Lfr;
+	FIELD l CREEBET Lfr;
+	FIELD m WANDERER Lfr;
+	FIELD n GRAHAM Lfr;
+	FIELD o MATCH Lfr;
+	FIELD p BUST Lfr;
+	FIELD q STAGE Lfr;
+	FIELD r VOID Lfr;
+	FIELD s SKULL_AND_ROSES Lfr;
+	FIELD t FIGHTERS Lfr;
+	FIELD u POINTER Lfr;
+	FIELD v PIGSCENE Lfr;
+	FIELD w BURNING_SKULL Lfr;
+	FIELD x SKELETON Lfr;
+	FIELD y DONKEY_KONG Lfr;
+	FIELD z maxNameLength I
+	METHOD <init> (Ljava/lang/String;ILjava/lang/String;IIII)V
+		ARG 3 name
+		ARG 4 x
+		ARG 5 y
+		ARG 6 width
+		ARG 7 height

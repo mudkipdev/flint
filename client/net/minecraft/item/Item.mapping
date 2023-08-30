@@ -165,6 +165,8 @@ CLASS gm net/minecraft/item/Item
 	METHOD a setMetadataAllowed (Z)Lgm;
 		ARG 1 isMetadataAllowed
 	METHOD b is3D ()Z
+	METHOD b getPlacedMetadata (I)I
+		ARG 1 metadata
 	METHOD b getTexture (Liz;)I
 		ARG 1 itemStack
 	METHOD b b (Liz;Lfd;Lgs;)V

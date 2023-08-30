@@ -1,1 +1,2 @@
 CLASS pi net/minecraft/entity/monster/ZombiePigmanEntity
+	FIELD f HELD_ITEM Lfy;

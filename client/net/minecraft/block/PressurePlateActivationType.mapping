@@ -1,0 +1,4 @@
+CLASS rt net/minecraft/block/PressurePlateActivationType
+	FIELD a ALL Lrt;
+	FIELD b MOBS Lrt;
+	FIELD c PLAYERS Lrt;

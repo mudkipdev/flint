@@ -1,1 +1,4 @@
 CLASS eh net/minecraft/entity/animal/WolfEntity
+	METHOD x getOwner ()Ljava/lang/String;
+	METHOD y isSitting ()Z
+	METHOD z isAngry ()Z

@@ -1,0 +1,4 @@
+CLASS ab net/minecraft/client/widget/SmallButton
+	FIELD i option Lht;
+	METHOD <init> <init> (IIILht;Ljava/lang/String;)V
+		ARG 4 option

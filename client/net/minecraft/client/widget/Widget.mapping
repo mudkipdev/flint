@@ -1,0 +1,13 @@
+CLASS ub net/minecraft/client/widget/Widget
+	METHOD a drawCenteredText (Lsj;Ljava/lang/String;III)V
+		ARG 1 fontRenderer
+		ARG 2 text
+		ARG 3 x
+		ARG 4 y
+		ARG 5 color
+	METHOD b drawText (Lsj;Ljava/lang/String;III)V
+		ARG 1 fontRenderer
+		ARG 2 text
+		ARG 3 x
+		ARG 4 y
+		ARG 5 color

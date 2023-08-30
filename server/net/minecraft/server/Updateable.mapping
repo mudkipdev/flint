@@ -1,0 +1,2 @@
+CLASS dg net/minecraft/server/Updateable
+	METHOD a update ()V

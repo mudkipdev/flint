@@ -1,0 +1,2 @@
+CLASS ii net/minecraft/entity/MobEntity
+	METHOD g_ getTarget ()Lsn;

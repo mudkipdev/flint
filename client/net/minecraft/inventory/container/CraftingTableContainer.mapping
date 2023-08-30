@@ -1,0 +1,4 @@
+CLASS it net/minecraft/inventory/container/CraftingTableContainer
+	FIELD a inventory Lmq;
+	FIELD b resultInventory Llw;
+	FIELD c world Lfd;

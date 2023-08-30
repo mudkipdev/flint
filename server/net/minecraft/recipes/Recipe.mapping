@@ -1,0 +1,7 @@
+CLASS ck net/minecraft/recipes/Recipe
+	METHOD a getSize ()I
+	METHOD a matches (Lhz;)Z
+		ARG 1 craftingInventory
+	METHOD b getResult ()Lfy;
+	METHOD b createResult (Lhz;)Lfy;
+		ARG 1 craftingInventory

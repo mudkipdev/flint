@@ -1,0 +1,8 @@
+CLASS bd net/minecraft/isom/IsomCanvas
+	FIELD d world Lfd;
+	FIELD e directory Ljava/io/File;
+	METHOD a getDirectory ()Ljava/io/File;
+	METHOD a getDirectory (Ljava/lang/String;)Ljava/io/File;
+		ARG 1 name
+	METHOD b start ()V
+	METHOD c stop ()V

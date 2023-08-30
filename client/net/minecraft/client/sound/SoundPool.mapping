@@ -1,1 +1,11 @@
 CLASS hr net/minecraft/client/sound/SoundPool
+	FIELD a soundCount I
+	FIELD c random Ljava/util/Random;
+	FIELD d keyToSoundMap Ljava/util/Map;
+	FIELD e sounds Ljava/util/List;
+	METHOD a getRandomSound ()Lbh;
+	METHOD a getSound (Ljava/lang/String;)Lbh;
+		ARG 1 key
+	METHOD a addSound (Ljava/lang/String;Ljava/io/File;)Lbh;
+		ARG 1 key
+		ARG 2 file

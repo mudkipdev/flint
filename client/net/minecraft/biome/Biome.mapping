@@ -13,8 +13,10 @@ CLASS kd net/minecraft/biome/Biome
 	FIELD l NETHER Lkd;
 	FIELD m SKY Lkd;
 	FIELD n name Ljava/lang/String;
+	FIELD o grassColor I
 	FIELD p topBlockID B
 	FIELD q fillBlockID B
+	FIELD r foliageColor I
 	FIELD s monsters Ljava/util/List;
 	FIELD t mobs Ljava/util/List;
 	FIELD u waterMobs Ljava/util/List;
@@ -22,11 +24,16 @@ CLASS kd net/minecraft/biome/Biome
 	FIELD w canRain Z
 	METHOD a getSkyColor (F)I
 		ARG 1 temperature
+	METHOD a setFoliageColor (I)Lkd;
+		ARG 1 foliageColor
 	METHOD a setName (Ljava/lang/String;)Lkd;
+		ARG 1 name
 	METHOD a chooseTreeGenerator (Ljava/util/Random;)Lpg;
 		ARG 1 random
 	METHOD a getSpawnableMobs (Llk;)Ljava/util/List;
 		ARG 1 mobType
 	METHOD b enableSnow ()Lkd;
+	METHOD b setGrassColor (I)Lkd;
+		ARG 1 grassColor
 	METHOD c canSnow ()Z
 	METHOD e disableRain ()Lkd;

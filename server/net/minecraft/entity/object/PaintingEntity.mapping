@@ -1,0 +1,2 @@
+CLASS kf net/minecraft/entity/object/PaintingEntity
+	FIELD e painting Lfr;

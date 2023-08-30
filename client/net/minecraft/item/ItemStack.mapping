@@ -39,7 +39,7 @@ CLASS iz net/minecraft/item/ItemStack
 	METHOD a damage (ILsn;)V
 		ARG 1 amount
 		ARG 2 entity
-	METHOD a rigthClick (Lfd;Lgs;)Liz;
+	METHOD a rightClick (Lfd;Lgs;)Liz;
 		ARG 1 world
 		ARG 2 player
 	METHOD a stepAnimationFrame (Lfd;Lsn;IZ)V

@@ -24,7 +24,9 @@ CLASS sn net/minecraft/entity/Entity
 	FIELD be isRemoved Z
 	FIELD bk fallDistance F
 	FIELD bs random Ljava/util/Random;
+	FIELD bv fire I
 	FIELD bw maxAir I
+	FIELD bx wasInWater Z
 	FIELD bz air I
 	METHOD <init> <init> (Lfd;)V
 		ARG 1 world
@@ -36,6 +38,9 @@ CLASS sn net/minecraft/entity/Entity
 		ARG 1 lightningBolt
 	METHOD a interact (Lgs;)Z
 		ARG 1 player
+	METHOD a dropItemStack (Liz;F)Lhl;
+		ARG 1 itemStack
+		ARG 2 yOffset
 	METHOD a isInMaterial (Lln;)Z
 	METHOD a killEntity (Lls;)V
 		ARG 1 living

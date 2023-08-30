@@ -1,0 +1,4 @@
+CLASS kx net/minecraft/block/PressurePlateActivationType
+	FIELD a ALL Lkx;
+	FIELD b MOBS Lkx;
+	FIELD c PLAYERS Lkx;

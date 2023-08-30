@@ -1,1 +1,4 @@
 CLASS oc net/minecraft/entity/animal/PigEntity
+	METHOD a setSaddled (Z)V
+		ARG 1 isSaddled
+	METHOD x isSaddled ()Z

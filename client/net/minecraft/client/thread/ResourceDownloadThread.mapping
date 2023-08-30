@@ -1,1 +1,6 @@
 CLASS cz net/minecraft/client/thread/ResourceDownloadThread
+	FIELD a resourceDirectory Ljava/io/File;
+	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	METHOD <init> (Ljava/io/File;Lnet/minecraft/client/Minecraft;)V
+		ARG 1 minecraftDirectory
+		ARG 2 minecraft

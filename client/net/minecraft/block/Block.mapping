@@ -216,6 +216,7 @@ CLASS uu net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 	METHOD a getTexture (Lxp;IIII)I
+		ARG 1 blockAccessor
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -259,6 +260,7 @@ CLASS uu net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 	METHOD b shouldRenderSide (Lxp;IIII)Z
+		ARG 1 blockAccessor
 		ARG 2 x
 		ARG 3 y
 		ARG 4 z
@@ -296,6 +298,13 @@ CLASS uu net/minecraft/block/Block
 		ARG 3 y
 		ARG 4 z
 		ARG 5 n4
+	METHOD d (Lxp;III)F
+		ARG 1 blockAccessor
+	METHOD d (Lxp;IIII)Z
+		ARG 1 blockAccessor
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
 	METHOD e getCollisionAABB (Lfd;III)Leq;
 		ARG 1 world
 		ARG 2 x

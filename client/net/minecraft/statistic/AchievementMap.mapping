@@ -1,0 +1,5 @@
+CLASS b net/minecraft/statistic/AchievementMap
+	FIELD a instance Lb;
+	FIELD b idToGUIDMap Ljava/util/Map;
+	METHOD a getGUID (I)Ljava/lang/String;
+		ARG 0 id

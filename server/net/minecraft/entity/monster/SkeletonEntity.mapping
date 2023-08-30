@@ -1,1 +1,2 @@
 CLASS dv net/minecraft/entity/monster/SkeletonEntity
+	FIELD a HELD_ITEM Lfy;

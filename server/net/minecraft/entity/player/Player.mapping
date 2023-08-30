@@ -1,3 +1,4 @@
 CLASS em net/minecraft/entity/player/Player
+	FIELD i inventory Lfx;
 	FIELD r username Ljava/lang/String;
 	METHOD a incrementStatistic (Lns;I)V

@@ -1,4 +1,6 @@
 CLASS fm net/minecraft/world/storage/DefaultStorageHandler
 	FIELD a LOGGER Ljava/util/logging/Logger;
 	FIELD b worldDirectory Ljava/io/File;
+	FIELD c playersDirectory Ljava/io/File;
+	FIELD d dataDirectory Ljava/io/File;
 	METHOD a getDirectory ()Ljava/io/File;

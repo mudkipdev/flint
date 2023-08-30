@@ -1,4 +1,5 @@
 CLASS dj net/minecraft/world/World
+	FIELD B isMultiplayer Z
 	FIELD r random Ljava/util/Random;
 	FIELD s isNew Z
 	FIELD t dimension Los;
@@ -7,3 +8,5 @@ CLASS dj net/minecraft/world/World
 	FIELD x info Lct;
 	METHOD a getTopBlockIDAt (II)I
 	METHOD b updateBlockEntity (IIILjh;)V
+	METHOD b addEntity (Llq;)Z
+	METHOD j canSeeSky (III)Z
