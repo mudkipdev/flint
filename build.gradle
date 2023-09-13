@@ -5,14 +5,14 @@ plugins {
 }
 
 group 'dev.mudkip'
-version '0.1.0'
+version project['flint.version']
 
 // Enigma is only compiled for Java 17+
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
 
-final clientURL = new URL('https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar')
-final serverURL = new URL('https://files.betacraft.uk/server-archive/beta/b1.7.3.jar')
+final clientURL = new URL(project['flint.client_url'])
+final serverURL = new URL(project['flint.server_url'])
 
 configurations { enigma }
 
@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    enigma 'cuchaz:enigma-swing:2.3.2'
+    enigma 'cuchaz:enigma-swing:' + project['enigma_version']
 }
 
 static String getUserAgent() {
