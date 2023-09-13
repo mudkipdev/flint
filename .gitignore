@@ -1,4 +1,4 @@
-enigma.jar
-matcher.jar
-client.jar
-server.jar
+.gradle/
+.idea/
+.vscode/
+libs/

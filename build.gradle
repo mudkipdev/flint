@@ -1,0 +1,101 @@
+import org.gradle.work.DisableCachingByDefault
+
+plugins {
+    id 'java'
+}
+
+group 'dev.mudkip'
+version '0.1.0'
+
+// Enigma is only compiled for Java 17+
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+
+final clientURL = new URL('https://piston-data.mojang.com/v1/objects/43db9b498cb67058d2e12d394e6507722e71bb45/client.jar')
+final serverURL = new URL('https://files.betacraft.uk/server-archive/beta/b1.7.3.jar')
+
+configurations { enigma }
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabricmc.net' }
+}
+
+dependencies {
+    enigma 'cuchaz:enigma-swing:2.3.2'
+}
+
+static String getUserAgent() {
+    String javaVendor = System.getProperty('java.vendor')
+    String javaVersion = System.getProperty('java.version')
+    String javaVendorVersion = System.getProperty('java.vm.version')
+    String osName = System.getProperty('os.name')
+    String osVersion = System.getProperty('os.version')
+    String osArchitecture = System.getProperty('os.arch')
+
+    return String.format(
+            'Gradle/8.3 (%s;%s;%s) (%s;%s;%s)',
+            osName, osVersion, osArchitecture,
+            javaVendor, javaVersion, javaVendorVersion
+    )
+}
+
+static void download(URL url, File file) {
+    if (file.exists()) {
+        return
+    }
+
+    printf 'Downloading %s...%n', file.getName()
+    HttpURLConnection connection = (HttpURLConnection) url.openConnection()
+    connection.setConnectTimeout(5000)
+    connection.setRequestProperty('User-Agent', getUserAgent())
+
+    file.withOutputStream {
+        it << connection.getInputStream()
+    }
+}
+
+@DisableCachingByDefault
+abstract class EnigmaTask extends JavaExec {
+    @InputFile
+    abstract RegularFileProperty getJar()
+
+    @Input
+    abstract Property<File> getMappings()
+
+    EnigmaTask() {
+        classpath project.configurations.enigma
+        mainClass.set('cuchaz.enigma.gui.Main')
+        jvmArgs '-Xmx2048M'
+    }
+
+    @TaskAction
+    void exec() {
+        if (!this.jar.isPresent()) {
+            println 'Could not find the game JAR!'
+            return
+        }
+
+        args '-jar'
+        args this.jar.get().asFile.absolutePath
+        args '-mappings'
+        args this.mappings.get().absolutePath
+        super.exec()
+    }
+}
+
+File libraryDirectory = new File(project.rootDir, 'libs')
+libraryDirectory.mkdirs()
+
+tasks.register('enigmaClient', EnigmaTask) {
+    jar = new File(libraryDirectory, 'client.jar')
+    mappings = new File(project.rootDir, 'client')
+}
+
+tasks.register('enigmaServer', EnigmaTask) {
+    jar = new File(libraryDirectory, 'client.jar')
+    mappings = new File(project.rootDir, 'server')
+}
+
+download(clientURL, new File(libraryDirectory, 'client.jar'))
+download(serverURL, new File(libraryDirectory, 'server.jar'))
