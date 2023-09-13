@@ -1,5 +1,5 @@
-# beta-mappings
-A set of deobfuscated names for Minecraft Beta 1.7.3's game code.
+# flint
+A set of deobfuscated mappings for Minecraft Beta 1.7.3's game code.
 
 ## Contributing
 Please use [Fabric](https://github.com/FabricMC/Enigma) or [Quilt](https://github.com/QuiltMC/enigma) Enigma to contribute.
