@@ -6,7 +6,7 @@ plugins {
 
 group 'dev.mudkip'
 description 'A set of deobfuscated mappings for Minecraft Beta 1.7.3\'s game code.'
-version project['flint.version']
+version project['version']
 
 // Enigma is only compiled for Java 17+
 java.sourceCompatibility = JavaVersion.VERSION_17
@@ -23,7 +23,7 @@ repositories {
 
 dependencies {
     enigma 'cuchaz:enigma-swing:' + project['enigma_version']
-    implementation 'net.fabricmc:mapping-io:' + project['mapping-io_version']
+    implementation 'net.fabricmc:mapping-io:' + project['mapping_io_version']
 }
 
 static String getUserAgent() {
@@ -91,12 +91,14 @@ libraryDirectory.mkdirs()
 tasks.register('enigmaClient', EnigmaTask) {
     jar = new File(libraryDirectory, 'client.jar')
     mappings = new File(project.rootDir, 'client')
+    it.group = "flint"
 }
 
 tasks.register('enigmaServer', EnigmaTask) {
     jar = new File(libraryDirectory, 'client.jar')
     mappings = new File(project.rootDir, 'server')
+    it.group = "flint"
 }
 
-download(new URL(project['flint.client_url']), new File(libraryDirectory, 'client.jar'))
-download(new URL(project['flint.server_url']), new File(libraryDirectory, 'server.jar'))
+download(new URL(project['client_url'] as String), new File(libraryDirectory, 'client.jar'))
+download(new URL(project['server_url'] as String), new File(libraryDirectory, 'server.jar'))
